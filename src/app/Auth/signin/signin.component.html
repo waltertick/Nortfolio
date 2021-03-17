@@ -1,21 +1,22 @@
 <div class="signinClass">
-  <div >
-    <img class="resizeImg hide-mobile" src="../assets/Images/camera1.png" alt="">
-    <img class="resizeImg hide-desktop" src="../assets/Images/camera.png" alt="">
+  <div class="imageClass preferal_bg" [ngStyle]="{'background-image': 'url(../assets/Images/pexelscamera.jpeg)'}">
+    
   </div>
-  
+  <div class="hide_mobile">
+    <img class="fixCameraImage" src="../assets/Images/camera.png" alt="">
+  </div>
   <div class="rightSide">
 
 
     <h1>Sign In</h1>
     <p class="error"> {{errorMessage}} </p>
-    
+
     <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
 
       <div class="field">
         <input type="email" formControlName="email" name="email" id="email" placeholder=" ">
-        <label for="email"><img  src="../assets/Images/userIcon.svg" alt="usericon">
-          username
+        <label for="email"><img class="resizeImg" src="../assets/Images/userIcon.svg" alt="usericon">
+         <span class="setOnlyLabelName"> username </span>
         </label>
       </div>
 
@@ -24,12 +25,12 @@
           [type]=" hide ?'password':'text'">
         <label for="Password">
 
-          <img  src="../assets/Images/password.svg" alt="usericon">
-            password
+          <img class="resizeImg" src="../assets/Images/password.svg" alt="usericon">
+            <span class="setOnlyLabelName"> password</span>
 
         </label>
         <div class="imgClass">
-          <i class="material-icons imgClass changeColor" matSuffix (click)="hide =!hide">
+          <i class="material-icons resizeImg imgClass changeColor" matSuffix (click)="hide =!hide">
             {{hide ? 'visibility': 'visibility_off'}}
           </i>
         </div>

@@ -39,11 +39,11 @@
 }
 
 .headerContent {
-  padding: 12px 100px 12px 100px;
+  padding: 12px 10px 12px 10px;
 }
 
 
-@media only screen and (min-width: 360px) {
+@media only screen and (min-width: 501px) {
 
   .header {
     padding: 12px 0px 12px 0px;
@@ -56,25 +56,37 @@
   
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 701px) {
    .header {
      padding: 12px 0px 12px 0px;
    }
 
    .headerContent {
-     padding: 12px 45px 12px 65px;
+     padding: 12px 50px 12px 50px;
 
 
    }
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 901px){
   .headerContent {
-    padding: 12px 80px 12px 80px;
+    padding: 12px 60px 12px 60px;
 
 
   }
    .header {
      padding: 12px 0px 12px 0px;
    }
+}
+
+@media only screen and (min-width: 1201px) {
+  .headerContent {
+    padding: 12px 70px 12px 70px;
+
+
+  }
+
+  .header {
+    padding: 12px 0px 12px 0px;
+  }
 }

@@ -1,15 +1,33 @@
 .rightSide {
   background-color: #fff;
-  margin-right:10px;
-  margin-left:10px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding: 14px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.preferal_bg {
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  background-position: 50% 50%;
+
 }
 
 .resizeImg {
-  width: 320px;
+  width: 14px;
+  height: 14px;
 }
+
+.setOnlyLabelName {
+  font-size: 12px;
+}
+
+.hide_mobile {
+  display: none;
+}
+
 
 .field {
   display: flex;
@@ -23,9 +41,7 @@ input {
   transition: all 0.001s;
 }
 
-.hide-desktop {
-    display: none;
-  }
+
 
 input {
   font-size: 1.1em;
@@ -109,6 +125,7 @@ input:focus+label {
 h1 {
   text-align: center;
   margin-bottom: 35px;
+  font-size: 16px;
 }
 
 span {
@@ -121,179 +138,231 @@ span {
   margin-top: 35px;
 }
 
-@media only screen and (min-width: 360px){
-  .resizeImg {
-    width: 360px;
-  }
-
-}
-
-@media only screen and (min-width: 375px) {
-  .resizeImg {
-    width: 375px;
-  }
-
-}
-@media only screen and (min-width: 400px) {
-  .resizeImg {
-    width: 400px;
-  }
-@media only screen and (min-width: 414px) {
-  .resizeImg {
-    width: 414px;
-  }
-}
-@media only screen and (min-width: 480px) {
-  .resizeImg {
-    width: 480px;
-  }
-}
-
-
-}
-@media only screen and (min-width: 650px) {
-  .resizeImg {
-    width: 650px;
-  }
-
-}
-
-@media only screen and (min-width: 750px) {
-  .resizeImg {
-    width: 750px;
-  }
-
-}
-@media only screen and (min-width: 768px) {
-  .resizeImg {
-    width: 768px;
-  }
-
-}
-
-@media only screen and (min-width: 900px) {
-.resizeImg {
-
-}
-
-.hide-desktop {
-  display: block;
-}
-
-.hide-mobile {
-  display: none;
-}
-
-.signinClass {
-  margin-left: 65px;
-  margin-right: 0px;
-  display: flex;
-  flex-wrap: wrap;
-}
-h1 {
-
-  margin-bottom: 50px;
-}
-.rightSide {
-  margin: 0;
-  padding-left: 20px;
-  padding-right: 0;
-  padding-top: 0;
-  background-color: #F3F5F9;
-
-}
-.centerContainer {
-
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-input {
-  background-color: #F3F5F9;
-  margin-bottom: 50px;
-}
-}
-
-@media only screen and (min-width: 1024px) {
-.resizeImg {
-
-}
-
-.hide-mobile {
-  display: none;
-}
-
-.hide-desktop {
-  display:block;
-}
-
-h1 {
-  margin-top: 60px;
-  margin-bottom: 70px;
-}
-.centerContainer {
-
-  margin-bottom: 70px;
-  margin-top: 70px;
-}
-.signinClass {
-  margin-left: 80px;
-  margin-right: 0px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.rightSide {
-  margin: 0;
-  padding-left: 40px;
-  padding-top: 0;
-  padding-right: 0;
-  background-color: #F3F5F9;
-
-}
-
-input {
-  background-color: #F3F5F9;
-  width: 100%;
-  margin-bottom: 50px;
-}
-}
-
-@media only screen and (min-width: 1324px) {
-  .resizeImg {
-    width: 560px;
-    height: 606px;
-  }
-
-  h1 {
-    margin-top: 60px;
-    margin-bottom: 70px;
-  }
-
-  .centerContainer {
-
-    margin-bottom: 70px;
-    margin-top: 70px;
-  }
-
+@media only screen and (min-width: 501px) {
   .signinClass {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 10px;
+    margin-right: 0;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .rightSide {
-    margin: 0;
-    padding-left: 100px;
-    padding-top: 0;
-    padding-right: 0;
-    background-color: #F3F5F9;
-
+  .imageClass {
+    max-width: 47%;
   }
 
   input {
     background-color: #F3F5F9;
-    width: 100%;
-    margin-bottom: 50px;
+  }
+
+  .preferal_bg {
+    background-repeat: no-repeat;
+    height: 310px;
+
+    background-position: center;
+  }
+
+  .rightSide {
+    background-color: #F3F5F9;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 47%;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 14px;
+    margin-top: 25px;
+  }
+
+  .centerContainer {
+
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .resizeImg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .setOnlyLabelName {
+    font-size: 12px;
+  }
+}
+
+
+@media only screen and (min-width: 701px) {
+  .signinClass {
+    margin-left: 50px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .imageClass {
+    max-width: 47%;
+  }
+
+  input {
+    background-color: #F3F5F9;
+  }
+
+  .preferal_bg {
+    background-repeat: no-repeat;
+    height: 400px;
+
+    background-position: center;
+  }
+
+  .rightSide {
+    background-color: #F3F5F9;
+    margin-right: 0;
+    margin-left: 10px;
+    padding-left: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 47%;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 24px;
+    margin-top: 45px;
+  }
+
+  .centerContainer {
+
+    margin-bottom: 35px;
+    margin-top: 35px;
+  }
+
+  .resizeImg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .setOnlyLabelName {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .signinClass {
+    margin-left: 60px;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .imageClass {
+    max-width: 47%;
+  }
+
+  input {
+    background-color: #F3F5F9;
+  }
+
+  .preferal_bg {
+    background-repeat: no-repeat;
+    height: 450px;
+
+    background-position: center;
+  }
+
+  .rightSide {
+    background-color: #F3F5F9;
+    margin-right: 0;
+    margin-left: 20px;
+    padding-left: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 47%;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 34px;
+    margin-top: 55px;
+  }
+
+  .centerContainer {
+
+    margin-bottom: 55px;
+    margin-top: 55px;
+  }
+
+  .resizeImg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .setOnlyLabelName {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .signinClass {
+    margin-left: 70px;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .imageClass {
+    display: none;
+  }
+
+  input {
+    background-color: #F3F5F9;
+    width: 405px;
+  }
+
+  .preferal_bg {
+    display: none;
+  }
+
+  .rightSide {
+    background-color: #F3F5F9;
+    margin-right: 0;
+    margin-left: 80px;
+    padding-left: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 46%;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 34px;
+    margin-top: 55px;
+  }
+
+  .centerContainer {
+
+    margin-bottom: 55px;
+    margin-top: 55px;
+  }
+
+  .hide_mobile {
+    display: block;
+
+  }
+
+  .resizeImg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .fixCameraImage {
+    width: 540px;
+    height: 572px;
+  }
+
+  .setOnlyLabelName {
+    font-size: 14px;
   }
 }
