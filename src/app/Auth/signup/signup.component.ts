@@ -29,32 +29,33 @@ export class SignupComponent implements OnInit {
     this.signUpForm = this.formBuilder.group({
       email: ['',[Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.pattern(/[0-9a-zA-Z]{6,}/)]]
+
     });
 }
 
- 
+
 
   onSubmit() {
     const email = this.signUpForm.get('email').value;
     const password = this.signUpForm.get('password').value;
     this.authService.createNewUser(email, password).then(
       () => {
-        this.router.navigate(['/auth/signin']);
+        this.router.navigate(['/home']);
       },
       (error)  => {
         this.errorMessage = error;
-        this.toaster.show('error', 'Error Message!', this.errorMessage,12000);
+        this.toaster.show('error', 'Error Message!', this.errorMessage,20000);
 
       }
     )
   }
- 
+ /*
    showSuccessToaster() {
     this.toaster.show('success', 'Well done!', 'This is a success alert');
   }
- 
+
   showWarningToaster() {
     this.toaster.show('warning', 'Check it out!', 'This is a warning alert', 3000);
   }
-
+*/
 }

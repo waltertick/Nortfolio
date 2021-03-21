@@ -40,9 +40,9 @@ export class SigninComponent implements OnInit {
       },
       (error)  => {
         this.errorMessage = error;
-        this.toaster.show('error', 'Error Message!', this.errorMessage,15000);
-      } 
-    ) 
+        this.toaster.show('error', 'Error Message!', this.errorMessage,20000);
+      }
+    )
   }
 
 }
