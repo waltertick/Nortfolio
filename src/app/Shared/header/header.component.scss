@@ -20,14 +20,14 @@
   cursor: pointer;
 }
 .header {
-  
+
   background: #FFFFFF;
   box-shadow: 0px 4px 10px 1px rgba(141, 140, 140, 0.2);
   width: 100%;
   height: 50px;
   position: fixed;
   top: 0;
-  
+
 }
 .show-desktop {
   display: flex;
@@ -46,32 +46,26 @@
 @media only screen and (min-width: 501px) {
 
   .header {
-    padding: 12px 0px 12px 0px;
+    height: 50px;
   }
-  .headerContent {
-    padding: 12px 10px 12px 10px;
-    
-    
-  }
-  
+
 }
 
-@media only screen and (min-width: 701px) {
-   .header {
-     padding: 12px 0px 12px 0px;
-   }
+@media only screen and (min-width: 726px) {
 
-   .headerContent {
-     padding: 12px 50px 12px 50px;
+  .header {
+    height: 50px;
 
+  }
+  .headerContent {
+    padding: 12px 50px 12px 50px;
+  }
 
-   }
 }
 
 @media only screen and (min-width: 901px){
   .headerContent {
-    padding: 12px 60px 12px 60px;
-
+    padding: 12px 50px 12px 50px;
 
   }
    .header {
@@ -79,7 +73,7 @@
    }
 }
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1101px) {
   .headerContent {
     padding: 12px 70px 12px 70px;
 

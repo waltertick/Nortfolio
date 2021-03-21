@@ -1,12 +1,15 @@
 
 
   <div class="signinClass">
-    <div class="imageClass preferal_bg" [ngStyle]="{'background-image': 'url(../assets/Images/pexelscamera.jpeg)'}">
-  
-    </div>
-    <div class="hide_mobile">
-      <img class="fixCameraImage" src="../assets/Images/camera.png" alt="">
-    </div>
+<div class="imageDesign preferal_bg" [ngStyle]="{'background-image': 'url(../assets/Images/pexelscamera.jpeg)'}">
+
+</div>
+<div class="imageDesign2 preferal_bg2" [ngStyle]="{'background-image': 'url(../assets/Images/camera3.png)'}">
+
+</div>
+<div class="hide_mobile">
+  <img class="fixCameraImage" src="../assets/Images/camera.png" alt="">
+</div>
     <div class="rightSide">
 
       <h1>Sign Up</h1>
@@ -16,7 +19,7 @@
         <div class="field">
           <input type="email" formControlName="email" name="email" id="email" placeholder=" ">
           <label for="email"><img class="resizeImg"  src="../assets/Images/userIcon.svg" alt="usericon">
-            <span class="setOnlyLabelName"> username </span>
+            <span class="setOnlyLabelName"> USERNAME </span>
           </label>
         </div>
 
@@ -26,11 +29,11 @@
           <label for="Password">
 
                 <img class="resizeImg" src="../assets/Images/password.svg" alt="usericon">
-                <span class="setOnlyLabelName"> password</span>
+                <span class="setOnlyLabelName"> PASSWORD</span>
 
 
           </label>
-          <div class="imgClass">
+          <div class="imgPosition">
             <i class="material-icons resizeImg imgClass changeColor" matSuffix (click)="hide =!hide">
               {{hide ? 'visibility': 'visibility_off'}}
             </i>
@@ -38,8 +41,14 @@
 
         </div>
 
+        <div class="checkbox changeColor">
+          <label class="containerCheckbox">I agree to the Terms and Privacy
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
 
-        <button type="submit" [disabled]="signUpForm.invalid" class="loginButton">
+        </div>
+        <button type="submit" class="loginButton" [disabled]="signUpForm.invalid" >
           Create account
         </button>
       </form>
@@ -55,4 +64,5 @@
     </div>
 
   </div>
+
 

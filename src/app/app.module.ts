@@ -1,6 +1,11 @@
+import { PinkToast } from './pink.toast';
 
 import { AuthGuardService } from './services/auth-guard.service';
-
+import {
+  ToastrModule,
+  ToastContainerModule,
+  ToastNoAnimationModule,
+} from 'ngx-toastr';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -31,6 +36,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule} from '@angular/material/input';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +53,8 @@ import { MatInputModule} from '@angular/material/input';
     ExperienceActionListComponent,
     SingleExperienceActionComponent,
     SkillFormComponent,
-    UserFormComponent
+    UserFormComponent,
+    PinkToast
   ],
   imports: [
     BrowserModule,
@@ -55,7 +62,14 @@ import { MatInputModule} from '@angular/material/input';
     FormsModule,MatInputModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ToastNoAnimationModule,
+    ToastrModule.forRoot(
+      {
+        toastComponent: PinkToast,
+      }
+    ),
+    ToastContainerModule
 
   ],
   providers: [
@@ -65,6 +79,7 @@ import { MatInputModule} from '@angular/material/input';
     SettingService
 
   ],
+  entryComponents: [PinkToast],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

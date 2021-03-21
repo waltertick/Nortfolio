@@ -14,7 +14,6 @@
   background-position: 50% 50%;
 
 }
-
 .resizeImg {
   width: 14px;
   height: 14px;
@@ -23,8 +22,13 @@
 .setOnlyLabelName {
   font-size: 12px;
 }
-
 .hide_mobile {
+  display: none;
+}
+.imageDesign2 {
+  display: none;
+}
+.preferal_bg2 {
   display: none;
 }
 
@@ -92,7 +96,7 @@ input:focus+label {
   cursor: pointer;
 }
 
-.imgClass {
+.imgPosition {
   position: absolute;
   top: 9px;
   right: 0;
@@ -139,42 +143,42 @@ span {
 }
 
 @media only screen and (min-width: 501px) {
-  .signinClass {
-    margin-left: 10px;
-    margin-right: 0;
-    display: flex;
-    flex-wrap: wrap;
+
+  .hide_mobile {
+    display: none;
+
   }
 
-  .imageClass {
-    max-width: 47%;
+
+
+  .rightSide {
+    padding: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
-  input {
-    background-color: #F3F5F9;
+  .imageDesign {
+    display: none;
   }
 
   .preferal_bg {
-    background-repeat: no-repeat;
-    height: 310px;
-
-    background-position: center;
+    display: none;
+  }
+  .imageDesign2 {
+    display: block;
   }
 
-  .rightSide {
-    background-color: #F3F5F9;
-    margin-right: 0;
-    margin-left: 0;
-    padding-left: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: 47%;
+  .preferal_bg2 {
+    background-repeat: no-repeat;
+    height: 240px;
+    width: 100%;
+    background-position: 50% 50%;
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 23px;
     margin-bottom: 14px;
-    margin-top: 25px;
+    margin-top: 14px;
   }
 
   .centerContainer {
@@ -193,28 +197,37 @@ span {
   }
 }
 
-
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 726px) {
   .signinClass {
     margin-left: 50px;
     margin-right: 10px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
+.imageDesign2 {
+  display: none;
+}
 
-  .imageClass {
-    max-width: 47%;
+.preferal_bg2 {
+  display: none;
+}
+  .imageDesign {
+    display: none ;
   }
-
+  .hide_mobile {
+    display: block;
+  }
+  .fixCameraImage {
+    width: 100%;
+    height: 500px;
+  }
   input {
     background-color: #F3F5F9;
+    margin-bottom: 50px;
   }
 
   .preferal_bg {
-    background-repeat: no-repeat;
-    height: 400px;
-
-    background-position: center;
+    display: none;
   }
 
   .rightSide {
@@ -229,14 +242,14 @@ span {
 
   h1 {
     font-size: 20px;
-    margin-bottom: 24px;
+    margin-bottom: 34px;
     margin-top: 45px;
   }
 
   .centerContainer {
 
-    margin-bottom: 35px;
-    margin-top: 35px;
+    margin-bottom: 25px;
+    margin-top: 45px;
   }
 
   .resizeImg {
@@ -251,35 +264,48 @@ span {
 
 @media only screen and (min-width: 901px) {
   .signinClass {
-    margin-left: 60px;
+    margin-left: 50px;
     margin-right: 50px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
+.imageDesign {
+  display: none;
+}
+.imageDesign2 {
+  display: none;
+}
 
-  .imageClass {
-    max-width: 47%;
-  }
+.preferal_bg2 {
+  display: none;
+}
+.hide_mobile {
+  display: block;
+  width: 55%;
+}
 
-  input {
-    background-color: #F3F5F9;
-  }
+.fixCameraImage {
 
-  .preferal_bg {
-    background-repeat: no-repeat;
-    height: 450px;
+  height: 572px;
+}
 
-    background-position: center;
-  }
+input {
+  background-color: #F3F5F9;
+  margin-bottom: 50px;
+}
+
+.preferal_bg {
+  display: none;
+}
 
   .rightSide {
     background-color: #F3F5F9;
     margin-right: 0;
-    margin-left: 20px;
-    padding-left: 35px;
+    margin-left: 10px;
+    padding-left: 10px;
     margin-top: 0;
     margin-bottom: 0;
-    max-width: 47%;
+    max-width: 45%;
   }
 
   h1 {
@@ -304,21 +330,27 @@ span {
   }
 }
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1101px) {
   .signinClass {
     margin-left: 70px;
-    margin-right: 40px;
+    margin-right: 30px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+  }
+  .imageDesign2 {
+    display: none;
   }
 
-  .imageClass {
+  .preferal_bg2 {
+    display: none;
+  }
+  .imageDesign {
     display: none;
   }
 
   input {
     background-color: #F3F5F9;
-    width: 405px;
+    width: 425px;
   }
 
   .preferal_bg {
@@ -328,11 +360,11 @@ span {
   .rightSide {
     background-color: #F3F5F9;
     margin-right: 0;
-    margin-left: 80px;
-    padding-left: 35px;
+    margin-left: 10px;
+    padding-left: 10px;
     margin-top: 0;
     margin-bottom: 0;
-    max-width: 46%;
+    max-width: 50%;
   }
 
   h1 {
@@ -358,7 +390,7 @@ span {
   }
 
   .fixCameraImage {
-    width: 540px;
+
     height: 572px;
   }
 
