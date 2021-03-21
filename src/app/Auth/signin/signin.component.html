@@ -12,7 +12,7 @@
 
 
     <h1>Sign In</h1>
-    <p class="error"> {{errorMessage}} </p>
+    
 
     <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
 
@@ -51,7 +51,7 @@
         <span>Not registered yet?<a routerLink="/auth/signup" class="changeColor"> Sign up</a></span>
       </div>
 
-
+<app-toaster-container></app-toaster-container>
     </div>
 
 

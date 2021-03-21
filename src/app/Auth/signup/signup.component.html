@@ -13,7 +13,7 @@
     <div class="rightSide">
 
       <h1>Sign Up</h1>
-      <p class="error"> {{errorMessage}} </p>
+      
 
       <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
         <div class="field">
@@ -48,7 +48,7 @@
           </label>
 
         </div>
-        <button type="submit" class="loginButton" [disabled]="signUpForm.invalid" >
+        <button type="submit"  class="loginButton" [disabled]="signUpForm.invalid" >
           Create account
         </button>
       </form>
@@ -63,6 +63,8 @@
 
     </div>
 
+
+<app-toaster-container></app-toaster-container>
   </div>
 
 

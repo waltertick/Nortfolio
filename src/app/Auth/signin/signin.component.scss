@@ -87,7 +87,7 @@ input:placeholder-shown+label {
 
 input:focus::-webkit-input-placeholder {
   opacity: 1;
-  color: #F3F5F9;
+  
 }
 
 input:not(:placeholder-shown)+label,
@@ -390,7 +390,7 @@ input {
   }
 
   .fixCameraImage {
-
+    width: 580px;
     height: 572px;
   }
 

@@ -1,11 +1,9 @@
-import { PinkToast } from './pink.toast';
+import { ToasterService } from './services/toaster.service';
+import { ToasterComponent } from './Shared/toaster.component';
+import { ToasterContainerComponent } from './Shared/toaster-container.component';
 
 import { AuthGuardService } from './services/auth-guard.service';
-import {
-  ToastrModule,
-  ToastContainerModule,
-  ToastNoAnimationModule,
-} from 'ngx-toastr';
+
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -54,7 +52,8 @@ import { MatInputModule} from '@angular/material/input';
     SingleExperienceActionComponent,
     SkillFormComponent,
     UserFormComponent,
-    PinkToast
+    ToasterContainerComponent, ToasterComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -63,13 +62,7 @@ import { MatInputModule} from '@angular/material/input';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ToastNoAnimationModule,
-    ToastrModule.forRoot(
-      {
-        toastComponent: PinkToast,
-      }
-    ),
-    ToastContainerModule
+    
 
   ],
   providers: [
@@ -79,7 +72,6 @@ import { MatInputModule} from '@angular/material/input';
     SettingService
 
   ],
-  entryComponents: [PinkToast],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

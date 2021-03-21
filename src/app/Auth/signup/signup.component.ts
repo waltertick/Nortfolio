@@ -1,3 +1,4 @@
+import { ToasterService } from './../../services/toaster.service';
 import { Router } from '@angular/router';
 import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
@@ -15,7 +16,8 @@ export class SignupComponent implements OnInit {
 
   constructor(private formBuilder:FormBuilder,
               private authService: AuthService,
-              private router: Router) { }
+              private router: Router,
+              private toaster: ToasterService) { }
 
   ngOnInit() {
     this.initForm();
@@ -30,19 +32,29 @@ export class SignupComponent implements OnInit {
     });
 }
 
+ 
+
   onSubmit() {
     const email = this.signUpForm.get('email').value;
     const password = this.signUpForm.get('password').value;
     this.authService.createNewUser(email, password).then(
       () => {
-        this.router.navigate(['/home']);
+        this.router.navigate(['/auth/signin']);
       },
       (error)  => {
         this.errorMessage = error;
-
+        this.toaster.show('error', 'Error Message!', this.errorMessage,12000);
 
       }
     )
+  }
+ 
+   showSuccessToaster() {
+    this.toaster.show('success', 'Well done!', 'This is a success alert');
+  }
+ 
+  showWarningToaster() {
+    this.toaster.show('warning', 'Check it out!', 'This is a warning alert', 3000);
   }
 
 }
