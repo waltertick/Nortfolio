@@ -13,6 +13,7 @@ export class SignupComponent implements OnInit {
    signUpForm: FormGroup;
   errorMessage: string;
   hide:boolean = true;
+  
 
   constructor(private formBuilder:FormBuilder,
               private authService: AuthService,
@@ -41,21 +42,17 @@ export class SignupComponent implements OnInit {
     this.authService.createNewUser(email, password).then(
       () => {
         this.router.navigate(['/home']);
+         this.toaster.show('success', 'Welcome!', 'Please click on setting to be able to add one or more skills one or more experience(s) and finally put an picture and user name  ',20000);
       },
       (error)  => {
         this.errorMessage = error;
         this.toaster.show('error', 'Error Message!', this.errorMessage,20000);
-
+       
       }
     )
   }
- /*
-   showSuccessToaster() {
-    this.toaster.show('success', 'Well done!', 'This is a success alert');
-  }
+ 
+    /*this.toaster.show('warning', 'Check it out!', 'This is a warning alert', 3000);
+      */
 
-  showWarningToaster() {
-    this.toaster.show('warning', 'Check it out!', 'This is a warning alert', 3000);
   }
-*/
-}

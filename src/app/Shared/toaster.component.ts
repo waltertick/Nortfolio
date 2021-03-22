@@ -4,13 +4,16 @@ import { Toast } from '../models/toast.interface';
 @Component({
   selector: 'app-toaster',
   template: `
-    <div class="toast toast-{{toast.type}}"
+    <div class="toast"
       [style.bottom.px]="i*100">
-      <div class="alignXiconAndTitle">
-      <span class="xred">X</span>
+      <div  class="toast-{{toast.type}}"></div>
+      <div class="messageContainer">
       <h4 class="toast-heading">{{ toast.title}}</h4>
+      <div class="alignXiconAndTitle">
+        {{toast.body}}
       </div>
-      <p>{{toast.body}}</p>
+      </div>
+
       <a class="close" (click)="remove.emit(i)">&times;</a>
     </div>
   `,
@@ -18,17 +21,23 @@ import { Toast } from '../models/toast.interface';
     .toast {
       position: fixed;
       left: 0;
-      width: 320px;
+      width: 350px;
       height: 120px;
-      padding: .75rem 1.01rem;
-      margin-top: 1rem;
-      
-      border-radius: .25rem;
+      background-color: #fcfcfd;
+      border-radius: .5rem;
       animation: move 2s ;
-    }
-    .alignXiconAndTitle {
       display:flex;
       flex-wrap:nowrap;
+      color: #7b8594;
+      box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
+    }
+    .messageContainer {
+      padding:4px;
+    }
+    
+    .alignXiconAndTitle {
+      font-style:justify;
+      margin:1px 8px;
     }
     .xred {
       font-size: 16px;
@@ -36,25 +45,37 @@ import { Toast } from '../models/toast.interface';
       padding-right:8px;
 
     }
+    h4 {
+      padding-top:8px;
+    }
     .toast-success {
-      color: #acb8cb;
-      background-color: #4d6180;
-      border-color: #c3e6cb;
-      box-shadow: 0px 4px 10px rgba(146, 143, 143, 0.431);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+      background-color: #00c367;
+      border-color: #00c367;
+      width: 21px;
+      height: 120px;
+      border-top-left-radius: .5rem;
+      border-bottom-left-radius: .5rem;
     }
 
     .toast-error {
-      color: #acb8cb;
-      background-color: #4d6180;
-      border-color: #f5c6cb;
-      box-shadow: 0px 4px 10px rgba(146, 143, 143, 0.431);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+      background-color:#ff0000;
+      border-color:#ff0000;
+      width: 21px;
+      height: 120px;
+      border-top-left-radius: .5rem;
+      border-bottom-left-radius: .5rem;
     }
 
     .toast-warning {
-      color: #acb8cb;
-      background-color: #4d6180;
-      border-color: #ffeeba;
-      box-shadow: 0px 4px 10px rgba(146, 143, 143, 0.431);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+      background-color: #feca6a;
+      border-color: #feca6a;
+      width: 21px;
+      height: 120px;
+      border-top-left-radius: .5rem;
+      border-bottom-left-radius: .5rem;
     }
 
     .close {
@@ -66,8 +87,8 @@ import { Toast } from '../models/toast.interface';
     }
 
     .toast-heading {
-      margin-top: 0px;
-      margin-left: 10px;
+      margin: 8px 10px;
+      
     }
 
     @keyframes move {
