@@ -11,8 +11,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class SignupComponent implements OnInit {
    signUpForm: FormGroup;
+   submitted=false;
   errorMessage: string;
   hide:boolean = true;
+
   
 
   constructor(private formBuilder:FormBuilder,
@@ -21,32 +23,37 @@ export class SignupComponent implements OnInit {
               private toaster: ToasterService) { }
 
   ngOnInit() {
-    this.initForm();
+    this.signUpForm = this.formBuilder.group({
+      email: ['',[Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.pattern(/[0-9a-zA-Z]{6,}/), Validators.minLength(6)]],
+      agreeTerms: [false, Validators.requiredTrue]
+
+    });
   }
   onChangeView() {
       this.hide=!this.hide;
   }
-    initForm() {
-    this.signUpForm = this.formBuilder.group({
-      email: ['',[Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.pattern(/[0-9a-zA-Z]{6,}/)]]
-
-    });
-}
-
-
+  
+  get f() { return this.signUpForm.controls; }
+  
 
   onSubmit() {
-    const email = this.signUpForm.get('email').value;
-    const password = this.signUpForm.get('password').value;
+    this.submitted = true;
+
+
+    if(this.signUpForm.invalid) {
+      return;
+    }
+     const email= this.f.email.value;
+     const password = this.f.password.value;
     this.authService.createNewUser(email, password).then(
       () => {
         this.router.navigate(['/home']);
-         this.toaster.show('success', 'Welcome!', 'Please click on setting to be able to add one or more skills one or more experience(s) and finally put an picture and user name  ',20000);
+         this.toaster.show('success', 'Welcome!', 'Please click on setting to be able to add one or more skills one or more experience(s) and finally put an picture and user name  ',5000);
       },
       (error)  => {
         this.errorMessage = error;
-        this.toaster.show('error', 'Error Message!', this.errorMessage,20000);
+        this.toaster.show('error', 'Error Message!', this.errorMessage,5000);
        
       }
     )

@@ -17,15 +17,19 @@
 
       <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
         <div class="field">
-          <input type="email" formControlName="email" name="email" id="email" placeholder=" ">
+          <input type="email" formControlName="email" name="email" id="email" placeholder=" " [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
           <label for="email"><img class="resizeImg"  src="../assets/Images/userIcon.svg" alt="usericon">
             <span class="setOnlyLabelName"> USERNAME </span>
           </label>
+          <div class="invalid-feedback" *ngIf="submitted && f.email.errors" class="invalid-feedback">
+            <div *ngIf="f.email.errors.required">Email is required</div>
+            <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+          </div>
         </div>
         <div class="spacer"></div>
         <div class="field">
-          <input type="password" formControlName="password" name="Password" id="Password" placeholder=" "
-            [type]=" hide ?'password':'text'">
+          <input type="password" formControlName="password" name="password" id="Password" placeholder=" "
+            [type]=" hide ?'password':'text'"  [ngClass]="{ 'is-invalid': submitted && f.password.errors}" >
           <label for="Password">
 
                 <img class="resizeImg" src="../assets/Images/password.svg" alt="usericon">
@@ -38,18 +42,22 @@
               {{hide ? 'visibility': 'visibility_off'}}
             </i>
           </div>
-
+          <div class="invalid-feedback" *ngIf="submitted && f.password.errors" >
+            <div *ngIf="f.password.errors.required">Password is required</div>
+            <div  *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+          </div>
         </div>
         <div class="spacer"></div>
         <div class="checkbox changeColor">
+          <div *ngIf="submitted && f.agreeTerms.errors" class="invalid-feedback">I agree to the Terms and Privacy is required</div>
           <label class="containerCheckbox">I agree to the Terms and Privacy
-            <input type="checkbox">
+            <input type="checkbox" formControlName="agreeTerms" id="agreeTerms"  [ngClass]="{ 'is-invalid': submitted && f.agreeTerms.errors }" >
             <span class="checkmark"></span>
           </label>
-
+          
         </div>
 
-        <button type="submit"  class="loginButton" [disabled]="signUpForm.invalid" >
+        <button type="submit"  class="loginButton"  >
           Create account
         </button>
       </form>
@@ -66,7 +74,7 @@
     </div>
 
 
-<app-toaster-container></app-toaster-container>
+
   </div>
 
 

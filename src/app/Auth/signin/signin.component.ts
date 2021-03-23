@@ -11,6 +11,7 @@ import { ToasterService } from './../../services/toaster.service';
 })
 export class SigninComponent implements OnInit {
    signInForm: FormGroup;
+   submitted=false;
   errorMessage: string;
   hide:boolean = true;
 
@@ -20,28 +21,37 @@ export class SigninComponent implements OnInit {
               private toaster: ToasterService) { }
 
   ngOnInit() {
-    this.initForm();
-  }
-    initForm() {
-    this.signInForm = this.formBuilder.group({
+     this.signInForm = this.formBuilder.group({
       email: ['',[Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.pattern(/[0-9a-zA-Z]{6,}/)]]
+      password: ['', [Validators.required, Validators.pattern(/[0-9a-zA-Z]{6,}/), Validators.minLength(6)]]
+
     });
-}
+  }
+  
+   get f() { return this.signInForm.controls; }
+
+
  onChangeView() {
       this.hide=!this.hide;
  }
   onSubmit() {
-    const email = this.signInForm.get('email').value;
-    const password = this.signInForm.get('password').value;
+    this.submitted = true;
+
+     if(this.signInForm.invalid) {
+      return;
+    }
+
+    const email= this.f.email.value;
+     const password = this.f.password.value;
+
     this.authService.signInUser(email, password).then(
       () => {
        this.router.navigate(['/home']);
-         this.toaster.show('success', 'Welcome!', 'Please click on setting to be able to add one or more skills one or more experience(s) and finally put an picture and user name  ',20000);
+         this.toaster.show('success', 'Welcome!', 'Please click on setting to be able to add one or more skills one or more experience(s) and finally put an picture and user name  ',5000);
       },
       (error)  => {
         this.errorMessage = error;
-        this.toaster.show('error', 'Error Message!', this.errorMessage,20000);
+        this.toaster.show('error', 'Error Message!', this.errorMessage,5000);
        
       }
     )
