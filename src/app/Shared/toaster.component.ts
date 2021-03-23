@@ -32,21 +32,21 @@ import { Toast } from '../models/toast.interface';
       box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
     }
     .messageContainer {
+      display:flex;
+      flex-direction:column;
+      justify-content:start;
       padding:4px;
     }
     
     .alignXiconAndTitle {
       font-style:justify;
-      margin:1px 8px;
+      text-align:left;
+      padding-left: 4px;
     }
-    .xred {
-      font-size: 16px;
-      color:red;
-      padding-right:8px;
-
-    }
+    
     h4 {
-      padding-top:8px;
+      padding:12px 0px;
+      text-align:left;
     }
     .toast-success {
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
@@ -87,7 +87,8 @@ import { Toast } from '../models/toast.interface';
     }
 
     .toast-heading {
-      margin: 8px 10px;
+      padding:14px 0px 8px 4px;
+      margin:0px;
       
     }
 

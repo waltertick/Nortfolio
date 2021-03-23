@@ -141,6 +141,11 @@ span {
 }
 
 @media only screen and (min-width: 501px) {
+
+  ._container {
+    display: block;
+    margin: auto;
+  }
   .signinClass {
     margin: 30px 50px;
   }
