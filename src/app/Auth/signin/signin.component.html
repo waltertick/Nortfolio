@@ -8,60 +8,61 @@
         <img class="fixCameraImage" src="../assets/Images/camera.png" alt="">
       </div>
   </div>
-  <div class="rightSide">
-    <div class="_container">
+  <div class="_container">
+        <div class="rightSide">
+          
 
-    <h1>Sign In</h1>
+          <h1>Sign In</h1>
 
 
-    <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
-      <div class="spacer"></div>
-      <div class="field">
-        <input type="email"  formControlName="email" name="email" id="email" placeholder=" " [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
-        <label for="email"><img class="resizeImg" src="../assets/Images/userIcon.svg" alt="usericon">
-         <span class="setOnlyLabelName"> username </span>
-        </label>
-        <div class="invalid-feedback" *ngIf="submitted && f.email.errors" class="invalid-feedback">
-          <div *ngIf="f.email.errors.required">Email is required</div>
-          <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
-        </div>
-      </div>
-      
-      <div class="spacer"></div>
-      <div class="field">
-        <input type="password" required formControlName="password" name="Password" id="Password" placeholder=" "
-          [type]=" hide ?'password':'text'" [ngClass]="{ 'is-invalid': submitted && f.password.errors}">
-        <label for="Password">
+          <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+            
+            <div class="field">
+              <input type="email"  formControlName="email" name="email" id="email" placeholder=" " [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+              <label for="email"><img class="resizeImg" src="../assets/Images/userIcon.svg" alt="usericon">
+              <span class="setOnlyLabelName"> username </span>
+              </label>
+              
+            </div>
+            <div class="invalid-feedback" *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required">Email is required</div>
+              <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+            </div>
+            <div class="spacer"></div>
+            <div class="field">
+              <input type="password" required formControlName="password" name="Password" id="Password" placeholder=" "
+                [type]=" hide ?'password':'text'" [ngClass]="{ 'is-invalid': submitted && f.password.errors}">
+              <label for="Password">
 
-          <img class="resizeImg" src="../assets/Images/password.svg" alt="usericon">
-            <span class="setOnlyLabelName"> password</span>
+                <img class="resizeImg" src="../assets/Images/password.svg" alt="usericon">
+                  <span class="setOnlyLabelName"> password</span>
 
-        </label>
-        <div class="imgPosition">
-          <i class="material-icons resizeImg imgClass changeColor" matSuffix (click)="hide =!hide">
-            {{hide ? 'visibility': 'visibility_off'}}
-          </i>
-        </div>
-        <div  class="invalid-feedback" *ngIf="submitted && f.password.errors">
-          <div *ngIf="f.password.errors.required">Password is required</div>
-          <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
-        </div>
-      </div>
-      <div class="spacer"></div>
-      <button type="submit"  class="loginButton">
-        Log In
-      </button>
-    </form>
+              </label>
+              <div class="imgPosition">
+                <i class="material-icons resizeImg imgClass changeColor" matSuffix (click)="hide =!hide">
+                  {{hide ? 'visibility': 'visibility_off'}}
+                </i>
+              </div> 
+            </div>
+              <div class="invalid-feedback" *ngIf="submitted && f.password.errors">
+                <div *ngIf="f.password.errors.required">Password is required</div>
+                <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+              </div>
+            <div class="spacer"></div>
+            <button type="submit"  class="loginButton">
+              Log In
+            </button>
+          </form>
 
-    <div class="centerContainer">
-      <div class="spacer"></div>
-      <div class="signupLink">
-        <span>Not registered yet?<a routerLink="/auth/signup" class="changeColor"> Sign up</a></span>
-      </div>
-      <div class="spacer"></div>
-      
-    </div>
-
+                <div class="centerContainer">
+                  
+                  <div class="signupLink">
+                    <span>Not registered yet?<a routerLink="/auth/signup" class="changeColor"> Sign up</a></span>
+                  </div>
+                  
+                  
+                </div>
+          </div>
     </div>
   </div>
-</div>
+

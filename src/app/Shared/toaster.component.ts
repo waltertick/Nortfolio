@@ -25,7 +25,7 @@ import { Toast } from '../models/toast.interface';
       height: 120px;
       background-color: #fcfcfd;
       border-radius: .5rem;
-      animation: move 2s ;
+      margin-bottom: 2em;
       display:flex;
       flex-wrap:nowrap;
       color: #7b8594;
@@ -37,16 +37,18 @@ import { Toast } from '../models/toast.interface';
       justify-content:start;
       padding:4px;
     }
-    
+
     .alignXiconAndTitle {
       font-style:justify;
       text-align:left;
       padding-left: 4px;
+      font-size:12px;
     }
-    
+
     h4 {
       padding:12px 0px;
       text-align:left;
+      font-size:16px;
     }
     .toast-success {
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
@@ -89,7 +91,7 @@ import { Toast } from '../models/toast.interface';
     .toast-heading {
       padding:14px 0px 8px 4px;
       margin:0px;
-      
+
     }
 
     @keyframes move {

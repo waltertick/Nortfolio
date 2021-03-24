@@ -1,5 +1,6 @@
 .invalid-feedback {
   color: tomato;
+  font-size: 12px;
 }
 .rightSide {
   background-color: #fff;
@@ -29,12 +30,7 @@
 .hide_mobile {
   display: none;
 }
-.imageDesign2 {
-  display: none;
-}
-.preferal_bg2 {
-  display: none;
-}
+
 
 
 .field {
@@ -101,16 +97,16 @@ input:focus+label {
 }
 
 .imgPosition {
-  position: absolute;
-  top: 9px;
+  position: absolute;  
   right: 0;
   cursor: pointer;
 }
 .signupLink {
   font-weight: bold;
+  padding: 18px 0px 12px 0px;
 }
 .spacer {
-  margin-bottom: 26px;
+  margin-bottom: 0px;
 }
 .loginButton {
   cursor: pointer;
@@ -133,6 +129,7 @@ input:focus+label {
 h1 {
   text-align: center;
   font-size: 16px;
+  margin: 0;
 }
 
 span {
@@ -148,6 +145,7 @@ span {
   ._container {
     display: block;
     margin: auto;
+    
   }
   .signinClass {
     margin: 30px 50px;

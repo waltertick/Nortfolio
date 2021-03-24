@@ -1,31 +1,31 @@
 
+<div class="signinClass">
+  <div class="_container">
+    <div class="imageDesign preferal_bg" [ngStyle]="{'background-image': 'url(../assets/Images/pexelscamera.jpeg)'}">
 
-  <div class="signinClass">
-<div class="imageDesign preferal_bg" [ngStyle]="{'background-image': 'url(../assets/Images/pexelscamera.jpeg)'}">
+    </div>
 
-</div>
-<div class="imageDesign2 preferal_bg2" [ngStyle]="{'background-image': 'url(../assets/Images/camera3.png)'}">
-
-</div>
-<div class="hide_mobile">
-  <img class="fixCameraImage" src="../assets/Images/camera.png" alt="">
-</div>
+    <div class="hide_mobile">
+      <img class="fixCameraImage" src="../assets/Images/camera.png" alt="">
+    </div>
+  </div>
     <div class="rightSide">
 
       <h1>Sign Up</h1>
+      
       <div class="spacer"></div>
-
       <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
         <div class="field">
           <input type="email" formControlName="email" name="email" id="email" placeholder=" " [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
           <label for="email"><img class="resizeImg"  src="../assets/Images/userIcon.svg" alt="usericon">
             <span class="setOnlyLabelName"> USERNAME </span>
           </label>
-          <div class="invalid-feedback" *ngIf="submitted && f.email.errors" class="invalid-feedback">
-            <div *ngIf="f.email.errors.required">Email is required</div>
-            <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
-          </div>
+    
         </div>
+              <div class="invalid-feedback" *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required">Email is required</div>
+                <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+              </div>
         <div class="spacer"></div>
         <div class="field">
           <input type="password" formControlName="password" name="password" id="Password" placeholder=" "
@@ -42,19 +42,20 @@
               {{hide ? 'visibility': 'visibility_off'}}
             </i>
           </div>
-          <div class="invalid-feedback" *ngIf="submitted && f.password.errors" >
-            <div *ngIf="f.password.errors.required">Password is required</div>
-            <div  *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
-          </div>
+          
         </div>
-        <div class="spacer"></div>
+        <div class="invalid-feedback" *ngIf="submitted && f.password.errors">
+          <div *ngIf="f.password.errors.required">Password is required</div>
+          <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+        </div>
+        
         <div class="checkbox changeColor">
-          <div *ngIf="submitted && f.agreeTerms.errors" class="invalid-feedback">I agree to the Terms and Privacy is required</div>
+          
           <label class="containerCheckbox">I agree to the Terms and Privacy
             <input type="checkbox" formControlName="agreeTerms" id="agreeTerms"  [ngClass]="{ 'is-invalid': submitted && f.agreeTerms.errors }" >
             <span class="checkmark"></span>
           </label>
-          
+          <div *ngIf="submitted && f.agreeTerms.errors" class="invalid-feedback">Please check to agree  to Terms and Privacy     </div>
         </div>
 
         <button type="submit"  class="loginButton"  >
@@ -64,17 +65,14 @@
 
 
       <div class="centerContainer">
-        <div class="spacer"></div>
+        
         <div class="signupLink">
           <span>Existing user?<a routerLink="/auth/signin" class="changeColor"> Log in</a></span>
         </div>
-        <div class="spacer"></div>
+        
       </div>
 
     </div>
-
-
-
   </div>
 
 

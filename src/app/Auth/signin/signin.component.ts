@@ -47,11 +47,11 @@ export class SigninComponent implements OnInit {
     this.authService.signInUser(email, password).then(
       () => {
        this.router.navigate(['/home']);
-         this.toaster.show('success', 'Welcome!', 'Please click on setting to be able to add one or more skills one or more experience(s) and finally put an picture and user name  ',5000);
+         this.toaster.show('success', 'Welcome!', 'Please click on setting to be able to add one or more skills one or more experience(s) and finally put an picture and user name  ',15000);
       },
       (error)  => {
         this.errorMessage = error;
-        this.toaster.show('error', 'Error Message!', this.errorMessage,5000);
+        this.toaster.show('error', 'Error Message!', this.errorMessage,15000);
        
       }
     )
