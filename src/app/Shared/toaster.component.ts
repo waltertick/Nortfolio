@@ -19,34 +19,37 @@ import { Toast } from '../models/toast.interface';
   `,
   styles: [`
     .toast {
+      transition: margin-right 2s ease-in-out;
       position: fixed;
       left: 0;
-      width: 350px;
-      height: 120px;
+      width: 300px;
+      height: 80px;
       background-color: #fcfcfd;
       border-radius: .5rem;
-      margin-bottom: 2em;
+      margin-bottom: 1em;
+      margin-left:1em;
       display:flex;
       flex-wrap:nowrap;
       color: #7b8594;
+      
       box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
     }
     .messageContainer {
       display:flex;
       flex-direction:column;
       justify-content:start;
-      padding:4px;
+      padding:2px;
     }
 
     .alignXiconAndTitle {
-      font-style:justify;
-      text-align:left;
+      
+      text-align:justify;
       padding-left: 4px;
       font-size:12px;
     }
 
     h4 {
-      padding:12px 0px;
+      padding:10px 0px 2px 0px;
       text-align:left;
       font-size:16px;
     }
@@ -54,8 +57,8 @@ import { Toast } from '../models/toast.interface';
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
       background-color: #00c367;
       border-color: #00c367;
-      width: 21px;
-      height: 120px;
+      width: 16px;
+      height: 80px;
       border-top-left-radius: .5rem;
       border-bottom-left-radius: .5rem;
     }
@@ -64,8 +67,8 @@ import { Toast } from '../models/toast.interface';
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
       background-color:#ff0000;
       border-color:#ff0000;
-      width: 21px;
-      height: 120px;
+      width: 16px;
+      height: 80px;
       border-top-left-radius: .5rem;
       border-bottom-left-radius: .5rem;
     }
@@ -74,8 +77,8 @@ import { Toast } from '../models/toast.interface';
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
       background-color: #feca6a;
       border-color: #feca6a;
-      width: 21px;
-      height: 120px;
+      width: 16px;
+      height: 80px;
       border-top-left-radius: .5rem;
       border-bottom-left-radius: .5rem;
     }
@@ -89,7 +92,7 @@ import { Toast } from '../models/toast.interface';
     }
 
     .toast-heading {
-      padding:14px 0px 8px 4px;
+      padding:10px 0px 2px 4px;
       margin:0px;
 
     }

@@ -137,7 +137,7 @@ input:focus {
 }
 
 label {
-  
+  width: 80%;
   letter-spacing: 0.03em;
   color: #65B79F;
   font-size: 1.1em;
@@ -221,6 +221,13 @@ span {
 @media only screen and (min-width: 501px) {
   .signinClass {
     margin: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  ._container {
+    width: 95%;
   }
 
   .rightSide {
@@ -234,7 +241,8 @@ span {
     margin-left: 30px;
     margin-right: 30px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-items: normal;
   }
 
   .imageDesign2 {
@@ -256,7 +264,7 @@ span {
 
   .fixCameraImage {
     width: 100%;
-    height: 450px;
+    
   }
 
   input {
@@ -305,13 +313,11 @@ span {
     display: none;
   }
 
-  .imageDesign2 {
-    display: none;
+
+  imgClass {
+    top: 2px;
   }
 
-  .preferal_bg2 {
-    display: none;
-  }
 
   .hide_mobile {
     display: block;
@@ -320,7 +326,7 @@ span {
 
   .fixCameraImage {
     width: 100%;
-    height: 570px;
+
   }
 
   input {
@@ -362,6 +368,11 @@ span {
 
   .setOnlyLabelName {
     font-size: 14px;
+  }
+
+  .imgPosition {
+    top: 18px;
+    padding-right: 6px;
   }
 }
 @media only screen and (min-width: 1101px) {
