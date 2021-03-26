@@ -10,17 +10,18 @@
     </div>
   </div>
     <div class="rightSide">
-
-      <h1>Sign Up</h1>
-      
       <div class="spacer"></div>
+      <h1>Sign Up</h1>
+
+
       <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+        <div class="spacer"></div>
         <div class="field">
           <input type="email" formControlName="email" name="email" id="email" placeholder=" " [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
           <label for="email"><img class="resizeImg"  src="../assets/Images/userIcon.svg" alt="usericon">
             <span class="setOnlyLabelName"> USERNAME </span>
           </label>
-    
+
         </div>
               <div class="invalid-feedback" *ngIf="submitted && f.email.errors" class="invalid-feedback">
                 <div *ngIf="f.email.errors.required">Email is required</div>
@@ -42,15 +43,16 @@
               {{hide ? 'visibility': 'visibility_off'}}
             </i>
           </div>
-          
+
         </div>
+        <div class="spacer"></div>
         <div class="invalid-feedback" *ngIf="submitted && f.password.errors">
           <div *ngIf="f.password.errors.required">Password is required</div>
           <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
         </div>
-        
+
         <div class="checkbox changeColor">
-          
+
           <label class="containerCheckbox">I agree to the Terms and Privacy
             <input type="checkbox" formControlName="agreeTerms" id="agreeTerms"  [ngClass]="{ 'is-invalid': submitted && f.agreeTerms.errors }" >
             <span class="checkmark"></span>
@@ -69,7 +71,7 @@
         <div class="signupLink">
           <span>Existing user?<a routerLink="/auth/signin" class="changeColor"> Log in</a></span>
         </div>
-        
+
       </div>
 
     </div>

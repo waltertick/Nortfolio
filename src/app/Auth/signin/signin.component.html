@@ -10,13 +10,13 @@
   </div>
   
         <div class="rightSide">
-          
+          <div class="spacer"></div>
 
           <h1>Sign In</h1>
 
 
           <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
-            
+            <div class="spacer"></div>
             <div class="field">
               <input type="email"  formControlName="email" name="email" id="email" placeholder=" " [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
               <label for="email"><img class="resizeImg" src="../assets/Images/userIcon.svg" alt="usericon">
@@ -44,18 +44,19 @@
                 </i>
               </div> 
             </div>
+            <div class="spacer"></div>
               <div class="invalid-feedback" *ngIf="submitted && f.password.errors">
                 <div *ngIf="f.password.errors.required">Password is required</div>
                 <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
               </div>
-            <div class="spacer"></div>
+            
             <button type="submit"  class="loginButton">
               Log In
             </button>
           </form>
 
                 <div class="centerContainer">
-                  
+                  <div class="spacer"></div>
                   <div class="signupLink">
                     <span>Not registered yet?<a routerLink="/auth/signup" class="changeColor"> Sign up</a></span>
                   </div>

@@ -8,10 +8,10 @@ import { Toast } from '../models/toast.interface';
       [style.bottom.px]="i*100">
       <div  class="toast-{{toast.type}}"></div>
       <div class="messageContainer">
-      <h4 class="toast-heading">{{ toast.title}}</h4>
-      <div class="alignXiconAndTitle">
-        {{toast.body}}
-      </div>
+        <h4 class="toast-heading">{{ toast.title}}</h4>
+        <div class="alignXiconAndTitle">
+          {{toast.body}}
+        </div>
       </div>
 
       <a class="close" (click)="remove.emit(i)">&times;</a>
@@ -22,7 +22,7 @@ import { Toast } from '../models/toast.interface';
       transition: margin-right 2s ease-in-out;
       position: fixed;
       left: 0;
-      width: 300px;
+      width: 330px;
       height: 80px;
       background-color: #fcfcfd;
       border-radius: .5rem;
@@ -31,7 +31,7 @@ import { Toast } from '../models/toast.interface';
       display:flex;
       flex-wrap:nowrap;
       color: #7b8594;
-      
+
       box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
     }
     .messageContainer {
@@ -42,9 +42,10 @@ import { Toast } from '../models/toast.interface';
     }
 
     .alignXiconAndTitle {
-      
+
       text-align:justify;
-      padding-left: 4px;
+      padding-left: 10px;
+      padding-right: 10px;
       font-size:12px;
     }
 
@@ -92,7 +93,7 @@ import { Toast } from '../models/toast.interface';
     }
 
     .toast-heading {
-      padding:10px 0px 2px 4px;
+      padding:10px 0px 2px 10px;
       margin:0px;
 
     }
