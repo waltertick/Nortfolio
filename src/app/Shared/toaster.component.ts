@@ -38,15 +38,16 @@ import { Toast } from '../models/toast.interface';
       display:flex;
       flex-direction:column;
       justify-content:start;
-      padding:2px;
+      padding:2px 2px 10px 2px ;
     }
 
     .alignXiconAndTitle {
-
+      
       text-align:justify;
       padding-left: 10px;
       padding-right: 10px;
       font-size:12px;
+      padding-bottom:8px;
     }
 
     h4 {
