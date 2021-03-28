@@ -24,6 +24,7 @@
     "@angular/router": "~8.2.9",
     "angularfire2": "^5.4.2",
     "firebase": "^7.24.0",
+    "hamburgers": "^1.1.3",
     "hammerjs": "^2.0.8",
     "ngx-toastr": "^11.3.3",
     "rxjs": "^6.6.3",

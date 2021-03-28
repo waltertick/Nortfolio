@@ -19,7 +19,7 @@ import { Toast } from '../models/toast.interface';
   `,
   styles: [`
     .toast {
-      transition: margin-right 2s ease-in-out;
+      transition: .5s;
       position: fixed;
       left: 0;
       width: 330px;
