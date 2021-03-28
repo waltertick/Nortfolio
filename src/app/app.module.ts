@@ -32,6 +32,7 @@ import { SkillFormComponent } from './Shared/skill-form/skill-form.component';
 import { UserFormComponent } from './Shared/user-form/user-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule} from '@angular/material/input';
+import { HamburgertoggleDirective } from './hamburgertoggle.directive';
 
 
 
@@ -52,7 +53,7 @@ import { MatInputModule} from '@angular/material/input';
     SingleExperienceActionComponent,
     SkillFormComponent,
     UserFormComponent,
-    ToasterContainerComponent, ToasterComponent
+    ToasterContainerComponent, ToasterComponent, HamburgertoggleDirective
     
   ],
   imports: [
