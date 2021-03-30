@@ -56,17 +56,17 @@ import { MatInputModule} from '@angular/material/input';
     UserFormComponent,
     ToasterContainerComponent, ToasterComponent,
     ReadMoreComponent
-    
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+
     FormsModule,MatInputModule,
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    
+
 
   ],
   providers: [

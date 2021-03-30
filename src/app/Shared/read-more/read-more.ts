@@ -9,7 +9,7 @@ import { Component, ViewEncapsulation, Input, AfterViewInit, ElementRef } from "
         </div>
         <a (click)="isCollapsed = !isCollapsed" [hidden]="dataLength" class="pt-2 pull-right">
           <img  alt="Voir Plus" class="resizeImage" src="../assets/Images/VectorFleche.svg" *ngIf="isCollapsed">
-          
+
           <img  alt="Voir Plus" class="resizeImage" src="../assets/Images/VectorFleche.svg" *ngIf="!isCollapsed">
         </a>
         <div class='cb'></div>

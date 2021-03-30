@@ -9,7 +9,7 @@ import { Toast } from '../models/toast.interface';
       <div  class="toast-{{toast.type}}"></div>
       <div class="messageContainer">
         <h4 class="toast-heading">{{ toast.title}}</h4>
-        <div class="alignXiconAndTitle">
+        <div class="card">
             <read-more [dataLength]="dataLength">
                 {{toast.body}}
         </read-more>
@@ -25,8 +25,8 @@ import { Toast } from '../models/toast.interface';
       transition: 5s;
       position: fixed;
       left: 0;
-      width: 330px;
-      height: 80px;
+      width: 360px;
+      height: 100px;
       background-color: #fcfcfd;
       border-radius: .5rem;
       margin-bottom: 1em;
@@ -43,7 +43,15 @@ import { Toast } from '../models/toast.interface';
       justify-content:start;
       padding:4px 2px 0px 2px ;
     }
-    
+    .card {
+    width: 330px;
+    font-size:12px;
+    padding: 6px;
+    border-radius: 0.3rem 0.3rem;
+    transition: 5s;
+
+}
+/*
     .alignXiconAndTitle {
       width:250px;
       white-space: nowrap;
@@ -56,7 +64,7 @@ import { Toast } from '../models/toast.interface';
       font-size:12px;
       padding-bottom:0px;
     }
-
+*/
     h4 {
       padding:10px 0px 2px 0px;
       text-align:left;
@@ -66,8 +74,8 @@ import { Toast } from '../models/toast.interface';
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
       background-color: #00c367;
       border-color: #00c367;
-      width: 12px;
-      height: 80px;
+      width: 10px;
+      height: 100px;
       border-top-left-radius: .5rem;
       border-bottom-left-radius: .5rem;
     }
@@ -76,8 +84,8 @@ import { Toast } from '../models/toast.interface';
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
       background-color:#ff0000;
       border-color:#ff0000;
-      width: 12px;
-      height: 80px;
+      width: 10px;
+      height: 100px;
       border-top-left-radius: .5rem;
       border-bottom-left-radius: .5rem;
     }
@@ -86,8 +94,8 @@ import { Toast } from '../models/toast.interface';
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
       background-color: #feca6a;
       border-color: #feca6a;
-      width: 12px;
-      height: 80px;
+      width: 10px;
+      height: 100px;
       border-top-left-radius: .5rem;
       border-bottom-left-radius: .5rem;
     }
