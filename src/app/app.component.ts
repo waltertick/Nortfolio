@@ -1,4 +1,5 @@
 import { Toast } from './models/toast.interface';
+import { Router } from '@angular/router';
 import { Component, OnInit,Input, Output, } from '@angular/core';
 import * as firebase from 'firebase/app';
 import 'firebase/auth';        // for authentication
@@ -20,7 +21,7 @@ export class AppComponent implements OnInit {
   @Input() toast: Toast;
 
 
- constructor() {
+ constructor( private router: Router) {
    var config= {
      apiKey: "AIzaSyCgmJfgoom6Rbjcknw2S1A0v3dXvgTBnC0",
     authDomain: "angularfirebaseapp-264d9.firebaseapp.com",
@@ -37,8 +38,10 @@ export class AppComponent implements OnInit {
         (user) => {
           if(user) {
           this.isAuth = true;
+          this.router.navigate(['/home']);
           }else {
             this.isAuth = false;
+            this.router.navigate(['/auth/signin']);
           }
         }
     );
