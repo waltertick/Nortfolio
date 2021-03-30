@@ -13,8 +13,6 @@ import 'firebase/database';    // for realtime database
 })
 export class HeaderComponent implements OnInit {
   isAuth: boolean;
-  collapse:boolean =true;
-
   constructor( private authService : AuthService) { }
 
   ngOnInit() {
@@ -32,8 +30,5 @@ export class HeaderComponent implements OnInit {
   onSignOut() {
     this.authService.signOutUser();
   }
-  toggleCollapse(): void {
-  this.collapse = !this.collapse;
-}
 
 }

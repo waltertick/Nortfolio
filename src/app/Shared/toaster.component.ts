@@ -10,8 +10,11 @@ import { Toast } from '../models/toast.interface';
       <div class="messageContainer">
         <h4 class="toast-heading">{{ toast.title}}</h4>
         <div class="alignXiconAndTitle">
-          {{toast.body}}
+            <read-more [dataLength]="dataLength">
+                {{toast.body}}
+        </read-more>
         </div>
+     
       </div>
 
       <a class="close" (click)="remove.emit(i)">&times;</a>
@@ -19,7 +22,7 @@ import { Toast } from '../models/toast.interface';
   `,
   styles: [`
     .toast {
-      transition: .5s;
+      transition: 5s;
       position: fixed;
       left: 0;
       width: 330px;
@@ -38,16 +41,20 @@ import { Toast } from '../models/toast.interface';
       display:flex;
       flex-direction:column;
       justify-content:start;
-      padding:2px 2px 10px 2px ;
+      padding:4px 2px 0px 2px ;
     }
-
+    
     .alignXiconAndTitle {
+      width:250px;
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
       
       text-align:justify;
       padding-left: 10px;
       padding-right: 10px;
       font-size:12px;
-      padding-bottom:8px;
+      padding-bottom:0px;
     }
 
     h4 {
@@ -59,7 +66,7 @@ import { Toast } from '../models/toast.interface';
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
       background-color: #00c367;
       border-color: #00c367;
-      width: 16px;
+      width: 12px;
       height: 80px;
       border-top-left-radius: .5rem;
       border-bottom-left-radius: .5rem;
@@ -69,7 +76,7 @@ import { Toast } from '../models/toast.interface';
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
       background-color:#ff0000;
       border-color:#ff0000;
-      width: 16px;
+      width: 12px;
       height: 80px;
       border-top-left-radius: .5rem;
       border-bottom-left-radius: .5rem;
@@ -79,7 +86,7 @@ import { Toast } from '../models/toast.interface';
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
       background-color: #feca6a;
       border-color: #feca6a;
-      width: 16px;
+      width: 12px;
       height: 80px;
       border-top-left-radius: .5rem;
       border-bottom-left-radius: .5rem;
@@ -111,6 +118,7 @@ import { Toast } from '../models/toast.interface';
 export class ToasterComponent {
   @Input() toast: Toast;
   @Input() i: number;
+  dataLength:boolean;
 
   @Output() remove = new EventEmitter<number>();
 }

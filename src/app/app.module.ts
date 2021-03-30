@@ -1,6 +1,7 @@
 import { ToasterService } from './services/toaster.service';
 import { ToasterComponent } from './Shared/toaster.component';
 import { ToasterContainerComponent } from './Shared/toaster-container.component';
+import { ReadMoreComponent }  from './Shared/read-more/read-more';
 
 import { AuthGuardService } from './services/auth-guard.service';
 
@@ -32,7 +33,7 @@ import { SkillFormComponent } from './Shared/skill-form/skill-form.component';
 import { UserFormComponent } from './Shared/user-form/user-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule} from '@angular/material/input';
-import { HamburgertoggleDirective } from './hamburgertoggle.directive';
+
 
 
 
@@ -53,12 +54,14 @@ import { HamburgertoggleDirective } from './hamburgertoggle.directive';
     SingleExperienceActionComponent,
     SkillFormComponent,
     UserFormComponent,
-    ToasterContainerComponent, ToasterComponent, HamburgertoggleDirective
+    ToasterContainerComponent, ToasterComponent,
+    ReadMoreComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    
     FormsModule,MatInputModule,
     ReactiveFormsModule,
     HttpClientModule,

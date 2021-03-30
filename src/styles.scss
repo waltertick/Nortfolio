@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
+
 
 
 body {
@@ -31,13 +31,8 @@ aside {
 .spacer {
   margin-top: 40px;
 }
-.sidebar {
-  flex:20%;
-}
 
-.main {
-  flex: 80%;
 
-}
+
 
 

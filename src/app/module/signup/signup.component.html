@@ -1,0 +1,45 @@
+<div class="container">
+  <header>
+    <div class="header">
+      <span class="logo">Preferral</span>
+
+    </div>
+  </header>
+  <section class="wrap">
+    <img class="resizeImg" src="../assets/Images/camera.png" alt="">
+    <div *ngIf="!isSignedIn" class="rightSide">
+      <div class="bigSpacer"></div>
+      <h1>Sign up</h1>
+      
+      <div class="bigSpacer"></div>
+      <div class="field">
+        <input type="email" #emailSignup required name="fullname" id="fullname" placeholder="ticktick.elvis@gmail.com"
+          required #email>
+        <label for="fullname"><img src="../assets/Images/userIcon.svg" alt="usericon">USERNAME</label>
+      </div>
+      <div class="smallSpacer"></div>
+      <div class="field">
+        <input type="password" #passwordSignup required name="password" id="password" placeholder="Password" required #password>
+        <label for="password">
+          <div class="labelClass">
+            <div class="passwordandIcon"> <img src="../assets/Images/password.svg" alt="usericon">password</div><img
+              class="imgClass" src="../assets/Images/eyePassword.svg" alt="usericon">
+          </div>
+        </label>
+      </div>
+      
+      <div class="bigSpacer"></div>
+      <div class="centerContainer">
+        <div (click)="onSignup(emailSignup.value,passwordSignup.value)" routerLink="/login" class="loginButton">
+          <span>Create account</span>
+        </div>
+        <div class="smallSpacer"></div>
+        <div class="signupLink">
+          <span>Existing user?<a routerLink="/login" class="changeColor">login</a></span>
+        </div>
+        <div class="smallSpacer"></div>
+      </div>
+    </div>
+
+  </section>
+</div>
