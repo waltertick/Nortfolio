@@ -3,7 +3,7 @@ $line-height: 1.5;
 $lines-to-show: 1;
 
 div.collapsed {
-  display: -webkit-inline-box;
+ // display: -webkit-inline-box;
   display: inline-block;
   font-size: $font-size;
   white-space: nowrap;
@@ -36,4 +36,5 @@ div.collapsed {
 
 .pull-left {
   float: left;
+  
 }

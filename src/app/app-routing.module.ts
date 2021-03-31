@@ -7,12 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { SettingComponent } from './setting/setting.component';
 import { AuthGuardService } from './services/auth-guard.service';
 import { UserFormComponent } from './Shared/user-form/user-form.component';
-import { SkillListComponent } from './Shared/skill-list/skill-list.component';
+import { AuthCheckredirectionComponent } from './Shared/auth-checkredirection/auth-checkredirection.component';
+
+
 
 const routes: Routes = [
   {path: 'auth/signin', component : SigninComponent},
   {path: 'setting/user', component : UserFormComponent},
-  {path: 'setting/skill', component : SkillListComponent},
+  {path: 'auth/check', component : AuthCheckredirectionComponent},
   {path: 'setting/experience', component : ExperienceListComponent},
   {path: 'auth/signup', component: SignupComponent},
   {path: 'home', canActivate: [AuthGuardService], component: HomeComponent},

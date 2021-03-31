@@ -33,6 +33,7 @@ import { SkillFormComponent } from './Shared/skill-form/skill-form.component';
 import { UserFormComponent } from './Shared/user-form/user-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule} from '@angular/material/input';
+import { AuthCheckredirectionComponent } from './Shared/auth-checkredirection/auth-checkredirection.component';
 
 
 
@@ -55,7 +56,8 @@ import { MatInputModule} from '@angular/material/input';
     SkillFormComponent,
     UserFormComponent,
     ToasterContainerComponent, ToasterComponent,
-    ReadMoreComponent
+    ReadMoreComponent,
+    AuthCheckredirectionComponent
 
   ],
   imports: [

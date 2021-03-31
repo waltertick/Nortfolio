@@ -2,7 +2,35 @@
   color:tomato;
   font-size:12px;
 }
+.logo {
+  color: #65B79F;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0px;
+}
 
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header {
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px 1px rgba(141, 140, 140, 0.2);
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+
+
+}
+
+.headerContent {
+  padding: 12px 10px 12px 10px;
+}
 /* The container */
 .containerCheckbox {
   display: block;
@@ -234,6 +262,18 @@ span {
     padding: 20px 50px;
     margin: 26px 0px;
   }
+
+  .header {
+    height: 50px;
+  }
+
+  .headerContent {
+    padding: 12px 50px 12px 50px;
+  }
+
+  .logo {
+    padding: 0;
+  }
 }
 
 @media only screen and (min-width: 750px) {
@@ -248,7 +288,7 @@ span {
   .fixCameraImage {
     margin: 50px 0px;
     height: 440px;
-    width: 100%;
+    width: 67vh;
   }
 
 
@@ -293,6 +333,27 @@ span {
   .setOnlyLabelName {
     font-size: 14px;
   }
+.header {
+  height: 50px;
+
+}
+
+.headerContent {
+  padding: 12px 50px 12px 50px;
+}
+
+.logo {
+  padding: 0;
+}
+
+.hide-desktop {
+  display: block;
+}
+
+.hide-mobile {
+  display: none;
+}
+
 }
 
 @media only screen and (min-width: 951px) {
@@ -311,7 +372,26 @@ span {
   imgClass {
     top: 2px;
   }
+  .headerContent {
+    padding: 12px 70px 12px 70px;
 
+  }
+
+  .hide-desktop {
+    display: block;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .logo {
+    padding: 0;
+  }
+
+  .header {
+    padding: 12px 0px 12px 0px;
+  }
 
   .hide_mobile {
     display: block;
@@ -319,7 +399,7 @@ span {
   }
 
   .fixCameraImage {
-    margin: 70px 0px;
+    margin: 50px 0px;
     height: 460px;
     width: 100%;
   }
@@ -339,7 +419,7 @@ span {
     height: 460px;
     padding: 0 40px;
     width: 100%;
-    margin: 70px 0;
+    margin: 50px 0;
   }
 
   h1 {
@@ -377,7 +457,25 @@ span {
     flex-wrap: nowrap;
   }
 
+  .headerContent {
+    padding: 12px 100px 12px 100px;
+  }
 
+  .hide-desktop {
+    display: block;
+  }
+
+  .logo {
+    padding: 0;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .header {
+    padding: 12px 0px 12px 0px;
+  }
 
   .imageDesign {
     display: none;
@@ -444,7 +542,25 @@ span {
     flex-wrap: nowrap;
   }
 
+  .headerContent {
+    padding: 12px 125px 12px 125px;
+  }
 
+  .logo {
+    padding: 0;
+  }
+
+  .hide-desktop {
+    display: block;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .header {
+    padding: 12px 0px 12px 0px;
+  }
 
   .imageDesign {
     display: none;
@@ -470,6 +586,91 @@ span {
     padding: 0 40px;
     width: 100%;
     margin: 20px 0;
+    height: 555px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 55px;
+    margin-top: 55px;
+  }
+
+  .centerContainer {
+
+    margin-bottom: 55px;
+    margin-top: 55px;
+  }
+
+  .hide_mobile {
+    display: block;
+
+  }
+
+  .resizeImg {
+    width: 16px;
+    height: 16px;
+  }
+
+
+
+  .setOnlyLabelName {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1351px) {
+  .signinClass {
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+
+
+  .imageDesign {
+    display: none;
+  }
+
+  input {
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .preferal_bg {
+    display: none;
+  }
+
+  .headerContent {
+    padding: 12px 200px 12px 200px;
+  }
+
+  .logo {
+    padding: 0;
+  }
+
+  .hide-desktop {
+    display: block;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .header {
+    padding: 12px 0px 12px 0px;
+  }
+
+  .fixCameraImage {
+    margin: 30px 0px;
+    width: 100%;
+    height: 555px;
+  }
+
+  .rightSide {
+    background-color: #fff;
+    padding: 0 40px;
+    width: 100%;
+    margin: 30px 0;
     height: 555px;
   }
 

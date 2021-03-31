@@ -1,6 +1,7 @@
 import { Toast } from './models/toast.interface';
 import { Router } from '@angular/router';
 import { Component, OnInit,Input, Output, } from '@angular/core';
+
 import * as firebase from 'firebase/app';
 import 'firebase/auth';        // for authentication
 import 'firebase/storage';     // for storage
@@ -9,6 +10,7 @@ import 'firebase/firestore';   // for cloud firestore
 import 'firebase/messaging';   // for cloud messaging
 import 'firebase/functions';   // for cloud functions
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,7 +18,7 @@ import 'firebase/functions';   // for cloud functions
 })
 export class AppComponent implements OnInit {
     dataLength: boolean;
-  isAuth: boolean;
+  
   data: string;
   @Input() toast: Toast;
 
@@ -34,22 +36,12 @@ export class AppComponent implements OnInit {
  }
 
   ngOnInit() {
-    firebase.auth().onAuthStateChanged(
-        (user) => {
-          if(user) {
-          this.isAuth = true;
-          this.router.navigate(['/home']);
-          }else {
-            this.isAuth = false;
-            this.router.navigate(['/auth/signin']);
-          }
-        }
-    );
+    
 
     this.isReadMore(this.toast.body)
   }
 
   isReadMore(data:string) {
-    this.dataLength = !(data.length > 150)
+    this.dataLength = !(data.length >50)
   }
 }

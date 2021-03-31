@@ -10,7 +10,7 @@ import { Component, ViewEncapsulation, Input, AfterViewInit, ElementRef } from "
         <a (click)="isCollapsed = !isCollapsed" [hidden]="dataLength" class="pt-2 pull-right">
           <img  alt="Voir Plus" class="resizeImage" src="../assets/Images/VectorFleche.svg" *ngIf="isCollapsed">
 
-          <img  alt="Voir Plus" class="resizeImage" src="../assets/Images/VectorFleche.svg" *ngIf="!isCollapsed">
+          <img  alt="Voir Plus" class="resizeImage" src="../assets/Images/VectorFleche2.svg" *ngIf="!isCollapsed">
         </a>
         <div class='cb'></div>
     `,
@@ -20,7 +20,7 @@ import { Component, ViewEncapsulation, Input, AfterViewInit, ElementRef } from "
 export class ReadMoreComponent implements AfterViewInit {
   @Input() dataLength: boolean;
    @Input() maxHeight: number; // enable below comment if you want to show 1 or 2 lines of the content element
-  // @Input() maxWidth: number; // enable below comment if you want to show 1 or 2 lines of the content element
+   @Input() maxWidth: number; // enable below comment if you want to show 1 or 2 lines of the content element
   public isCollapsed: boolean = true;
   public isCollapsable: boolean = false;
   constructor(private elementRef: ElementRef) {}

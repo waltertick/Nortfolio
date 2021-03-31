@@ -1,10 +1,42 @@
+
+<div class="header">
+  <div routerLinkActive="active" class="headerContent">
+
+    <div class="navbar">
+
+      <span routerLink="home" class="logo">Preferral</span>
+      <div class="hide-desktop">
+        <span class="showCursor"  routerLink="home">Home</span>
+      </div>
+      <div class="hide-desktop">
+        <span class="showCursor"  routerLink="setting">Setting</span>
+      </div>
+      <div  (click)="onSignOut()" routerLink="auth/signin" class="logout">
+        <img class="hide-desktop" src="../assets/Images/Vector_power.svg" alt="Se Déconnecter">
+      </div>
+      <div  class="show-mobile hide-mobile">
+
+        <a class="hamburger menu  " id="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
 <div class="container">
 
   
   <main class="main">
     <div class="_mainContainer">
           <div class="Profile">
-                  <img class="roundedImage" src="../assets/Images/IconUser2.jpg" alt="Photo de profil">
+                  <img class="roundedImage" src="../assets/Images/walter 1.png" alt="Photo de profil">
                 <span class="fixUsername"> Elvis TICK TICK </span>
           </div>
           <div class="spacer"></div>
@@ -20,10 +52,12 @@
       <div class="smallCard">
         <div class="pictureAndWorkstation">
                 <img class="roundedImageEntreprise" src="../assets/Images/enterpri 1.png" alt="Photo de profil">
-              <div class="workstation">
+              <div class="fixWorkstation">
+                <div class="workstation">
                 <h2>DevelopperCompany</h2>
                 <h3>Frontend Developper & UI Design</h3>
                 <h4>Juin 2019 -Septembre 2020</h4>
+                </div>
               </div>
         </div>
               <img class="resizeImage" src="../assets/Images/VectorFleche.svg" alt="Voir Plus">
@@ -48,9 +82,9 @@
           </div>
     </div>
     </div>
-    <div class="smallCard">
+    <div class="smallCard1">
       <div class="pictureAndWorkstation">
-        <img class="roundedImageEntreprise" src="../assets/Images/brand 2.png" alt="Photo de profil">
+        <img class="roundedImageEntreprise" src="../assets/Images/brand 1.png" alt="Photo de profil">
         <div class="workstation">
           <h2>DesignerCompany</h2>
           <h3>UX & UI Design</h3>
