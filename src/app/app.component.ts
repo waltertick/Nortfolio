@@ -42,6 +42,6 @@ export class AppComponent implements OnInit {
   }
 
   isReadMore(data:string) {
-    this.dataLength = !(data.length >50)
+    this.dataLength = !(data.length >250)
   }
 }

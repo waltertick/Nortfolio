@@ -16,7 +16,7 @@
       </div>
       <div  class="show-mobile hide-mobile">
 
-        <a class="hamburger menu  " id="menu">
+        <a class="hamburger menu" #menu >
           <span></span>
           <span></span>
           <span></span>
@@ -25,9 +25,17 @@
 
       </div>
     </div>
+    <div class="mobile-menu show-mobile hide-mobile"  #mobile_menu >
+      <a routerLink="home"> Home</a>
+      <a routerLink="setting"> Setting</a>
+      <a (click)="onSignOut()" routerLink="auth/signin" class="logout"> <img class="hide-desktop"
+          src="../assets/Images/Vector_power.svg" alt="Se Déconnecter"></a>
+    </div>
   </div>
-
+        
 </div>
+
+
 
 
 <div class="container">
