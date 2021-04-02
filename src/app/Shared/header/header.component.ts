@@ -13,6 +13,7 @@ import 'firebase/database';    // for realtime database
 })
 export class HeaderComponent implements OnInit {
   isAuth: boolean;
+  checkAuth:boolean;
   constructor( private authService : AuthService) { }
 
   ngOnInit() {
@@ -25,6 +26,8 @@ export class HeaderComponent implements OnInit {
           }
         }
     );
+    this.checkAuth=this.authService.redirectHome;
+
   }
 
   onSignOut() {

@@ -18,7 +18,8 @@ import 'firebase/functions';   // for cloud functions
 })
 export class AppComponent implements OnInit {
     dataLength: boolean;
-  
+    isAuth: boolean;
+    
   data: string;
   @Input() toast: Toast;
 
@@ -37,6 +38,17 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     
+     firebase.auth().onAuthStateChanged(
+        (user) => {
+          if(user) {
+          this.isAuth = true;
+          
+          }else {
+            this.isAuth = false;
+            
+          }
+        }
+    );
 
     this.isReadMore(this.toast.body)
   }

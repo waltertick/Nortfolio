@@ -1,6 +1,7 @@
+import { AuthService } from 'src/app/services/auth.service';
 import { ToasterService } from './../../services/toaster.service';
 import { Router } from '@angular/router';
-import { AuthService } from './../../services/auth.service';
+
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -23,6 +24,7 @@ export class SignupComponent implements OnInit {
               private toaster: ToasterService) { }
 
   ngOnInit() {
+    this.authService.redirectHome = false;
     this.signUpForm = this.formBuilder.group({
       email: ['',[Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.pattern(/[0-9a-zA-Z]{6,}/), Validators.minLength(6)]],
@@ -36,7 +38,7 @@ export class SignupComponent implements OnInit {
   
   get f() { return this.signUpForm.controls; }
   
-
+  
   onSubmit() {
     this.submitted = true;
 

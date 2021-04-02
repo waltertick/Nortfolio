@@ -5,7 +5,7 @@ import * as firebase from 'firebase';
   providedIn: 'root'
 })
 export class AuthService {
-
+redirectHome:boolean;
   constructor() { }
 
   createNewUser(email: string, password: string) {
@@ -14,9 +14,11 @@ export class AuthService {
         firebase.auth().createUserWithEmailAndPassword(email,password).then(
           ()  => {
             resolve() ;
+            this.redirectHome=true;
           },
           (error)  => {
             reject(error);
+            this.redirectHome=false;
           }
         );
       }
@@ -28,9 +30,11 @@ export class AuthService {
         firebase.auth().signInWithEmailAndPassword(email,password).then(
           ()  => {
             resolve() ;
+            this.redirectHome=true;
           },
           (error)  => {
             reject(error);
+            this.redirectHome=false;
           }
         );
       }
