@@ -4,12 +4,12 @@
 
     <div class="navbar">
 
-      <span routerLink="home" class="logo">Preferral</span>
+      <a routerLink="/home" class="logo">Preferral</a>
       <div class="hide-desktop">
-        <span class="showCursor"  routerLink="home">Home</span>
+        <a class="showCursor"  routerLink="/home">Home</a>
       </div>
       <div class="hide-desktop">
-        <span class="showCursor"  routerLink="setting">Setting</span>
+        <a class="showCursor"  routerLink="/setting">Setting</a>
       </div>
       <div  (click)="onSignOut()" routerLink="auth/signin" class="logout">
         <img class="hide-desktop" src="../assets/Images/Vector_power.svg" alt="Se Déconnecter">
@@ -26,10 +26,9 @@
       </div>
     </div>
     <div class="mobile-menu show-mobile hide-mobile"  #mobile_menu >
-      <a routerLink="home"> Home</a>
-      <a routerLink="setting"> Setting</a>
-      <a (click)="onSignOut()" routerLink="auth/signin" class="logout"> <img class="hide-desktop"
-          src="../assets/Images/Vector_power.svg" alt="Se Déconnecter"></a>
+      <a routerLink="/home"> Home</a>
+      <a routerLink="/setting"> Setting</a>
+      
     </div>
   </div>
         
@@ -43,10 +42,18 @@
   
   <main class="main">
     <div class="_mainContainer">
+      <div class="userContain">
           <div class="Profile">
                   <img class="roundedImage" src="../assets/Images/walter 1.png" alt="Photo de profil">
                 <span class="fixUsername"> Elvis TICK TICK </span>
+            
           </div>
+
+          <div class="deconnexion">
+            <a (click)="onSignOut()" routerLink="auth/signin" class="logout"> <img class="hide-mobile"
+                src="../assets/Images/Vector_power.svg" alt="Se Déconnecter"></a>
+          </div>
+      </div>
           <div class="spacer"></div>
              <div class="skillContainer"> 
               <h2>Skills </h2>

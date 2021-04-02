@@ -5,7 +5,14 @@
 .show-mobile {
   padding: 0;
 }
-
+.deconnexion {
+  margin-right: 6px;
+}
+.userContain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .logo {
   color: #65B79F;
   font-size: large;
@@ -28,8 +35,8 @@
   max-width: 300px;
   overflow-x: hidden;
   padding: 100px 0 40px 0;
-  color:#FFFFFF;
-  background-color: #65B79F;
+  color: #65B79F;
+  background-color: #f5fdff;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   transition: .5s;
   z-index: 5;
@@ -155,7 +162,7 @@ h4 {
   width: 100%;
   height:30em;
   padding-bottom: 20px;
- 
+
 }
 ._mainContainer {
   padding-bottom: 40px;
@@ -173,12 +180,12 @@ h4 {
     border: 1px solid rgba(35, 36, 37, 0.19);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
     border-radius: 8px;
-    
+
     text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
-    
+
 }
   .smartTitle {
     font-style: 16px;
@@ -214,7 +221,7 @@ h4 {
 }
 
 .Profile {
-  margin-top: 22px;
+  margin-top: 0px;
   margin-left: 0px;
   display: flex;
   flex-direction:row;
@@ -236,7 +243,7 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
+
 }
 
 .smallCard1 {
@@ -244,7 +251,7 @@ h4 {
   border: 1px solid rgba(35, 36, 37, 0.19);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
   border-radius: 8px;
-  
+
   text-align: center;
   width: 100%;
   display: flex;

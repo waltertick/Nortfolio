@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngOnInit() {
   }
   ngAfterViewInit() {
-    
+
     const menu = this.elementRef.nativeElement.querySelector('.menu');
     menu.addEventListener('click', () => {
   if (this.hamburgerMenu.nativeElement.classList.contains('open')) {
@@ -31,6 +31,16 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.mobileMenu.nativeElement.style.width = '60%';
   }
 });
+
+
+
+window.addEventListener('mouseup', (event) => {
+  if ( event.target != this.hamburgerMenu.nativeElement) {
+    this.hamburgerMenu.nativeElement.classList.remove('open');
+    this.mobileMenu.nativeElement.style.width = '0';
+
+  }
+})
   }
 
   onSignOut() {

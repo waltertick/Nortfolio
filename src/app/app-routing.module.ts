@@ -19,6 +19,7 @@ const routes: Routes = [
   {path: 'auth/signup', component: SignupComponent},
   {path: 'home', canActivate: [AuthGuardService], component: HomeComponent},
   {path: 'setting', canActivate: [AuthGuardService], component: SettingComponent },
+  
   {path: '',redirectTo: 'auth/signin',pathMatch: 'full'},
   {path: '**',redirectTo: 'auth/signin'}
 ];
