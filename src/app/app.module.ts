@@ -1,6 +1,6 @@
 import { ToasterService } from './services/toaster.service';
-import { ToasterComponent } from './Shared/toaster.component';
-import { ToasterContainerComponent } from './Shared/toaster-container.component';
+import { ToasterComponent } from './Shared/toaster/toaster.component';
+import { ToasterContainerComponent } from './Shared/toaster-container/toaster-container.component';
 import { ReadMoreComponent }  from './Shared/read-more/read-more';
 
 import { AuthGuardService } from './services/auth-guard.service';

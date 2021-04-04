@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Toast } from '../models/toast.interface';
+import { Toast } from '../../models/toast.interface';
 
 @Component({
   selector: 'app-toaster',

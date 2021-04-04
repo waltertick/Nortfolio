@@ -1,15 +1,19 @@
-$font-size:100%;
+$font-size:12px;
 $line-height: 1.5;
 $lines-to-show: 1;
 
 div.collapsed {
-  display: -webkit-inline-box;
-  display: inline-block;
+  display: -webkit-box;
+  display: block;
   font-size: $font-size;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 92%;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+   height: $font-size*$line-height*$lines-to-show;
+   -webkit-box-orient: vertical;
   
 }
 .resizeImage1 {
