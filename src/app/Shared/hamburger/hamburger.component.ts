@@ -1,39 +1,20 @@
-import { AuthService } from './../../services/auth.service';
-
 import { Component, OnInit , AfterViewInit, ElementRef,ViewChild } from '@angular/core';
-import * as firebase from 'firebase/app';
-import 'firebase/auth';        // for authentication
-import 'firebase/storage';     // for storage
-import 'firebase/database';    // for realtime database
+
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  selector: 'app-hamburger',
+  templateUrl: './hamburger.component.html',
+  styleUrls: ['./hamburger.component.scss']
 })
-export class HeaderComponent implements OnInit, AfterViewInit {
+export class HamburgerComponent implements OnInit, AfterViewInit {
 @ViewChild("menu", { static: false }) hamburgerMenu: ElementRef;
 @ViewChild("mobile_menu", { static: false }) mobileMenu: ElementRef;
-isAuth: boolean;
-  
-  constructor(private authService : AuthService,
-                private elementRef: ElementRef
-                ) { }
+
+  constructor(private elementRef: ElementRef) { }
 
   ngOnInit() {
-    firebase.auth().onAuthStateChanged(
-        (user) => {
-          if(user) {
-          this.isAuth = true;
-          }else {
-            this.isAuth = false;
-          }
-        }
-    );
-
-       
   }
-
+  
    ngAfterViewInit() {
 
     const menu = this.elementRef.nativeElement.querySelector('.menu');
@@ -56,11 +37,6 @@ window.addEventListener('mouseup', (event) => {
 
   }
 })
-  }
-
-  onSignOut() {
-    this.authService.signOutUser();
-    
   }
 
 }

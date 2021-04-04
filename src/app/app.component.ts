@@ -18,13 +18,13 @@ import 'firebase/functions';   // for cloud functions
 })
 export class AppComponent implements OnInit {
     dataLength: boolean;
-    isAuth: boolean;
+    isAuth: boolean=false;
     
   data: string;
   @Input() toast: Toast;
 
 
- constructor( private router: Router) {
+ constructor() {
    var config= {
      apiKey: "AIzaSyCgmJfgoom6Rbjcknw2S1A0v3dXvgTBnC0",
     authDomain: "angularfirebaseapp-264d9.firebaseapp.com",

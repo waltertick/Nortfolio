@@ -1,38 +1,4 @@
 
-<div class="header">
-  <div routerLinkActive="active" class="headerContent">
-
-    <div class="navbar">
-
-      <a routerLink="/home" class="logo">Preferral</a>
-      <div class="hide-desktop">
-        <a class="showCursor"  routerLink="/home">Home</a>
-      </div>
-      <div class="hide-desktop">
-        <a class="showCursor"  routerLink="/setting">Setting</a>
-      </div>
-      <div  (click)="onSignOut()" routerLink="auth/signin" class="logout">
-        <img class="hide-desktop" src="../assets/Images/Vector_power.svg" alt="Se Déconnecter">
-      </div>
-      <div  class="show-mobile hide-mobile">
-
-        <a class="hamburger menu" #menu >
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-
-
-      </div>
-    </div>
-    <div class="mobile-menu show-mobile hide-mobile"  #mobile_menu >
-      <a routerLink="/home"> Home</a>
-      <a routerLink="/setting"> Setting</a>
-      
-    </div>
-  </div>
-        
-</div>
 
 
 
@@ -50,7 +16,7 @@
           </div>
 
           <div class="deconnexion">
-            <a (click)="onSignOut()" routerLink="auth/signin" class="logout"> <img class="hide-mobile"
+            <a (click)="onSignOut()" routerLink="/auth/signin" class="logout"> <img class="hide-mobile"
                 src="../assets/Images/Vector_power.svg" alt="Se Déconnecter"></a>
           </div>
       </div>

@@ -1,3 +1,4 @@
+import { AuthService } from 'src/app/services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import * as firebase from 'firebase/app';
 import 'firebase/auth';        // for authentication
@@ -14,23 +15,24 @@ import 'firebase/functions';   // for cloud functions
   styleUrls: ['./auth-checkredirection.component.scss']
 })
 export class AuthCheckredirectionComponent implements OnInit {
-isAuth: boolean;
-  constructor() { }
+isConnected : boolean ;
+isAuth : boolean ;
+  constructor(private authService : AuthService) { }
 
   ngOnInit() {
     firebase.auth().onAuthStateChanged(
         (user) => {
           if(user) {
           this.isAuth = true;
-          //this.router.navigate(['/home']);
+          
           }else {
             this.isAuth = false;
-           // this.router.navigate(['/auth/signin']);
+            
           }
         }
     );
-    
+    this.isConnected=this.isAuth;
+    console.log(this.isAuth + 'beedi'+ this.isConnected);
   }
-  
-
+ 
 }

@@ -20,8 +20,8 @@ const routes: Routes = [
   {path: 'home', canActivate: [AuthGuardService], component: HomeComponent},
   {path: 'setting', canActivate: [AuthGuardService], component: SettingComponent },
   
-  {path: '',redirectTo: 'auth/signin',pathMatch: 'full'},
-  {path: '**',redirectTo: 'auth/signin'}
+  {path: '',redirectTo: 'auth/check',pathMatch: 'full'},
+  {path: '**',redirectTo: 'auth/check'}
 ];
 
 @NgModule({

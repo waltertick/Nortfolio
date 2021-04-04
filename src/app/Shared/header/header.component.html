@@ -1,33 +1,32 @@
-<div *ngIf="isAuth && checkAuth" class="header">
+<div *ngIf="isAuth " class="header">
   <div routerLinkActive="active" class="headerContent">
 
     <div class="navbar">
 
-      <span routerLink="home" class="logo">Preferral</span>
+      <a routerLink="/home" class="logo">Preferral</a>
       <div class="hide-desktop">
-        <span class="showCursor"  *ngIf="isAuth" routerLink="home">Home</span>
+        <a class="showCursor"  *ngIf="isAuth" routerLink="/home">Home</a>
       </div>
       <div class="hide-desktop">
-        <span class="hide-desktop showCursor" *ngIf="isAuth" routerLink="setting">Setting</span>
+        <a class="showCursor" *ngIf="isAuth" routerLink="/setting">Setting</a>
       </div>
-      <div  *ngIf="isAuth" (click)="onSignOut()" routerLink="auth/signin" class="logout">
+      <div class="logout" (click)="onSignOut()"  >
+        <a *ngIf="isAuth" routerLink="auth/signin">
         <img class="hide-desktop" src="../assets/Images/Vector_power.svg" alt="Se Déconnecter">
+        </a>
       </div>
       <div *ngIf="isAuth" class="show-mobile hide-mobile">
-      
-            <a class="hamburger menu  " id="menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
+          <app-hamburger></app-hamburger>
+        
 
 
       </div>
     </div>
+    
   </div>
 
 </div>
-<div *ngIf="!(isAuth && checkAuth)" class="header2">
+<div *ngIf="!(isAuth )" class="header2">
   <div routerLinkActive="active" class="headerContent">
 
     <div class="navbar">

@@ -20,7 +20,6 @@ import { ProfileComponent } from './Shared/profile/profile.component';
 import { SkillListComponent } from './Shared/skill-list/skill-list.component';
 import { SingleSkillComponent } from './Shared/single-skill/single-skill.component';
 import { ExperienceListComponent } from './Shared/experience-list/experience-list.component';
-import { SingleExperienceComponent } from './Shared/single-experience/single-experience.component';
 import { ExperienceActionListComponent } from './Shared/experience-action-list/experience-action-list.component';
 import { SingleExperienceActionComponent } from './Shared/single-experience-action/single-experience-action.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -34,6 +33,7 @@ import { UserFormComponent } from './Shared/user-form/user-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule} from '@angular/material/input';
 import { AuthCheckredirectionComponent } from './Shared/auth-checkredirection/auth-checkredirection.component';
+import { HamburgerComponent } from './Shared/hamburger/hamburger.component';
 
 
 
@@ -50,14 +50,14 @@ import { AuthCheckredirectionComponent } from './Shared/auth-checkredirection/au
     SkillListComponent,
     SingleSkillComponent,
     ExperienceListComponent,
-    SingleExperienceComponent,
     ExperienceActionListComponent,
     SingleExperienceActionComponent,
     SkillFormComponent,
     UserFormComponent,
     ToasterContainerComponent, ToasterComponent,
     ReadMoreComponent,
-    AuthCheckredirectionComponent
+    AuthCheckredirectionComponent,
+    HamburgerComponent
 
   ],
   imports: [
