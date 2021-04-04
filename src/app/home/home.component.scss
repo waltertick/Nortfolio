@@ -4,11 +4,11 @@
 .cardContainer {
   margin:0rem;
 }
-/*
+
 .main {
-  margin:0rem 1em ;
+  color:#6B7588;
 }
-*/
+
 
 .hide-desktop {
   display: none;
@@ -66,6 +66,7 @@
 h2,h3,h4 {
   margin: 2px 0px;
   padding: 0 ;
+  color:#6B7588;
 }
 .challenge {
   padding-left: 20px;
@@ -149,6 +150,8 @@ h4 {
 }
 .fixUsername{
   padding: 12px 0px 12px 12px;
+  font-weight: bold;
+  color: #6B7588;
 }
 
 .Profile {
