@@ -1,3 +1,15 @@
+.container {
+  padding:.7rem .7em ;
+}
+.cardContainer {
+  margin:0rem;
+}
+/*
+.main {
+  margin:0rem 1em ;
+}
+*/
+
 .hide-desktop {
   display: none;
 }
@@ -6,7 +18,7 @@
   padding: 0;
 }
 .deconnexion {
-  margin-right: 6px;
+  margin-right: 0em;
 }
 .userContain {
   display: flex;
@@ -36,33 +48,18 @@
   cursor: pointer;
 }
 
-.header {
-
-  background: #FFFFFF;
-  box-shadow: 0px 4px 10px 1px rgba(141, 140, 140, 0.2);
-  width: 100%;
-  height: 50px;
-  position: fixed;
-  top: 0;
-
-
-}
-
-.headerContent {
-  padding: 12px 10px 12px 10px;
-}
 
 .roundedImage {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  filter: drop-shadow(0 0 0.35rem #e6edee)
+
 }
 .roundedImageEntreprise {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  filter: drop-shadow(0 0 0.35rem #e6edee);
+
   padding: 20px ;
 
 }
@@ -90,19 +87,17 @@ h4 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  border: 1px solid rgba(58, 139, 247, 0.19);
+  
   border-radius: 8px;
   background: #F7F8FB;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
-  margin-bottom:20px ;
+  margin-bottom:0px 0px 20px 0px;
   width: 100%;
   height:30em;
   padding-bottom: 20px;
 
 }
-._mainContainer {
-  padding-bottom: 40px;
-}
+
 
 .challengeAndVector {
   display: flex;
@@ -113,7 +108,7 @@ h4 {
 }
 .smallCardForAction {
     background: #FFFFFF;
-    border: 1px solid rgba(35, 36, 37, 0.19);
+    
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
     border-radius: 8px;
 
@@ -133,8 +128,8 @@ h4 {
     padding: 0px 20px;
   }
 .rail {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 1.1em;
+  margin-right: 1.1em;
 }
 .description {
   padding: 20px;
@@ -144,7 +139,7 @@ h4 {
 .resizeImage {
   width:12px;
   height:12px;
-  padding: 50px 20px;
+  padding: 3.5em 1.1em;
 }
 
 .resizeImage1 {
@@ -170,7 +165,7 @@ h4 {
 }
 .smallCard {
   background: #FFFFFF;
-  border: 1px solid rgba(35, 36, 37, 0.19);
+  
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -187,18 +182,19 @@ h4 {
   border: 1px solid rgba(35, 36, 37, 0.19);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
   border-radius: 8px;
-
+  margin: 2.4rem 0rem;
   text-align: center;
   width: 100%;
   display: flex;
+  
   flex-direction: row;
   justify-content: space-between;
-
+  
 }
 .workstation {
   display: flex;
   flex-direction:column;
-  padding: 20px 4px;
+  padding: 1.8rem 2.4rem;
 }
 
 .fixWorkstation {

@@ -24,7 +24,7 @@ export class HamburgerComponent implements OnInit, AfterViewInit {
     this.mobileMenu.nativeElement.style.width = '0';
   } else {
     this.hamburgerMenu.nativeElement.classList.add('open');
-    this.mobileMenu.nativeElement.style.width = '60%';
+    this.mobileMenu.nativeElement.style.width = '40%';
   }
 });
 
