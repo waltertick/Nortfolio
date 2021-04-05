@@ -1,6 +1,9 @@
+
+/*
 $font-size:12px;
 $line-height: 1.5;
-$lines-to-show: 1;
+$lines-to-show: 2;
+
 
 div.collapsed {
   display: -webkit-box;
@@ -14,7 +17,38 @@ div.collapsed {
   -webkit-line-clamp: $lines-to-show;
    height: $font-size*$line-height*$lines-to-show;
    -webkit-box-orient: vertical;
-  
+
+}
+
+*/
+div.collapsed {
+overflow: hidden;
+position: relative;
+line-height: 1.2em;
+max-height: 2.4em;
+text-align: justify;
+margin-right: -.1em;
+padding-right: 1em;
+font-size: 12px;
+width: 90%;
+}
+
+div.collapsed:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+}
+
+div.collapsed:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+
 }
 .resizeImage1 {
   width: 12px;
@@ -41,5 +75,5 @@ div.collapsed {
 
 .pull-left {
   float: left;
-  
+
 }
