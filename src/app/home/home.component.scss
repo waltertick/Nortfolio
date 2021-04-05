@@ -88,14 +88,14 @@ h4 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  
+
   border-radius: 8px;
   background: #F7F8FB;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
   margin-bottom:0px 0px 20px 0px;
   width: 100%;
   height:30em;
-  padding-bottom: 20px;
+  padding-bottom: 8em;
 
 }
 
@@ -109,7 +109,7 @@ h4 {
 }
 .smallCardForAction {
     background: #FFFFFF;
-    
+
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
     border-radius: 8px;
 
@@ -168,7 +168,7 @@ h4 {
 }
 .smallCard {
   background: #FFFFFF;
-  
+
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -189,10 +189,10 @@ h4 {
   text-align: center;
   width: 100%;
   display: flex;
-  
+
   flex-direction: row;
   justify-content: space-between;
-  
+
 }
 .workstation {
   display: flex;
