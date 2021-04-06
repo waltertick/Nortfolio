@@ -1,3 +1,4 @@
+import { AuthService } from './../../services/auth.service';
 import { Component, OnInit , AfterViewInit, ElementRef,ViewChild } from '@angular/core';
 
 
@@ -10,7 +11,8 @@ export class HamburgerComponent implements OnInit, AfterViewInit {
 @ViewChild("menu", { static: false }) hamburgerMenu: ElementRef;
 @ViewChild("mobile_menu", { static: false }) mobileMenu: ElementRef;
 
-  constructor(private elementRef: ElementRef) { }
+  constructor(private elementRef: ElementRef,
+              private authService : AuthService) { }
 
   ngOnInit() {
   }
@@ -39,4 +41,8 @@ window.addEventListener('mouseup', (event) => {
 })
   }
 
+  onSignOut() {
+    this.authService.signOutUser();
+  }
 }
+
