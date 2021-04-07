@@ -11,6 +11,9 @@ padding: 0;
   cursor:pointer;
   padding:0px;
 }
+.changeToBold {
+  font-weight: bold;
+}
 .navbar {
   display: flex;
   flex-direction: row;
@@ -49,10 +52,15 @@ a {
 
 .headerContent {
   padding: 12px 10px 12px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
 }
 
 .headerContent2 {
   padding: 12px 10px 12px 10px;
+  
+
 }
 
 @media only screen and (min-width: 501px) {
@@ -116,7 +124,7 @@ a {
   }
   .logo {
     padding:0;
-    flex:31.5%;
+    flex:28.6%;
   }
   .navbar {
     flex: 75%;
@@ -132,7 +140,7 @@ a {
     padding: 12px 0px 12px 0px;
   }
   .headerContent {
-    padding: 12px 2rem 12px 2rem;
+    padding: 12px 5rem 12px 5rem;
     display: flex;
   }
 }
@@ -176,7 +184,7 @@ a {
 
    .logo {
      padding: 0;
-     flex: 28.6%;
+     flex: 28.2%;
    }
 
    .navbar {

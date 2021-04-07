@@ -5,8 +5,8 @@
 
       <a routerLink="/home" class="logo">Preferral</a>
       <div class="navbar">
-      <div class="hide-desktop moveOnLeft">
-        <a class="showCursor"  *ngIf="isAuth" routerLink="/home">Home</a>
+      <div class="hide-desktop ">
+        <a class="showCursor changeToBold"  *ngIf="isAuth" routerLink="/home">Home</a>
       </div>
       <div class="hide-desktop">
         <a class="showCursor" *ngIf="isAuth" routerLink="/setting">Setting</a>
@@ -16,14 +16,14 @@
         <img class="hide-desktop" src="../assets/Images/Vector_power.svg" alt="Se Déconnecter">
         </a>
       </div>
-      <div *ngIf="isAuth" class="show-mobile hide-mobile">
+
+    </div>
+    <div *ngIf="isAuth" class="show-mobile hide-mobile">
           <app-hamburger></app-hamburger>
 
 
 
       </div>
-    </div>
-
   </div>
 
 </div>
