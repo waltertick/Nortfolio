@@ -23,21 +23,17 @@
 }
 
 
-.hide-desktop {
+.hide-mobile {
   display: none;
 }
 
-.show-mobile {
-  padding: 0;
+.hide-desktop {
+  display: block;
 }
 .deconnexion {
   margin-right: 0em;
 }
-.userContain {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+
 /*
 .logo {
   color: #65B79F;
@@ -110,12 +106,10 @@
 h2 {
   font-size:18px;
 }
-h3 {
+h5 {
   font-size: 14px;
 }
-h4 {
-  font-size: 12px;
-}
+
 .skillContainer {
   text-align: center;
   color: #6B7588;
@@ -200,6 +194,10 @@ h4 {
   text-align: left;
 }
 
+.Profile2 {
+  display: none;
+}
+
 .pictureAndWorkstation {
   display: flex;
   flex-wrap: nowrap;
@@ -256,6 +254,15 @@ h4 {
   .smallTitle {
     font-size: 14px;
   }
+  h2 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+
+  }
+
 }
 
 @media only screen and (min-width: 750px) {
@@ -268,6 +275,46 @@ h4 {
 
 @media only screen and (min-width: 1101px) {
 
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    padding: 2rem 2rem;
+    display: flex;
+  }
+
+  .skillContainer {
+    text-align: center;
+    color: #6B7588;
+    flex: 40%;
+  }
+  .Profile2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+  .Profile{
+    display: none;
+  }
+  .hide-desktop {
+    display: none;
+  }
+  .hide-mobile {
+    display: block;
+  }
+  h2 {
+    margin: 0;
+    text-align: left;
+  }
+  h5 {
+    margin: 0;
+    text-align: left;
+  }
 }
 
 
