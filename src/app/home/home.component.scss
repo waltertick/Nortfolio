@@ -1,3 +1,16 @@
+:root {
+  /*Colors */
+  --primary-color: #6B7588;
+  --secondary-color: #65B79F;
+  --bg-color: #F7F8FB;
+  --cardheader-color: #FFFFFF;
+
+  /*Font sizes*/
+  --regular-size: 0.9em;
+  --small-size: 0.7em;
+}
+
+
 .container {
   padding:.7rem .7em ;
 }
@@ -25,6 +38,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+/*
 .logo {
   color: #65B79F;
   font-size: large;
@@ -32,6 +46,7 @@
   cursor: pointer;
   padding: 0px;
 }
+*/
 
 .navbar {
   display: flex;
@@ -39,7 +54,7 @@
   justify-content: space-between;
 }
 
-
+/*
 .logout {
   cursor: pointer;
 }
@@ -47,23 +62,26 @@
 .showCursor {
   cursor: pointer;
 }
-
+*/
 .bigTitle {
   font-weight: bold;
   font-size: 18px;
   color: #6B7588;
+  margin: 0 0 .2em 0 ;
 }
 
 .mediumTitle {
   font-weight: bold;
   font-size: 12px;
   color: #6B7588;
+  margin: 0 0 .2em 0;
 }
 
 .smallTitle {
   color: #6B7588;
   font-size: 12px;
   padding: 0em;
+  margin: .2em 0 0 0;
 }
 .roundedImage {
   border-radius: 50%;
@@ -72,7 +90,7 @@
 
 }
 .roundedImageEntreprise {
-  
+
   width: 2.5em;
   height: 2.5em;
   padding: 2.7em 0em 2.3em 1.25em;
@@ -106,15 +124,12 @@ h4 {
   display: flex;
   flex-direction: column;
   text-align: center;
-
+   color: #6B7588;
   border-radius: 8px;
   background: #F7F8FB;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
   margin-bottom:0px 0px 20px 0px;
   width: 100%;
-  height:26.7em;
-  padding-bottom: 8em;
-
 }
 
 
@@ -130,7 +145,7 @@ h4 {
 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
     border-radius: 8px;
-
+    margin: 0 0 1em 0;
     text-align: center;
     width: 100%;
     display: flex;
@@ -157,7 +172,7 @@ h4 {
 }
 .description {
   padding: 20px;
-
+  font-size: 13px;
   text-align: justify;
 }
 .resizeImage {
@@ -208,7 +223,7 @@ h4 {
   border: 1px solid rgba(35, 36, 37, 0.19);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
   border-radius: 8px;
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
   text-align: center;
   width: 100%;
   display: flex;
@@ -220,8 +235,46 @@ h4 {
 .workstation {
   display: flex;
   flex-direction:column;
-  padding: 2.2rem .4rem;
+  padding: 2.2rem 0rem 2.2rem .9rem;
   text-align: left;
 }
 
 
+@media only screen and (min-width: 501px) {
+  .container {
+    padding: 2rem 2rem;
+  }
+
+  .bigTitle {
+    font-size: 20px;
+  }
+
+  .mediumTitle {
+    font-size: 14px;
+  }
+
+  .smallTitle {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+
+}
+
+@media only screen and (min-width: 951px) {
+
+}
+
+@media only screen and (min-width: 1101px) {
+
+}
+
+
+@media only screen and (min-width: 1281px) {
+
+}
+
+@media only screen and (min-width: 1351px) {
+
+}
