@@ -57,12 +57,13 @@ a {
 
 @media only screen and (min-width: 501px) {
 
-  .header {
+  .header2 {
     height: 50px;
   }
 
-  .headerContent2 {
-    padding: 12px 50px 12px 50px;
+  .headerContent {
+    padding: 12px 2rem 12px 2rem;
+
   }
 
   .logo {
@@ -73,22 +74,18 @@ a {
 
 @media only screen and (min-width: 751px) {
 
-  .header {
+  .header2 {
     height: 50px;
 
   }
-  .headerContent2 {
-    padding: 12px 50px 12px 50px;
+  .headerContent {
+    padding: 12px 3rem 12px 3rem;
+
   }
  .logo {
    padding: 0;
  }
- .hide-desktop {
-   display:block;
- }
- .hide-mobile {
-   display: none;
- }
+
 
 }
 
@@ -97,16 +94,15 @@ a {
     padding: 12px 70px 12px 70px;
 
   }
-  .hide-desktop {
-    display: block;
+  .headerContent {
+    padding: 12px 5rem 12px 5rem;
+
   }
-  .hide-mobile {
-    display: none;
-  }
+
   .logo {
     padding: 0;
   }
-   .header {
+   .header2 {
      padding: 12px 0px 12px 0px;
    }
 }
@@ -120,13 +116,24 @@ a {
   }
   .logo {
     padding:0;
+    flex:29.6%;
+  }
+  .navbar {
+    flex: 75%;
   }
   .hide-mobile {
     display: none;
   }
 
+  .header2 {
+    padding: 12px 0px 12px 0px;
+  }
   .header {
     padding: 12px 0px 12px 0px;
+  }
+  .headerContent {
+    padding: 12px 2rem 12px 2rem;
+    display: flex;
   }
 }
 @media only screen and (min-width: 1281px) {
@@ -134,7 +141,12 @@ a {
     padding: 12px 125px 12px 125px;
   }
   .logo {
-    padding:0;
+    padding: 0;
+    flex: 28.6%;
+  }
+
+  .navbar {
+    flex: 75%;
   }
   .hide-desktop {
     display: block;
@@ -144,8 +156,16 @@ a {
     display: none;
   }
 
+  .header2 {
+    padding: 12px 0px 12px 0px;
+  }
   .header {
     padding: 12px 0px 12px 0px;
+  }
+
+  .headerContent {
+    padding: 12px 5rem 12px 5rem;
+    display: flex;
   }
 }
 
@@ -154,9 +174,14 @@ a {
     padding: 12px 200px 12px 200px;
   }
 
-  .logo {
-    padding: 0;
-  }
+   .logo {
+     padding: 0;
+     flex: 28.6%;
+   }
+
+   .navbar {
+     flex: 75%;
+   }
 
   .hide-desktop {
     display: block;
@@ -169,4 +194,249 @@ a {
   .header2 {
     padding: 12px 0px 12px 0px;
   }
+
+  .header {
+    padding: 12px 0px 12px 0px;
+  }
+
+  .headerContent {
+    padding: 12px 5rem 12px 5rem;
+    display: flex;
+  }
 }
+/*
+
+@media only screen and (min-width: 501px) {
+  .container {
+    padding: 2rem 2rem;
+  }
+
+  .bigTitle {
+    font-size: 20px;
+  }
+
+  .mediumTitle {
+    font-size: 14px;
+  }
+
+  .smallTitle {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+
+  }
+
+}
+
+@media only screen and (min-width: 750px) {
+  .container {
+    padding: 3rem 3rem;
+  }
+
+  .bigTitle {
+    font-size: 20px;
+  }
+
+  .mediumTitle {
+    font-size: 14px;
+  }
+
+  .smallTitle {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+
+  }
+}
+
+@media only screen and (min-width: 951px) {
+  .container {
+    padding: 5rem 5rem;
+  }
+
+  .bigTitle {
+    font-size: 20px;
+  }
+
+  .mediumTitle {
+    font-size: 14px;
+  }
+
+  .smallTitle {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+
+  }
+}
+@media only screen and (min-width: 1101px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    padding: 5rem 5rem;
+    display: flex;
+  }
+
+  .skillContainer {
+    text-align: center;
+    color: #6B7588;
+    flex: 75%;
+  }
+
+  .Profile2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 1.9rem;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .Profile {
+    display: none;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+  h2 {
+    margin: 0 0 2.5rem 0;
+    text-align: left;
+  }
+
+  h5 {
+    margin: 0 0 1.2rem 0;
+    text-align: left;
+  }
+}
+
+
+@media only screen and (min-width: 1281px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    padding: 5rem 5rem;
+    display: flex;
+  }
+
+  .skillContainer {
+    text-align: center;
+    color: #6B7588;
+    flex: 60%;
+  }
+
+  .Profile2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 1.9rem;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .Profile {
+    display: none;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+  h2 {
+    margin: 0 0 2.5rem 0;
+    text-align: left;
+  }
+
+  h5 {
+    margin: 0 0 1.2rem 0;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1351px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    padding: 5rem 5rem;
+    display: flex;
+  }
+
+  .skillContainer {
+    text-align: center;
+    color: #6B7588;
+    flex: 50%;
+  }
+
+  .Profile2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .Profile {
+    display: none;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+  h2 {
+    margin: 0 0 2rem 0;
+    text-align: left;
+  }
+
+  h5 {
+    margin: 0 0 1.2rem 0;
+    text-align: left;
+  }
+}
+
+*/

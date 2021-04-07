@@ -1,10 +1,11 @@
 <div *ngIf="isAuth " class="header">
   <div routerLinkActive="active" class="headerContent">
 
-    <div class="navbar">
+
 
       <a routerLink="/home" class="logo">Preferral</a>
-      <div class="hide-desktop">
+      <div class="navbar">
+      <div class="hide-desktop moveOnLeft">
         <a class="showCursor"  *ngIf="isAuth" routerLink="/home">Home</a>
       </div>
       <div class="hide-desktop">
