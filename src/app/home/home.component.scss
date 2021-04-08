@@ -97,6 +97,9 @@
   color: #6B7588;
   padding: 0px;
 }
+.skillContainer2 {
+  display: none;
+}
 .challenge {
   padding-left: 20px;
   padding-bottom: 12px;
@@ -108,6 +111,7 @@ h2 {
 }
 h5 {
   font-size: 14px;
+  margin: .7rem;
 }
 
 .skillContainer {
@@ -145,6 +149,33 @@ h5 {
     display: flex;
     flex-direction: column;
 
+}
+
+.comming-soon {
+  border: 2px solid #fff;
+  padding: 0.625rem 0.5rem;
+  margin: 3rem auto 1rem auto;
+  line-height: initial;
+  border-radius: 0.25rem;
+  max-width: 60ch;
+  display:flex;
+  flex-wrap:wrap;
+
+}
+
+.comming-soon h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.comming-soon h2:first-of-type {
+  display: block;
+  width: fit-content;
+  margin: 0.2rem .125rem 0.2rem .7rem;
+  background-color:#65B79F;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.4rem;
+  color: #FFFFFF;
 }
   .smartTitle {
     font-size: 14px;
@@ -260,7 +291,7 @@ h5 {
 
   h5 {
     font-size: 16px;
-
+    margin: .7rem;
   }
 
 }
@@ -288,7 +319,7 @@ h5 {
 
   h5 {
     font-size: 16px;
-
+    margin: .7rem;
   }
 }
 
@@ -315,7 +346,7 @@ h5 {
 
   h5 {
     font-size: 16px;
-
+    margin: .7rem;
   }
 }
 
@@ -332,11 +363,13 @@ h5 {
     display: flex;
   }
 
-  .skillContainer {
-    text-align: center;
-    color: #6B7588;
-    flex: 75%;
-  }
+
+.skillContainer2 {
+  text-align: left;
+  color: #6B7588;
+  flex: 75%;
+}
+
   .Profile2 {
     margin-top: 0px;
     margin-left: 0px;
@@ -362,6 +395,17 @@ h5 {
     margin: 0 0 1.2rem 0;
     text-align: left;
   }
+  .comming-soon {
+    display: none;
+  }
+
+  .comming-soon h2 {
+    display: none;
+  }
+
+  .comming-soon h2:first-of-type {
+    display: none;
+  }
 }
 
 
@@ -377,8 +421,8 @@ h5 {
     display: flex;
   }
 
-  .skillContainer {
-    text-align: center;
+  .skillContainer2 {
+    text-align: left;
     color: #6B7588;
     flex: 60%;
   }
@@ -427,8 +471,8 @@ body {
   display: flex;
 }
 
-.skillContainer {
-  text-align: center;
+.skillContainer2 {
+  text-align: left;
   color: #6B7588;
   flex: 50%;
 }

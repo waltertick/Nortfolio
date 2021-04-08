@@ -1,9 +1,11 @@
+/*
+
 .sidebarContainer {
-  
+
   border: 1px solid rgba(35, 36, 37, 0.19);
-  
+
   height: 510px;
-  
+
   margin-right: 10px;
   padding: 40px 20px 0px 20px;
   background: #FFFFFF;
@@ -31,3 +33,542 @@ ul {
   border-radius: 5px;
 
 }
+
+*/
+:root {
+  /*Colors */
+  --primary-color: #6B7588;
+  --secondary-color: #65B79F;
+  --bg-color: #F7F8FB;
+  --cardheader-color: #FFFFFF;
+
+  /*Font sizes*/
+  --regular-size: 0.9em;
+  --small-size: 0.7em;
+}
+
+
+.container {
+  padding: .7rem .7em;
+}
+
+.cardContainer {
+  margin: 0rem;
+}
+
+.main {
+  color: #6B7588;
+}
+
+
+.hide-mobile {
+  display: none;
+}
+
+.hide-desktop {
+  display: block;
+}
+
+.deconnexion {
+  margin-right: 0em;
+}
+
+/*
+.logo {
+  color: #65B79F;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0px;
+}
+*/
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*
+.logout {
+  cursor: pointer;
+}
+
+.showCursor {
+  cursor: pointer;
+}
+*/
+.bigTitle {
+  font-weight: bold;
+  font-size: 18px;
+  color: #6B7588;
+  margin: 0 0 .2em 0;
+}
+
+.mediumTitle {
+  font-weight: bold;
+  font-size: 12px;
+  color: #6B7588;
+  margin: 0 0 .2em 0;
+}
+
+.smallTitle {
+  color: #6B7588;
+  font-size: 12px;
+  padding: 0em;
+  margin: .2em 0 0 0;
+}
+
+.roundedImage {
+  border-radius: 50%;
+  width: 1.875em;
+  height: 1.875em;
+
+}
+
+.roundedImageEntreprise {
+
+  width: 2.5em;
+  height: 2.5em;
+  padding: 2.7em 0em 2.3em 1.25em;
+}
+
+.challengeText {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6B7588;
+  padding: 0px;
+}
+
+.skillContainer2 {
+  display: none;
+}
+
+.challenge {
+  padding-left: 20px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+  margin: .7rem;
+}
+
+.skillContainer {
+  text-align: center;
+  color: #6B7588;
+}
+
+.bigCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #6B7588;
+  border-radius: 8px;
+  background: #F7F8FB;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
+  margin-bottom: 0px 0px 20px 0px;
+  width: 100%;
+}
+
+
+.challengeAndVector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.smallCardForAction {
+  background: #FFFFFF;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+  margin: 0 0 1em 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.comming-soon {
+  border: 2px solid #fff;
+  padding: 0.625rem 0.5rem;
+  margin: 3rem auto 1rem auto;
+  line-height: initial;
+  border-radius: 0.25rem;
+  max-width: 60ch;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.comming-soon h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.comming-soon h2:first-of-type {
+  display: block;
+  width: fit-content;
+  margin: 0.2rem .125rem 0.2rem .7rem;
+  background-color: #65B79F;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.4rem;
+  color: #FFFFFF;
+}
+
+.smartTitle {
+  font-size: 14px;
+  padding: 20px 20px 10px 20px;
+  font-weight: bold;
+  color: #6B7588;
+  text-align: left;
+  margin: 0;
+}
+
+.smallDescription {
+  text-align: justify;
+  padding: 0px 20px;
+  font-size: 13px;
+  margin: 0 0 10px 0;
+}
+
+.rail {
+  margin-left: 1.1em;
+  margin-right: 1.1em;
+}
+
+.description {
+  padding: 20px;
+  font-size: 13px;
+  text-align: justify;
+}
+
+.resizeImage {
+  width: 12px;
+  height: 12px;
+  padding: 3.8em 1.25em 3.8em 0em;
+}
+
+.resizeImage1 {
+  width: 12px;
+  height: 12px;
+  padding: 14px 20px 18px 20px;
+}
+
+.fixUsername {
+  padding: 6px 0px 6px 8px;
+  font-weight: bold;
+  color: #6B7588;
+}
+
+.Profile {
+  margin-top: 0px;
+  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.Profile2 {
+  display: none;
+}
+
+.pictureAndWorkstation {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.smallCard {
+  background: #FFFFFF;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.smallCard1 {
+  background: #FFFFFF;
+  border: 1px solid rgba(35, 36, 37, 0.19);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+  margin: 1rem 0rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.workstation {
+  display: flex;
+  flex-direction: column;
+  padding: 2.2rem 0rem 2.2rem .9rem;
+  text-align: left;
+}
+
+
+@media only screen and (min-width: 501px) {
+  .container {
+    padding: 2rem 2rem;
+  }
+
+  .bigTitle {
+    font-size: 20px;
+  }
+
+  .mediumTitle {
+    font-size: 14px;
+  }
+
+  .smallTitle {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+    margin: .7rem;
+  }
+
+}
+
+@media only screen and (min-width: 750px) {
+  .container {
+    padding: 3rem 3rem;
+  }
+
+  .bigTitle {
+    font-size: 20px;
+  }
+
+  .mediumTitle {
+    font-size: 14px;
+  }
+
+  .smallTitle {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+    margin: .7rem;
+  }
+}
+
+@media only screen and (min-width: 951px) {
+  .container {
+    padding: 5rem 5rem;
+  }
+
+  .bigTitle {
+    font-size: 20px;
+  }
+
+  .mediumTitle {
+    font-size: 14px;
+  }
+
+  .smallTitle {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+    margin: .7rem;
+  }
+}
+
+@media only screen and (min-width: 1101px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    padding: 5rem 5rem;
+    display: flex;
+  }
+
+
+  .skillContainer2 {
+    text-align: left;
+    color: #6B7588;
+    flex: 75%;
+  }
+
+  .Profile2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 1.9rem;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .Profile {
+    display: none;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+  h2 {
+    margin: 0 0 2.5rem 0;
+    text-align: left;
+  }
+
+  h5 {
+    margin: 0 0 1.2rem 0;
+    text-align: left;
+  }
+
+  .comming-soon {
+    display: none;
+  }
+
+  .comming-soon h2 {
+    display: none;
+  }
+
+  .comming-soon h2:first-of-type {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 1281px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    padding: 5rem 5rem;
+    display: flex;
+  }
+
+  .skillContainer2 {
+    text-align: left;
+    color: #6B7588;
+    flex: 60%;
+  }
+
+  .Profile2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 1.9rem;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .Profile {
+    display: none;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+  h2 {
+    margin: 0 0 2.5rem 0;
+    text-align: left;
+  }
+
+  h5 {
+    margin: 0 0 1.2rem 0;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1351px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    padding: 5rem 5rem;
+    display: flex;
+  }
+
+  .skillContainer2 {
+    text-align: left;
+    color: #6B7588;
+    flex: 50%;
+  }
+
+  .Profile2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .Profile {
+    display: none;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+  h2 {
+    margin: 0 0 2rem 0;
+    text-align: left;
+  }
+
+  h5 {
+    margin: 0 0 1.2rem 0;
+    text-align: left;
+  }
+}
+
