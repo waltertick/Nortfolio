@@ -109,7 +109,7 @@ import { Toast } from '../../models/toast.interface';
     }
 
     .toast-heading {
-      padding:10px 0px 2px 0px;
+      padding:10px 0px 2px 4px;
       margin:0px;
     
 
