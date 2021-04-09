@@ -3,7 +3,7 @@
   <div class="spacer"></div>
   <div class="skillContainer  comming-soon">
     <h2>Dashboard </h2>
-    
+
       <h5> <a routerLink="/setting">User profile</a> </h5>
       <h5><a routerLink="/setting/experience">Add experiences</a></h5>
       <h5><a routerLink="/setting/skill">Add skill</a></h5>
@@ -14,7 +14,7 @@
     <h5> <a routerLink="/setting">User profile</a> </h5>
     <h5><a routerLink="/setting/experience">Add experiences</a></h5>
     <h5><a routerLink="/setting/skill">Add skill</a></h5>
- 
+
   </div>
 
 
@@ -22,8 +22,9 @@
       <div class="mainclass">
         <form [formGroup]="userProfileForm" (ngSubmit)="onSubmit()">
           <div class="classProfile">
-            <div class="uploadImage" style="background-image: url('../assets/Images/walter 2.png');">
-              <input type="file" class="my_file" style="background-image: url('../assets/Images/cameraGroup.png');">
+            <div class="uploadImage" >
+              <img [src]="urlLink" alt="Profile image">
+              <input type="file" class="my_file" style="background-image: url('../assets/Images/cameraGroup.png');" (change)="selectFiles($event)">
             </div>                      <div class="spacer"></div>
                       <div class="field">
                         <input type="email" formControlName="email" name="email" id="email" placeholder=" "
@@ -31,7 +32,7 @@
                         <label for="email"><img class="resizeImg" src="../assets/Images/userIcon.svg" alt="usericon">
                           <span class="setOnlyLabelName"> USERNAME </span>
                         </label>
-                    
+
                       </div>
                       <div class="invalid-feedback" *ngIf="submitted && f.email.errors" class="invalid-feedback">
                         <div *ngIf="f.email.errors.required">Email is required</div>
@@ -42,10 +43,10 @@
                         <input type="password" required formControlName="password" name="Password" id="Password" placeholder=" "
                           [type]=" hide ?'password':'text'" [ngClass]="{ 'is-invalid': submitted && f.password.errors}">
                         <label for="Password">
-                    
+
                           <img class="resizeImg" src="../assets/Images/password.svg" alt="usericon">
                           <span class="setOnlyLabelName"> PASSWORD </span>
-                    
+
                         </label>
                         <div class="imgPosition">
                           <i class="material-icons resizeImg imgClass changeColor" matSuffix (click)="hide =!hide">
@@ -53,7 +54,7 @@
                           </i>
                         </div>
                       </div>
-                    
+
                       <div class="invalid-feedback" *ngIf="submitted && f.password.errors">
                         <div *ngIf="f.password.errors.required">Password is required</div>
                         <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>

@@ -14,7 +14,7 @@ import { Toast } from '../../models/toast.interface';
                 {{toast.body}}
         </read-more>
         </div>
-     
+
       </div>
 
       <a class="close" (click)="remove.emit(i)">&times;</a>
@@ -57,7 +57,7 @@ import { Toast } from '../../models/toast.interface';
       white-space: nowrap;
       overflow:hidden;
       text-overflow:ellipsis;
-      
+
       text-align:justify;
       padding-left: 10px;
       padding-right: 10px;
@@ -109,9 +109,9 @@ import { Toast } from '../../models/toast.interface';
     }
 
     .toast-heading {
-      padding:10px 0px 2px 4px;
+      padding:10px 0px 2px 6px;
       margin:0px;
-    
+
 
     }
 

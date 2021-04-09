@@ -136,14 +136,23 @@ span {
   text-align: center;
 }
 .uploadImage {
-  height: 12rem;
-  width: 12rem;
+  height: 20rem;
+  width: 20rem;
   position: relative;
 
-  border-radius: 50%;
+   display: block;
+   margin:0 .8rem;
   background-size: 100% 100%;
-  margin: 20px auto;
+
   overflow: hidden;
+}
+.uploadImage img {
+  height: 18rem;
+  width: 18rem;
+  position: absolute;
+  left:0;
+  border-radius: 50%;
+
 }
 .setImage {
   margin-right: 4px;
@@ -178,8 +187,8 @@ a {
   box-sizing: border-box;
   cursor: pointer;
   background-color: transparent;
-  background-position: 17px 1px;
-  padding: 8px 4px;
+  background-position: 27px 1px;
+  padding: 18px 4px;
   transition: 0.5s;
   border-bottom: 0;
   background-repeat: no-repeat;
@@ -248,7 +257,7 @@ h5 {
     padding: 2rem 2rem;
   }
 
-  
+
   h2 {
     font-size: 20px;
   }
@@ -265,7 +274,7 @@ h5 {
     padding: 3rem 3rem;
   }
 
- 
+
   h2 {
     font-size: 20px;
   }
@@ -281,7 +290,7 @@ h5 {
     padding: 5rem 5rem;
   }
 
-  
+
   h2 {
     font-size: 20px;
   }

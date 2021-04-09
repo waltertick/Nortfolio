@@ -16,6 +16,7 @@ export class SettingComponent implements OnInit {
    submitted=false;
   errorMessage: string;
   hide:boolean = true;
+  urlLink:string="assets/Images/ketebo.png";
 
   constructor(private formBuilder:FormBuilder,
               private authService: AuthService,
@@ -26,18 +27,27 @@ export class SettingComponent implements OnInit {
     this.userProfileForm = this.formBuilder.group({
       email: ['',[Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.pattern(/[0-9a-zA-Z]{6,}/), Validators.minLength(6)]]
-      
+
 
     });
+  }
+  selectFiles(event) {
+    if( event.target.files) {
+      var reader = new FileReader()
+      reader.readAsDataURL(event.target.files[0])
+      reader.onload= (event:any)=>{
+        this.urlLink = event.target.result
+      }
+    }
   }
 
   onChangeView() {
       this.hide=!this.hide;
   }
-  
+
   get f() { return this.userProfileForm.controls; }
-  
-  
+
+
   onSubmit() {
     this.submitted = true;
 
@@ -55,7 +65,7 @@ export class SettingComponent implements OnInit {
       (error)  => {
         this.errorMessage = error;
         this.toaster.show('error', 'Error Message!', this.errorMessage,5000);
-       
+
       }
     )
   }

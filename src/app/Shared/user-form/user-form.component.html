@@ -1,9 +1,9 @@
 
   <div class="container">
-  
+
     <aside class="sidebar">
       <div class="sidebarContainer">
-        
+
         <div class="settingList">
           <ul>
             <li> <a routerLink="/setting/user">User Profile</a> </li>
@@ -12,7 +12,7 @@
           </ul>
         </div>
       </div>
-  
+
     </aside>
     <main class="main">
       <div class="mainContainer">
@@ -22,7 +22,7 @@
               <div class="uploadImage" style="background-image: url('../assets/Images/walter 1.png');">
                 <input type="file" class="my_file" style="background-image: url('../assets/Images/cameraGroup.png');">
               </div>
-      
+
               <div class="field">
                 <input type="email" formControlName="email" name="email" id="email" placeholder="USERNAME">
                 <label for="email"><img class="setImage" src="../assets/Images/userIcon.svg" alt="usericon">username</label>
@@ -32,21 +32,21 @@
                 <input type="password" formControlName="password" name="Password" id="Password" placeholder="PASSWORD"
                   [type]=" hide ?'password':'text'">
                 <label for="Password">
-              
+
                   <img class="setImage" src="../assets/Images/password.svg" alt="usericon">
                   password
-              
+
                 </label>
                 <div class="imgClass">
                   <i class="material-icons imgClass showCursor changeColor" matSuffix (click)="hide =!hide">
                     {{hide ? 'visibility': 'visibility_off'}}
                   </i>
                 </div>
-              
+
               </div>
-              
+
               <div class="bigSpacer"></div>
-              
+
               <button type="submit"  class="loginButton">
                 Saves changes
               </button>
