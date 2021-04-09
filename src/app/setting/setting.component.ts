@@ -16,7 +16,7 @@ export class SettingComponent implements OnInit {
    submitted=false;
   errorMessage: string;
   hide:boolean = true;
-  urlLink:string="assets/Images/ketebo.png";
+  urlLink:string="assets/Images/pexels-2.jpg";
 
   constructor(private formBuilder:FormBuilder,
               private authService: AuthService,

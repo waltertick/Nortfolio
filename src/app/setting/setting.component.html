@@ -1,6 +1,6 @@
 
 <div class="container">
-  <div class="spacer"></div>
+
   <div class="skillContainer  comming-soon">
     <h2>Dashboard </h2>
 
@@ -21,11 +21,16 @@
     <div class="mainContainer">
       <div class="mainclass">
         <form [formGroup]="userProfileForm" (ngSubmit)="onSubmit()">
-          <div class="classProfile">
-            <div class="uploadImage" >
-              <img [src]="urlLink" alt="Profile image">
-              <input type="file" class="my_file" style="background-image: url('../assets/Images/cameraGroup.png');" (change)="selectFiles($event)">
-            </div>                      <div class="spacer"></div>
+
+
+              <div class="uploadImage">
+                <img [src]="urlLink" alt="Profile image">
+                <input type="file" class="my_file" style="background-image: url('../assets/Images/cameraGroup.png');"
+                  (change)="selectFiles($event)">
+              </div>
+
+
+             <div class="spacer"></div>
                       <div class="field">
                         <input type="email" formControlName="email" name="email" id="email" placeholder=" "
                           [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
@@ -63,7 +68,7 @@
                       <button type="submit" class="loginButton">
                   Save changes
                       </button>
-                  </div>
+
           </form>
       </div>
   </div>

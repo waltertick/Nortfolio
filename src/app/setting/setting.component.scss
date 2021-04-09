@@ -36,19 +36,22 @@
   margin: 0rem;
 }
 .mainclass {
+
   display: block;
-
+  /*
   text-align: center;
-  padding-top: 1rem;
+*/
 }
-
+.imgPosition {
+  position: absolute;
+  padding-right: 9px;
+  right: 0;
+  cursor: pointer;
+}
 .mainContainer {
   border: 1px solid rgba(35, 36, 37, 0.19);
-
-  height: 510px;
-
   margin: 0;
-  padding: 40px 20px 0px 20px;
+  padding: 2rem;
   background: #FFFFFF;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
@@ -136,19 +139,21 @@ span {
   text-align: center;
 }
 .uploadImage {
-  height: 20rem;
-  width: 20rem;
+  height: 15rem;
+  width: 15rem;
   position: relative;
 
    display: block;
-   margin:0 .8rem;
+   margin:10%;
+   /*
   background-size: 100% 100%;
 
   overflow: hidden;
+  */
 }
 .uploadImage img {
-  height: 18rem;
-  width: 18rem;
+  height: 14rem;
+  width: 14rem;
   position: absolute;
   left:0;
   border-radius: 50%;
@@ -170,7 +175,7 @@ span {
 */
 a {
   text-decoration: #FFFFFF;
-  color: #060807;
+  color: #FFFFFF;
 }
 
 
@@ -181,16 +186,17 @@ a {
 .my_file {
   position: absolute;
   bottom: 0;
+  left: 0;
   outline: none;
   color: transparent;
   width: 100%;
   box-sizing: border-box;
   cursor: pointer;
   background-color: transparent;
-  background-position: 27px 1px;
-  padding: 18px 4px;
+  background-position: 187px 4px;
+  padding: 31px 0px;
   transition: 0.5s;
-  border-bottom: 0;
+  border-bottom: 1px solid #fff;
   background-repeat: no-repeat;
 }
 
@@ -198,7 +204,10 @@ a {
   visibility: hidden;
 }
 
-
+input[type="file"]:focus {
+  outline: 0;
+  border-bottom: 1px solid #fff;
+}
 
 .hide-mobile {
   display: none;
@@ -226,30 +235,32 @@ h5 {
   display: none;
 }
 .comming-soon {
-  border: 2px solid #fff;
+
   padding: 0.625rem 0.5rem;
-  margin: 3rem auto 1rem auto;
+
   line-height: initial;
   border-radius: 0.25rem;
   max-width: 60ch;
   display: flex;
   flex-wrap: wrap;
-
+  align-items: center;
 }
 
 .comming-soon h2 {
   font-size: 1.3rem;
   font-weight: 600;
+  margin-right: .9rem;
 }
 
-.comming-soon h2:first-of-type {
+.comming-soon h5 {
   display: block;
   width: fit-content;
-  margin: 0.2rem .125rem 0.2rem .7rem;
+  margin: 0.2rem .5rem 0.2rem 0rem;
   background-color: #65B79F;
   border-radius: 0.25rem;
   padding: 0.25rem 0.4rem;
   color: #FFFFFF;
+  text-align: center;
 }
 
 @media only screen and (min-width: 501px) {
