@@ -1,50 +1,262 @@
-.sidebarContainer {
-
-  border: 1px solid rgba(35, 36, 37, 0.19);
-
-  height: 510px;
-
-  margin-right: 10px;
-  padding: 40px 20px 0px 20px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
-  border-radius: 5px;
+.container {
+  padding: .7rem .7em;
 }
 
-ul {
-  list-style-type: none;
+.cardContainer {
+  margin: 0rem;
 }
 
-.mainclass {
+
+
+
+.hide-mobile {
+  display: none;
+}
+
+.hide-desktop {
   display: block;
-  margin: auto;
+}
+
+.deconnexion {
+  margin-right: 0em;
+}
+
+.bigTitle {
+  font-weight: bold;
+  font-size: 18px;
+  color: #6B7588;
+  margin: 0 0 .2em 0;
+}
+
+.mediumTitle {
+  font-weight: bold;
+  font-size: 12px;
+  color: #6B7588;
+  margin: 0 0 .2em 0;
+}
+
+.smallTitle {
+  color: #6B7588;
+  font-size: 12px;
+  padding: 0em;
+  margin: .2em 0 0 0;
+}
+
+.roundedImage {
+  border-radius: 50%;
+  width: 1.875em;
+  height: 1.875em;
+
+}
+
+.roundedImageEntreprise {
+
+  width: 2.5em;
+  height: 2.5em;
+  padding: 2.7em 0em 2.3em 1.25em;
+}
+
+.challengeText {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6B7588;
+  padding: 0px;
+}
+.mainclass {
+
+  display: block;
+  /*
   text-align: center;
-  padding-top: 255px;
+*/
 }
 
 .mainContainer {
   border: 1px solid rgba(35, 36, 37, 0.19);
-
-  height: 510px;
-
-  margin-left: 10px;
-  padding: 40px 20px 0px 20px;
+  margin: 0;
+  padding: 2rem;
   background: #FFFFFF;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
 
 }
-a{
-  text-decoration: #FFFFFF;
-  color: #060807;
+
+.bigCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #6B7588;
+  border-radius: 8px;
+  background: #F7F8FB;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
+  margin-bottom: 0px 0px 20px 0px;
+  width: 100%;
 }
-ul {
-  list-style-type: none;
-  padding-left: 0;
+.challenge {
+  padding-left: 20px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
 }
-li {
-  margin-bottom: 30px;
+
+.challengeAndVector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
+
+.smallCardForAction {
+  background: #FFFFFF;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+  margin: 0 0 1em 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
 .showCursor{
   cursor:pointer;
 }
+
+h2 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+  margin: .7rem;
+}
+
+.skillContainer {
+  text-align: center;
+  color: #6B7588;
+}
+
+.skillContainer2 {
+  display: none;
+}
+
+.comming-soon {
+
+  padding: 0.625rem 0.5rem;
+
+  line-height: initial;
+  border-radius: 0.25rem;
+  max-width: 60ch;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.comming-soon h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-right: .9rem;
+}
+
+.comming-soon h5 {
+  display: block;
+  width: fit-content;
+  margin: 0.2rem .5rem 0.2rem 0rem;
+  background-color: #65B79F;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.4rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+ .smartTitle {
+   font-size: 14px;
+   padding: 20px 20px 10px 20px;
+   font-weight: bold;
+   color: #6B7588;
+   text-align: left;
+   margin: 0;
+ }
+
+ .smallDescription {
+   text-align: justify;
+   padding: 0px 20px;
+   font-size: 13px;
+   margin: 0 0 10px 0;
+ }
+
+ .rail {
+   margin-left: 1.1em;
+   margin-right: 1.1em;
+ }
+
+ .description {
+   padding: 20px;
+   font-size: 13px;
+   text-align: justify;
+ }
+
+ .resizeImage {
+   width: 12px;
+   height: 12px;
+   padding: 3.8em 1.25em 3.8em 0em;
+ }
+
+ .resizeImage1 {
+   width: 12px;
+   height: 12px;
+   padding: 14px 20px 18px 20px;
+ }
+
+ .fixUsername {
+   padding: 6px 0px 6px 8px;
+   font-weight: bold;
+   color: #6B7588;
+ }
+
+ .pictureAndWorkstation {
+   display: flex;
+   flex-wrap: nowrap;
+ }
+
+ .smallCard {
+   background: #FFFFFF;
+
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+   text-align: center;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+ }
+
+ .smallCard1 {
+   background: #FFFFFF;
+   border: 1px solid rgba(35, 36, 37, 0.19);
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+   border-radius: 8px;
+   margin: 1rem 0rem;
+   text-align: center;
+   width: 100%;
+   display: flex;
+
+   flex-direction: row;
+   justify-content: space-between;
+
+ }
+
+ .workstation {
+   display: flex;
+   flex-direction: column;
+   padding: 2.2rem 0rem 2.2rem .9rem;
+   text-align: left;
+ }
+
+ a {
+   text-decoration: #FFFFFF;
+   color: #FFFFFF;
+ }

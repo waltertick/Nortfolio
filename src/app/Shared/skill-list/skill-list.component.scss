@@ -3,7 +3,7 @@
 
   background: #FFFFFF;
   /* mygreen */
-  
+
   border: 1px solid #65B79F;
   box-sizing: border-box;
   border-radius: 12px;
@@ -31,7 +31,7 @@ h2{
   border: .1px solid #65B79F;
   border-radius: 33px;
   /* (height of inner div) / 2 + padding */
-  
+
 }
 
 #progressbar>div {
@@ -50,7 +50,7 @@ h2{
   border: .1px solid #65B79F;
   border-radius: 33px;
   /* (height of inner div) / 2 + padding */
-  
+
 }
 
 #progressbar2>div {
@@ -88,7 +88,7 @@ h2{
   border: .1px solid #65B79F;
   border-radius: 33px;
   /* (height of inner div) / 2 + padding */
-  
+
 }
 
 #progressbar4>div {
@@ -124,23 +124,91 @@ ul {
 li {
   margin-bottom: 30px;
 }
-
-.mainclass {
-  display: block;
-  margin: auto;
-  text-align: center;
-  padding-top: 25px;
+.container {
+  padding: .7rem .7em;
+  color: #6B7588;
 }
 
+.cardContainer {
+  margin: 0rem;
+}
+
+.mainclass {
+
+  display: block;
+  /*
+  text-align: center;
+*/
+}
 .mainContainer {
   border: 1px solid rgba(35, 36, 37, 0.19);
-
-  height: 510px;
-
-  margin-left: 10px;
-  padding: 40px 20px 0px 20px;
+  margin: 0;
+  padding: 2rem;
   background: #FFFFFF;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
 
+}
+
+.loginButton {
+  cursor: pointer;
+  background: #65B79F;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+  color: #fff;
+  padding: 4px;
+  width: 120px;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: #FFFFFF;
+  color: #FFFFFF;
+}
+h2 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+  margin: .7rem;
+}
+
+.skillContainer {
+  text-align: center;
+  color: #6B7588;
+}
+
+.skillContainer2 {
+  display: none;
+}
+
+.comming-soon {
+
+  padding: 0.625rem 0.5rem;
+
+  line-height: initial;
+  border-radius: 0.25rem;
+  max-width: 60ch;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.comming-soon h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-right: .9rem;
+}
+
+.comming-soon h5 {
+  display: block;
+  width: fit-content;
+  margin: 0.2rem .5rem 0.2rem 0rem;
+  background-color: #65B79F;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.4rem;
+  color: #FFFFFF;
+  text-align: center;
 }
