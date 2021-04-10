@@ -83,6 +83,8 @@
 }
 h2 {
   font-size:18px;
+  color:#6B7588;
+
 }
 h5 {
   font-size: 14px;
@@ -90,7 +92,7 @@ h5 {
 }
 
 .skillContainer {
-  text-align: center;
+  text-align: left;
   color: #6B7588;
 }
 .bigCard {
@@ -128,8 +130,7 @@ h5 {
 
 .comming-soon {
 
-  padding: 0.625rem 0.5rem;
-
+  //padding: 0.625rem 0.5rem;
   line-height: initial;
   border-radius: 0.25rem;
   max-width: 60ch;
@@ -347,6 +348,10 @@ h5 {
   color: #6B7588;
   flex: 75%;
 }
+.skillContainer {
+  display: none;
+}
+
 
   .Profile2 {
     margin-top: 0px;
@@ -373,17 +378,7 @@ h5 {
     margin: 0 0 1.2rem 0;
     text-align: left;
   }
-  .comming-soon {
-    display: none;
-  }
 
-  .comming-soon h2 {
-    display: none;
-  }
-
-  .comming-soon h2:first-of-type {
-    display: none;
-  }
 }
 
 
