@@ -1,19 +1,4 @@
-/*
 
-.sidebarContainer {
-
-  border: 1px solid rgba(35, 36, 37, 0.19);
-
-  height: 510px;
-
-  margin-right: 10px;
-  padding: 40px 20px 0px 20px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
-  border-radius: 5px;
-}
-
-*/
 :root {
   /*Colors */
   --primary-color: #6B7588;
@@ -51,7 +36,7 @@
 .mainContainer {
   border: 1px solid rgba(35, 36, 37, 0.19);
   margin: 0;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
   background: #FFFFFF;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
@@ -142,9 +127,8 @@ span {
   height: 15rem;
   width: 15rem;
   position: relative;
-
    display: block;
-   margin:10%;
+   margin: 5% 10% 0% 15%;
    /*
   background-size: 100% 100%;
 
@@ -220,11 +204,12 @@ input[type="file"]:focus {
 
 h2 {
   font-size: 18px;
+  text-align: left;
 }
 
 h5 {
   font-size: 14px;
-  margin: .7rem;
+  margin: .7rem .7rem .7rem 0rem;
 }
 
 .skillContainer {
@@ -236,7 +221,7 @@ h5 {
 }
 .comming-soon {
 
-  padding: 0.625rem 0.5rem;
+  padding: 0.625rem 0.5rem 0.625rem 0;
 
   line-height: initial;
   border-radius: 0.25rem;
@@ -255,7 +240,7 @@ h5 {
 .comming-soon h5 {
   display: block;
   width: fit-content;
-  margin: 0.2rem .5rem 0.2rem 0rem;
+  margin: 0.2rem .5rem ;
   background-color: #65B79F;
   border-radius: 0.25rem;
   padding: 0.25rem 0.4rem;
@@ -267,7 +252,8 @@ h5 {
   font-size: 12px;
 }
 
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 381px) {
+  /*
   .container {
     padding: 2rem 2rem;
   }
@@ -281,9 +267,63 @@ h5 {
     font-size: 16px;
     margin: .7rem;
   }
+*/
+.uploadImage {
+
+  margin: 15% 10% 10% 15%;
 
 }
+}
 
+@media only screen and (min-width: 450px) {
+
+
+  .uploadImage {
+
+    margin: 15% 10% 10% 18%;
+
+  }
+}
+
+@media only screen and (min-width: 501px) {
+
+
+  .container {
+    padding: 2rem 2rem;
+  }
+
+
+  h2 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  h5 {
+    font-size: 16px;
+    margin: .7rem .7rem .7rem 0rem;
+  }
+
+  .uploadImage {
+
+    margin: 15% 10% 10% 20%;
+
+  }
+
+  form {
+    margin: 0 0 2rem 0;
+  }
+  .mainContainer {
+    padding: 1rem 4rem 4rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .uploadImage {
+
+    margin: 15% 10% 10% 29%;
+
+  }
+}
 @media only screen and (min-width: 750px) {
   .container {
     padding: 3rem 3rem;
@@ -292,11 +332,21 @@ h5 {
 
   h2 {
     font-size: 20px;
+    text-align: left;
   }
 
   h5 {
     font-size: 16px;
-    margin: .7rem;
+    margin: .7rem .7rem .7rem 0rem;
+  }
+
+  .spacer {
+    margin-bottom: 3.5rem;
+  }
+
+  .mainContainer {
+
+    padding: 1rem 8rem 8rem 8rem;
   }
 }
 
@@ -305,13 +355,23 @@ h5 {
     padding: 5rem 5rem;
   }
 
+  .mainContainer {
+    padding: 1rem 10rem 10rem 10rem;
+  }
+
+  .uploadImage {
+
+    margin: 15% 10% 10% 32%;
+
+  }
 
   h2 {
-    font-size: 20px;
+    font-size: 2rem;
+    text-align: left;
   }
 
   h5 {
-    font-size: 16px;
+    font-size: 1.2rem;
     margin: .7rem;
   }
 }
@@ -324,17 +384,50 @@ h5 {
     align-items: center;
   }
 
+  .settingSidebar {
+    border: 1px solid rgba(35, 36, 37, 0.19);
+    margin: 0 .9rem 0 0;
+    padding: 4.2rem 2rem 2rem 1rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+
+  }
+
   .container {
-    padding: 5rem 5rem;
+    padding: 3.5rem 3.5rem;
     display: flex;
   }
 
-
+  .mainContainer {
+    padding: 1rem 3rem 10rem 3rem;
+    width: 100%;
+  }
   .skillContainer2 {
+    display: block;
     text-align: left;
     color: #6B7588;
-    flex: 75%;
+    flex: 29.5%;
   }
+
+  .uploadImage {
+
+    margin: 15% 10% 10% 32%;
+
+  }
+
+  .skillContainer {
+    display: none;
+  }
+h2 {
+  margin: 0 0 2.5rem 0;
+  text-align: left;
+}
+
+.comming-soon h5 {
+  margin: 0 0 1.2rem 0;
+  text-align: left;
+}
 
   .Profile2 {
     margin-top: 0px;
@@ -368,116 +461,39 @@ h5 {
   }
 
   .comming-soon {
-    display: none;
-  }
-
-  .comming-soon h2 {
-    display: none;
-  }
-
-  .comming-soon h2:first-of-type {
-    display: none;
+    display: block;
   }
 }
 
 
 @media only screen and (min-width: 1281px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+ .mainContainer {
+   padding: 1rem 6rem 10rem 6rem;
+   width: 100%;
+ }
 
-  .container {
-    padding: 5rem 5rem;
-    display: flex;
-  }
+ .uploadImage {
 
-  .skillContainer2 {
-    text-align: left;
-    color: #6B7588;
-    flex: 60%;
-  }
+   margin: 15% 10% 10% 30%;
 
-  .Profile2 {
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 1.9rem;
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-  }
+ }
 
-  .Profile {
-    display: none;
-  }
-
-  .hide-desktop {
-    display: none;
-  }
-
-  .hide-mobile {
-    display: block;
-  }
-
-  h2 {
-    margin: 0 0 2.5rem 0;
-    text-align: left;
-  }
-
-  h5 {
-    margin: 0 0 1.2rem 0;
-    text-align: left;
-  }
 }
 
 @media only screen and (min-width: 1351px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .container {
-    padding: 5rem 5rem;
-    display: flex;
-  }
 
-  .skillContainer2 {
-    text-align: left;
-    color: #6B7588;
-    flex: 50%;
-  }
+ .mainContainer {
+   padding: 1rem 8rem 10rem 8rem;
+   width: 100%;
+ }
 
-  .Profile2 {
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-  }
+ .uploadImage {
 
-  .Profile {
-    display: none;
-  }
+   margin: 15% 10% 10% 32%;
 
-  .hide-desktop {
-    display: none;
-  }
+ }
 
-  .hide-mobile {
-    display: block;
-  }
 
-  h2 {
-    margin: 0 0 2rem 0;
-    text-align: left;
-  }
-
-  h5 {
-    margin: 0 0 1.2rem 0;
-    text-align: left;
-  }
-}
+ }
 
