@@ -34,5 +34,6 @@ export class ReadMoreComponent implements AfterViewInit {
       this.isCollapsed = true;
       this.isCollapsable = true;
     }
+    console.log(this.dataLength);
   }
 }

@@ -127,7 +127,7 @@ import { Toast } from '../../models/toast.interface';
 export class ToasterComponent {
   @Input() toast: Toast;
   @Input() i: number;
-  dataLength:boolean;
+  @Input() dataLength:boolean;
 
   @Output() remove = new EventEmitter<number>();
 }

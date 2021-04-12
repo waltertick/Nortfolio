@@ -39,10 +39,11 @@
                         </label>
 
                       </div>
-                      <div class="invalid-feedback" *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                        <div *ngIf="f.email.errors.required">Email is required</div>
-                        <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
-                      </div>
+                      
+                        <div class="invalid-feedback" *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                          <div *ngIf="f.email.errors.required">Email is required</div>
+                          <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                        </div>
                       <div class="spacer"></div>
                       <div class="field">
                         <input type="password" required formControlName="password" name="Password" id="Password" placeholder=" "

@@ -262,6 +262,10 @@ h5 {
   color: #FFFFFF;
   text-align: center;
 }
+.invalid-feedback {
+  color: tomato;
+  font-size: 12px;
+}
 
 @media only screen and (min-width: 501px) {
   .container {

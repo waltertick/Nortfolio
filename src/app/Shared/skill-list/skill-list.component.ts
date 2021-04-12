@@ -1,3 +1,4 @@
+import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { HomeService } from './../../services/home.service';
 import { Skill } from './../../models/Skill.model';
@@ -10,10 +11,13 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./skill-list.component.scss']
 })
 export class SkillListComponent implements OnInit {
-
+    skillForm: FormGroup;
+   submitted=false;
     skills: Skill [] ;
     skillsSubscription: Subscription;
+
   constructor(private homesService: HomeService,
+               private formBuilder:FormBuilder,
               private router: Router) { }
 
   ngOnInit() {
@@ -24,7 +28,7 @@ export class SkillListComponent implements OnInit {
     );
     this.homesService.emitSkills();
   }
-
+  get f() { return this.skillForm.controls; }
   onViewSkill(id: number) {
     this.router.navigate(['/home','view', id]);
   }
