@@ -6,9 +6,6 @@
   margin: 0rem;
 }
 
-
-
-
 .hide-mobile {
   display: none;
 }
@@ -100,7 +97,7 @@
 }
 .resizeImg {
   height: .6rem;
-  
+
 }
 .challengeAndVector {
   /*
@@ -283,7 +280,7 @@ h5 {
   color: #fff;
   padding: 4px;
   width: 120px;
-  
+
   font-weight: bold;
 }
 .fixInCenterButton {
@@ -372,4 +369,169 @@ textarea {
 
 .setOnlyLabelName {
   color : #65B79F;
+}
+
+@media only screen and (min-width: 501px) {
+
+
+  .container {
+    padding: 2rem 2rem;
+  }
+
+
+  h2 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  h5 {
+    font-size: 16px;
+    margin: .7rem .7rem .7rem 0rem;
+  }
+
+
+
+  form {
+    margin: 0 0 2rem 0;
+  }
+
+  .mainContainer {
+    padding: 1rem 4rem 4rem 4rem;
+  }
+}
+
+
+@media only screen and (min-width: 750px) {
+  .container {
+    padding: 3rem 3rem;
+  }
+
+
+  h2 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  h5 {
+    font-size: 16px;
+    margin: .7rem .7rem .7rem 0rem;
+  }
+
+  .spacer {
+    margin-bottom: 3.5rem;
+  }
+
+  .mainContainer {
+
+    padding: 1rem 8rem 8rem 8rem;
+  }
+}
+
+@media only screen and (min-width: 951px) {
+  .container {
+    padding: 5rem 5rem;
+  }
+
+  .mainContainer {
+    padding: 1rem 10rem 10rem 10rem;
+  }
+
+
+
+  h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    margin: .7rem;
+  }
+}
+
+@media only screen and (min-width: 1101px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .settingSidebar {
+    border: 1px solid rgba(35, 36, 37, 0.19);
+    margin: 0 .9rem 0 0;
+    padding: .9rem 2rem 2rem 1rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+
+  }
+
+  .container {
+    padding: 3.5rem 3.5rem;
+    display: flex;
+  }
+
+  .mainContainer {
+    padding: 1rem 3rem 10rem 3rem;
+    width: 100%;
+  }
+
+  .skillContainer2 {
+    display: block;
+    text-align: left;
+    color: #6B7588;
+    flex: 33%;
+  }
+
+
+  .skillContainer {
+    display: none;
+  }
+
+  h2 {
+    margin: 0 0 1.5rem 0;
+    text-align: left;
+  }
+
+  .comming-soon h5 {
+    margin: 0 0 1.2rem 0;
+    text-align: left;
+  }
+
+  h2 {
+    margin: 0 0 1.5rem 0;
+    text-align: left;
+  }
+
+  h5 {
+    margin: 0 0 1.2rem 0;
+    text-align: left;
+  }
+
+  .comming-soon {
+    display: block;
+  }
+}
+
+
+@media only screen and (min-width: 1281px) {
+  .mainContainer {
+    padding: 1rem 6rem 10rem 6rem;
+    width: 100%;
+  }
+
+
+}
+
+@media only screen and (min-width: 1351px) {
+
+
+  .mainContainer {
+    padding: 1rem 8rem 10rem 8rem;
+    width: 100%;
+  }
+
+
+
 }

@@ -10,7 +10,11 @@
   margin-top: 26px;
   margin-bottom: 26px;
 }
-
+button {
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+}
 .preferal_bg {
   background-repeat: no-repeat;
   height: 200px;
@@ -177,7 +181,7 @@ span {
     margin-right: 50px;
     display: flex;
     flex-direction: row;
-  
+
   }
   .header {
     height: 50px;

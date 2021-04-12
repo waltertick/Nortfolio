@@ -24,15 +24,17 @@
       <div class="mainclass">
         <form [formGroup]="userProfileForm" (ngSubmit)="onSubmit()">
 
-
+            <div>
               <div class="uploadImage">
+
                 <img [src]="urlLink" alt="Profile image">
+
                 <input type="file" class="my_file" style="background-image: url('../assets/Images/cameraGroup.png');"
                   (change)="selectFiles($event)">
               </div>
 
+              </div>
 
-             <div class="spacer"></div>
                       <div class="field">
                         <input type="email" formControlName="email" name="email" id="email" placeholder=" "
                           [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
