@@ -147,9 +147,33 @@ h2{
   font-weight: bold;
 }
 
-a {
-  text-decoration: #FFFFFF;
-  color: #FFFFFF;
+a:link {
+  color: #6B7588;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+a:visited {
+  color: #6B7588;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+
+
+a:hover {
+  color: #1e6d55;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+a:active {
+  color: #65B79F;
+  background-color: transparent;
+  text-decoration: none;
 }
 h2 {
   font-size: 18px;
@@ -164,6 +188,7 @@ h2 {
 h5 {
   font-size: 13px;
   margin: .7rem;
+  font-weight: normal;
 }
 
 .skillContainer {
@@ -177,11 +202,13 @@ h5 {
 
 .comming-soon {
 
+  /*
   padding: 0.625rem 0.5rem 0.625rem 0rem;
 
   line-height: initial;
   border-radius: 0.25rem;
   max-width: 60ch;
+  */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -192,7 +219,7 @@ h5 {
   font-weight: 600;
   margin-right: .9rem;
 }
-
+/*
 .comming-soon h5 {
   display: block;
   width: fit-content;
@@ -203,6 +230,7 @@ h5 {
   color: #FFFFFF;
   text-align: center;
 }
+*/
   h3 {
     text-align: center;
     margin: 1.3rem 0;
@@ -416,7 +444,7 @@ h5 {
   }
 
   h5 {
-    font-size: 1.2rem;
+   // font-size: 1.2rem;
     margin: .7rem;
   }
 }

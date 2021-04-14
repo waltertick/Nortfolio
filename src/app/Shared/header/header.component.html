@@ -3,13 +3,13 @@
 
 
 
-      <a routerLink="/home" class="logo">Preferral</a>
+     <div class="logo"> <a routerLink="/home" >Preferral</a></div>
       <div class="navbar">
       <div class="hide-desktop ">
-        <a class="showCursor changeToBold"  *ngIf="isAuth" routerLink="/home">Home</a>
+        <a class="showCursor "  *ngIf="isAuth" (click)="updateHomeColor()"  [style.color] ="colorH" [style.fontWeight]="fontWeightH" routerLink="/home" >Home</a>
       </div>
       <div class="hide-desktop">
-        <a class="showCursor" *ngIf="isAuth" routerLink="/setting">Setting</a>
+        <a class="showCursor" *ngIf="isAuth" (click)="updateSettingColor()"  [style.color] ="colorS" [style.fontWeight]="fontWeightS" routerLink="/setting">Setting</a>
       </div>
       <div class="logout" (click)="onSignOut()"  >
         <a *ngIf="isAuth" routerLink="auth/signin">

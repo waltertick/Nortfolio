@@ -4,18 +4,18 @@
   <div class="skillContainer">
     <h2>Dashboard </h2>
     <div class="comming-soon">
-      <h5> <a routerLink="/setting">User profile</a> </h5>
-      <h5><a routerLink="/setting/experience">Add experiences</a></h5>
-      <h5><a routerLink="/setting/skill">Add skill</a></h5>
+      <h5> <a routerLink="/setting" (click)="updateUserColor()"  [style.color] ="colorU" [style.fontWeight]="fontWeightU">User profile</a> </h5>
+      <h5><a routerLink="/setting/experience" (click)="updateExperienceColor()"  [style.color] ="colorE" [style.fontWeight]="fontWeightE">Add experiences</a></h5>
+      <h5><a routerLink="/setting/skill" (click)="updateSkillColor()"  [style.color] ="colorS" [style.fontWeight]="fontWeightS">Add skill</a></h5>
       </div>
     </div>
   <!--For desktop only-->
   <div class="skillContainer2 settingSidebar">
     <h2>Dashboard </h2>
     <div class="comming-soon">
-        <h5> <a routerLink="/setting">User profile</a> </h5>
-        <h5><a routerLink="/setting/experience">Add experiences</a></h5>
-        <h5><a routerLink="/setting/skill">Add skill</a></h5>
+        <h5> <a routerLink="/setting" (click)="updateUserColor()"  [style.color] ="colorU" [style.fontWeight]="fontWeightU">User profile</a> </h5>
+        <h5><a routerLink="/setting/experience" (click)="updateExperienceColor()"  [style.color] ="colorE" [style.fontWeight]="fontWeightE">Add experiences</a></h5>
+        <h5><a routerLink="/setting/skill" (click)="updateSkillColor()"  [style.color] ="colorS" [style.fontWeight]="fontWeightS">Add skill</a></h5>
     </div>
   </div>
 

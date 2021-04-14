@@ -11,6 +11,9 @@ padding: 0;
   cursor:pointer;
   padding:0px;
 }
+.logo a {
+  color: #65B79F;
+}
 .changeToBold {
   font-weight: bold;
 }
@@ -19,11 +22,36 @@ padding: 0;
   flex-direction: row;
   justify-content: space-between;
 }
-a {
+a:link {
+  color: #6B7588;
+  background-color: transparent;
   text-decoration: none;
-  color: inherit;
 }
-.logout{
+
+
+a:visited {
+  color: #6B7588;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+
+
+a:hover {
+  color: #1e6d55;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+a:active {
+  color: #65B79F ;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.logout {
   cursor:pointer;
 }
 
@@ -59,7 +87,7 @@ a {
 
 .headerContent2 {
   padding: 12px 10px 12px 10px;
-  
+
 
 }
 
