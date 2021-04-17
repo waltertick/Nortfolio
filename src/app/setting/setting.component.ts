@@ -14,12 +14,15 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class SettingComponent implements OnInit {
   userProfileForm: FormGroup;
    submitted=false;
+   ids: Array<String> = ['User profile', 'Add skill', 'Add experiences'];
+   
   errorMessage: string;
   hide:boolean = true;
   urlLink:string="assets/Images/pexels-2.jpg";
   colorE:string;
 colorU:string;
 colorS:string;
+
 fontWeightU:string="bold";
 fontWeightS:string;
 fontWeightE:string;

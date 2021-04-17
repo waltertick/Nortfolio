@@ -1,7 +1,7 @@
 import { ExperienceListComponent } from './Shared/experience-list/experience-list.component';
 import { SigninComponent } from './Auth/signin/signin.component';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { SignupComponent } from './Auth/signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { SettingComponent } from './setting/setting.component';
@@ -10,6 +10,11 @@ import { UserFormComponent } from './Shared/user-form/user-form.component';
 import { AuthCheckredirectionComponent } from './Shared/auth-checkredirection/auth-checkredirection.component';
 import { SkillListComponent } from './Shared/skill-list/skill-list.component';
 
+const routerOptions: ExtraOptions = {
+  scrollPositionRestoration: 'enabled',
+  anchorScrolling: 'enabled',
+  scrollOffset: [0, 64],
+};
 
 const routes: Routes = [
   {path: 'auth/signin', component : SigninComponent},
@@ -25,7 +30,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

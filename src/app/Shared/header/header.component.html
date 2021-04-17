@@ -3,13 +3,13 @@
 
 
 
-     <div class="logo"> <a routerLink="/home" >Preferral</a></div>
+     <div class="logo"> <a routerLink="/home" >Nortfolio</a></div>
       <div class="navbar">
       <div class="hide-desktop ">
         <a class="showCursor "  *ngIf="isAuth" (click)="updateHomeColor()"  [style.color] ="colorH" [style.fontWeight]="fontWeightH" routerLink="/home" >Home</a>
       </div>
       <div class="hide-desktop">
-        <a class="showCursor" *ngIf="isAuth" (click)="updateSettingColor()"  [style.color] ="colorS" [style.fontWeight]="fontWeightS" routerLink="/setting">Setting</a>
+        <a class="showCursor" *ngIf="isAuth" (click)="updateSettingColor()"  [style.color] ="colorS" [style.fontWeight]="fontWeightS" routerLink="/setting">Settings</a>
       </div>
       <div class="logout" (click)="onSignOut()"  >
         <a *ngIf="isAuth" routerLink="auth/signin">
@@ -32,13 +32,13 @@
 
     <div class="navbar">
 
-      <span routerLink="home" class="logo">Preferral</span>
+      <span routerLink="home" class="logo">Nortfolio</span>
       <!--
       <div class="hide-desktop">
         <span class="showCursor" *ngIf="isAuth" routerLink="home">Home</span>
       </div>
       <div class="hide-desktop">
-        <span class="hide-desktop showCursor" *ngIf="isAuth" routerLink="setting">Setting</span>
+        <span class="hide-desktop showCursor" *ngIf="isAuth" routerLink="setting">Settings</span>
       </div>
       <div *ngIf="isAuth" (click)="onSignOut()" routerLink="auth/signin" class="logout">
         <img class="hide-desktop" src="../assets/Images/Vector_power.svg" alt="Se Déconnecter">

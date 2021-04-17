@@ -19,7 +19,7 @@ import 'firebase/functions';   // for cloud functions
 export class AppComponent implements OnInit {
     dataLength: boolean;
     isAuth: boolean=false;
-
+    ids: Array<String> = ['user', 'skill', 'experience'];
   data: string;
   @Input() toast: Toast;
 

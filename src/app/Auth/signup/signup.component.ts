@@ -51,7 +51,7 @@ export class SignupComponent implements OnInit {
     this.authService.createNewUser(email, password).then(
       () => {
         this.router.navigate(['/home']);
-         this.toaster.show('success', 'Welcome!', 'Please click on setting to be able to add one or more skills one or more experience(s) and finally put an picture and user name  ',5000);
+         this.toaster.show('success', 'Welcome!', 'Please click on settings to be able to add one or more skills one or more experience(s) and finally put an picture and user name  ',5000);
       },
       (error)  => {
         this.errorMessage = error;
