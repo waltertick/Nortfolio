@@ -4,7 +4,7 @@
   <div class="skillContainer">
 
     <div class="comming-soon">
-      <h5> <a [routerLink]='"."' [fragment]="ids[0]" (click)="updateUserColor()" [style.color]="colorU"
+      <h5> <a routerLink="/setting" (click)="updateUserColor()" [style.color]="colorU"
           [style.fontWeight]="fontWeightU">User profile</a> </h5>
       <h5><a [routerLink]='"."' [fragment]="ids[1]" (click)="updateSkillColor()" [style.color]="colorS"
           [style.fontWeight]="fontWeightS">Add skill</a></h5>
@@ -17,7 +17,7 @@
     <div class="settingSidebar">
 
       <div class="comming-soon">
-        <h5> <a [routerLink]='"."' [fragment]="ids[0]" (click)="updateUserColor()" [style.color]="colorU"
+        <h5> <a routerLink="/setting" (click)="updateUserColor()" [style.color]="colorU"
             [style.fontWeight]="fontWeightU">User profile</a> </h5>
         <h5><a [routerLink]='"."' [fragment]="ids[1]" (click)="updateSkillColor()" [style.color]="colorS"
             [style.fontWeight]="fontWeightS">Add skill</a></h5>
@@ -26,7 +26,7 @@
       </div>
     </div>
   </div>
-  <div class="superMainContainer" [attr.id]='ids[0]'>
+  <div class="superMainContainer" >
     <div class="fixAllContainerInCenter">
       <div class="containerU" >
         <div class="mainContainerU" >
