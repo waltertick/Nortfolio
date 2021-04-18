@@ -15,7 +15,7 @@ export class SettingComponent implements OnInit {
   userProfileForm: FormGroup;
    submitted=false;
    ids: Array<String> = ['User profile', 'Add skill', 'Add experiences'];
-   
+
   errorMessage: string;
   hide:boolean = true;
   urlLink:string="assets/Images/pexels-2.jpg";
@@ -85,9 +85,10 @@ clickerS:number=0;
   updateUserColor(){
       this.colorU="#65B79F";
       this.fontWeightU="bold";
-      this.clickerU+=1;
+      this.clickerU=+1;
       this.clickerE=0;
       this.clickerS=0;
+
       if((this.clickerU>0)&&(this.clickerE==0)&&(this.clickerS==0)){
         this.colorE="#6B7588";
         this.fontWeightE="normal";
@@ -98,9 +99,10 @@ clickerS:number=0;
      updateSkillColor(){
       this.colorS="#65B79F";
       this.fontWeightS="bold";
-      this.clickerS+=1;
+      this.clickerS=+1;
       this.clickerE=0;
       this.clickerU=0;
+      this.ids[1]=this.ids[1] + this.clickerU.toString();
       if((this.clickerS>0)&&(this.clickerE==0)&&(this.clickerU==0)){
         this.colorE="#6B7588";
         this.fontWeightE="normal";
@@ -112,9 +114,10 @@ clickerS:number=0;
     updateExperienceColor(){
       this.colorE="#65B79F";
       this.fontWeightE="bold";
-      this.clickerE+=1;
+      this.clickerE=+1;
       this.clickerS=0;
       this.clickerU=0;
+      this.ids[2]=this.ids[2] + this.clickerU.toString();
       if((this.clickerE>0)&&(this.clickerS==0)&&(this.clickerU==0)){
         this.colorS="#6B7588";
         this.fontWeightS="normal";

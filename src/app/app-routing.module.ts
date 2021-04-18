@@ -18,12 +18,12 @@ const routerOptions: ExtraOptions = {
 
 const routes: Routes = [
   {path: 'auth/signin', component : SigninComponent},
-  {path: 'setting/skill', component : SkillListComponent},
+  {path: 'settings/skill', component : SkillListComponent},
   {path: 'auth/check', component : AuthCheckredirectionComponent},
-  {path: 'setting/experience', component : ExperienceListComponent},
+  {path: 'settings/experience', component : ExperienceListComponent},
   {path: 'auth/signup', component: SignupComponent},
   {path: 'home', canActivate: [AuthGuardService], component: HomeComponent},
-  {path: 'setting', canActivate: [AuthGuardService], component: SettingComponent },
+  {path: 'settings', canActivate: [AuthGuardService], component: SettingComponent },
 
   {path: '',redirectTo: 'auth/check',pathMatch: 'full'},
   {path: '**',redirectTo: 'auth/check'}
