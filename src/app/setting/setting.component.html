@@ -26,220 +26,223 @@
       </div>
     </div>
   </div>
-  <div class="superMainContainer">
-    <div class="mainContainerU">
-      <div class="mainclassU" [attr.id]='ids[0]'>
-        <form [formGroup]="userProfileForm" (ngSubmit)="onSubmit()">
+  <div class="superMainContainer" [attr.id]='ids[0]'>
+    <div class="fixAllContainerInCenter">
+      <div class="containerU" >
+        <div class="mainContainerU" >
+          <div class="mainclassU"  >
+            <form [formGroup]="userProfileForm" (ngSubmit)="onSubmit()" >
 
-          <div>
-            <div class="uploadImage">
-
-              <img [src]="urlLink" alt="Profile image">
-
-              <input type="file" class="my_file" style="background-image: url('../assets/Images/cameraGroup.png');"
-                (change)="selectFiles($event)">
-
-            </div>
-            <div class="userName">
-              <span> ELVIS TICK TICK </span>
-            </div>
-          </div>
-
-          <div class="field">
-            <input type="email" formControlName="email" name="email" id="email" placeholder=" "
-              [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
-            <label for="email"><img class="resizeImg" src="../assets/Images/userIcon.svg" alt="usericon">
-              <span class="setOnlyLabelName"> USERNAME </span>
-            </label>
-
-          </div>
-
-          <div class="invalid-feedback" *ngIf="submitted && f.email.errors" class="invalid-feedback">
-            <div *ngIf="f.email.errors.required">Email is required</div>
-            <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
-          </div>
-          <div class="spacer"></div>
-          <div class="field">
-            <input type="password" required formControlName="password" name="Password" id="Password" placeholder=" "
-              [type]=" hide ?'password':'text'" [ngClass]="{ 'is-invalid': submitted && f.password.errors}">
-            <label for="Password">
-
-              <img class="resizeImg" src="../assets/Images/password.svg" alt="usericon">
-              <span class="setOnlyLabelName"> PASSWORD </span>
-
-            </label>
-            <div class="imgPosition">
-              <i class="material-icons resizeImg imgClass changeColor" matSuffix (click)="hide =!hide">
-                {{hide ? 'visibility': 'visibility_off'}}
-              </i>
-            </div>
-          </div>
-
-          <div class="invalid-feedback" *ngIf="submitted && f.password.errors">
-            <div *ngIf="f.password.errors.required">Password is required</div>
-            <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
-          </div>
-          <div class="spacer"></div>
-          <button type="submit" class="loginButton">
-            Save changes
-          </button>
-
-        </form>
-      </div>
-    </div>
-    <!--     place of skill-->
-    <div class="containerS" [attr.id]='ids[1]'>
-
-
-
-      <div class="mainContainerS">
-        <div class="mainclassS">
-          <div class="smallCardS">
-
-            <div class="progressBar">
-              <h2>Maitrise du Html 5</h2>
-              <div class="progressBarAndImage">
-                <div id="progressbar">
-                  <div>96%</div>
-                </div>
-                <img class="setImage" src="../assets/Images/Group1.png" alt="usericon">
-              </div>
-            </div>
-
-          </div>
-          <div class="smallCardS">
-
-            <div class="progressBar">
-              <h2>Maitrise du Css 3</h2>
-              <div class="progressBarAndImage">
-                <div id="progressbar2">
-                  <div>90%</div>
-                </div>
-                <img class="setImage" src="../assets/Images/Group2.png" alt="usericon">
-              </div>
-            </div>
-
-          </div>
-          <div class="smallCardS">
-
-            <div class="progressBar">
-              <h2>Maitrise du Javascript </h2>
-              <div class="progressBarAndImage">
-                <div id="progressbar3">
-                  <div>98%</div>
-                </div>
-                <img class="setImage" src="../assets/Images/Group3.png" alt="usericon">
-              </div>
-            </div>
-
-          </div>
-          <div class="smallCardS">
-
-            <div class="progressBar">
-              <h2>Maitrise d'Angular</h2>
-              <div class="progressBarAndImage">
-                <div id="progressbar4">
-                  <div>94%</div>
-                </div>
-                <img class="setImage" src="../assets/Images/Group4.png" alt="usericon">
-              </div>
-            </div>
-
-          </div>
-          <div class="verySmallSpacer"></div>
-          <div class="smallCardAddS">
-            <h3><span class="setOnlyLabelName"> Add skill </span></h3>
-            <form>
-
-              <div class="verySmallSpacer"></div>
-              <div class="fixWidthOfInputAndTextarea">
-                <label for="email"><span class="setOnlyLabelName"> Skill name : </span>
-                </label>
-                <input type="text" formControlName="email" name="email">
-              </div>
-
-              <div class="verySmallSpacer"></div>
               <div>
-                <label for="email"><span class="setOnlyLabelName"> Skill level % (between 1 and 100): </span>
-                </label>
-                <input type="number" id="quantity" name="quantity" min="1" max="100">
-              </div>
-              <div class="verySmallSpacer"></div>
+                <div class="uploadImage">
 
+                  <img [src]="urlLink" alt="Profile image">
+
+                  <input type="file" class="my_file" style="background-image: url('../assets/Images/cameraGroup.png');"
+                    (change)="selectFiles($event)">
+
+                </div>
+                <div class="userName">
+                  <span> ELVIS TICK TICK </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <input type="email" formControlName="email" name="email" id="email" placeholder=" "
+                  [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                <label for="email"><img class="resizeImg" src="../assets/Images/userIcon.svg" alt="usericon">
+                  <span class="setOnlyLabelName"> USERNAME </span>
+                </label>
+
+              </div>
+
+              <div class="invalid-feedback" *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required">Email is required</div>
+                <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+              </div>
+              <div class="spacer"></div>
+              <div class="field">
+                <input type="password" required formControlName="password" name="Password" id="Password" placeholder=" "
+                  [type]=" hide ?'password':'text'" [ngClass]="{ 'is-invalid': submitted && f.password.errors}">
+                <label for="Password">
+
+                  <img class="resizeImg" src="../assets/Images/password.svg" alt="usericon">
+                  <span class="setOnlyLabelName"> PASSWORD </span>
+
+                </label>
+                <div class="imgPosition">
+                  <i class="material-icons resizeImg imgClass changeColor" matSuffix (click)="hide =!hide">
+                    {{hide ? 'visibility': 'visibility_off'}}
+                  </i>
+                </div>
+              </div>
+
+              <div class="invalid-feedback" *ngIf="submitted && f.password.errors">
+                <div *ngIf="f.password.errors.required">Password is required</div>
+                <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+              </div>
+              <div class="spacer"></div>
+              <button type="submit" class="loginButton">
+                Save changes
+              </button>
 
             </form>
           </div>
-          <div class="verySmallSpacer"></div>
-          <div class="fixInCenterButton">
-            <button>
-              <div type="submit" class="addButton">
-                Add
-              </div>
-            </button>
-            <button>
-              <div type="submit" class="saveButton">
-                Saves changes
-              </div>
-            </button>
-          </div>
         </div>
       </div>
+      <!--     place of skill-->
+      <div class="containerS" [attr.id]='ids[1]'>
 
 
 
-    </div>
+        <div class="mainContainerS" >
+          <div class="mainclassS" >
+            <div class="smallCardS">
 
-    <!--     place of experince-->
-    <div class="containerE" [attr.id]='ids[2]'>
-
-
-      <div class="mainContainerE">
-        <div class="mainclassE">
-
-          <div class="bigCard">
-            <div class="smallCardE">
-              <div class="pictureAndWorkstation">
-                <img class="roundedImageEntreprise" src="../assets/Images/enterpri 1.png" alt="Photo de profil">
-                <div class="fixWorkstation">
-                  <div class="workstation">
-                    <span class="bigTitle">DevelopperCompany</span>
-                    <span class="mediumTitle">Frontend Developper & UI Design</span>
-                    <span class="smallTitle">Juin 2019 -Septembre 2020</span>
+              <div class="progressBar">
+                <h2>Maitrise du Html 5</h2>
+                <div class="progressBarAndImage">
+                  <div id="progressbar">
+                    <div>96%</div>
                   </div>
+                  <img class="setImage" src="../assets/Images/Group1.png" alt="usericon">
                 </div>
               </div>
-              <img class="resizeImage" src="../assets/Images/VectorFleche.svg" alt="Voir Plus">
-            </div>
-            <div class="description">
-              Lorem ipsum dolot, consectetur adipiscing elit. set Diam amet, nulla mi ultricies pellentesque lo
-              nhjfdshhjhhfh
-              bortis.
-              Nisl hac adipiscing adipiscing facilisi at net heh le defi galiquam. Libero posuere tempus, orci ante
-              pulvinar
-              viverra
-              eget. Pellentesque in congue at semper.
-            </div>
 
-            <div class="rail">
-              <div class="smallCardForAction">
-                <span class="smartTitle">Coder une application de fast food</span>
-                <p class="smallDescription">Lorem ipsum dolor sit ametje suis en plein je paeeee , consectetur
-                  adipiscing
-                  elit. tu
-                  as</p>
-                <div class="challengeAndVector">
-                  <div class="challenge">
-                    <span class="challengeText">Challenge</span>
-                    <img class="resizeImg" src="../assets/Images/staricon.svg" alt="">
+            </div>
+            <div class="smallCardS">
+
+              <div class="progressBar">
+                <h2>Maitrise du Css 3</h2>
+                <div class="progressBarAndImage">
+                  <div id="progressbar2">
+                    <div>90%</div>
                   </div>
-                  <!--
-                    <img class="resizeImage1" src="../assets/Images/VectorFleche.svg" alt="">
-                      -->
+                  <img class="setImage" src="../assets/Images/Group2.png" alt="usericon">
                 </div>
               </div>
+
+            </div>
+            <div class="smallCardS">
+
+              <div class="progressBar">
+                <h2>Maitrise du Javascript </h2>
+                <div class="progressBarAndImage">
+                  <div id="progressbar3">
+                    <div>98%</div>
+                  </div>
+                  <img class="setImage" src="../assets/Images/Group3.png" alt="usericon">
+                </div>
+              </div>
+
+            </div>
+            <div class="smallCardS">
+
+              <div class="progressBar">
+                <h2>Maitrise d'Angular</h2>
+                <div class="progressBarAndImage">
+                  <div id="progressbar4">
+                    <div>94%</div>
+                  </div>
+                  <img class="setImage" src="../assets/Images/Group4.png" alt="usericon">
+                </div>
+              </div>
+
+            </div>
+            <div class="verySmallSpacer"></div>
+            <div class="smallCardAddS">
+              <h3><span class="setOnlyLabelName"> Add skill </span></h3>
+              <form>
+
+                <div class="verySmallSpacer"></div>
+                <div class="fixWidthOfInputAndTextarea">
+                  <label for="email"><span class="setOnlyLabelName"> Skill name : </span>
+                  </label>
+                  <input type="text" formControlName="email" name="email">
+                </div>
+
+                <div class="verySmallSpacer"></div>
+                <div>
+                  <label for="email"><span class="setOnlyLabelName"> Skill level % (between 1 and 100): </span>
+                  </label>
+                  <input type="number" id="quantity" name="quantity" min="1" max="100">
+                </div>
+                <div class="verySmallSpacer"></div>
+
+
+              </form>
+            </div>
+            <div class="verySmallSpacer"></div>
+            <div class="fixInCenterButton">
+              <button>
+                <div type="submit" class="addButton">
+                  Add
+                </div>
+              </button>
+              <button>
+                <div type="submit" class="saveButton">
+                  Saves changes
+                </div>
+              </button>
             </div>
           </div>
-          <!--
+        </div>
+
+
+
+      </div>
+
+      <!--     place of experince-->
+      <div class="containerE" [attr.id]='ids[2]'>
+
+
+        <div class="mainContainerE" >
+          <div class="mainclassE" >
+
+            <div class="bigCard">
+              <div class="smallCardE">
+                <div class="pictureAndWorkstation">
+                  <img class="roundedImageEntreprise" src="../assets/Images/enterpri 1.png" alt="Photo de profil">
+                  <div class="fixWorkstation">
+                    <div class="workstation">
+                      <span class="bigTitle">DevelopperCompany</span>
+                      <span class="mediumTitle">Frontend Developper & UI Design</span>
+                      <span class="smallTitle">Juin 2019 -Septembre 2020</span>
+                    </div>
+                  </div>
+                </div>
+                <img class="resizeImage" src="../assets/Images/VectorFleche.svg" alt="Voir Plus">
+              </div>
+              <div class="description">
+                Lorem ipsum dolot, consectetur adipiscing elit. set Diam amet, nulla mi ultricies pellentesque lo
+                nhjfdshhjhhfh
+                bortis.
+                Nisl hac adipiscing adipiscing facilisi at net heh le defi galiquam. Libero posuere tempus, orci ante
+                pulvinar
+                viverra
+                eget. Pellentesque in congue at semper.
+              </div>
+
+              <div class="rail">
+                <div class="smallCardForAction">
+                  <span class="smartTitle">Coder une application de fast food</span>
+                  <p class="smallDescription">Lorem ipsum dolor sit ametje suis en plein je paeeee , consectetur
+                    adipiscing
+                    elit. tu
+                    as</p>
+                  <div class="challengeAndVector">
+                    <div class="challenge">
+                      <span class="challengeText">Challenge</span>
+                      <img class="resizeImg" src="../assets/Images/staricon.svg" alt="">
+                    </div>
+                    <!--
+                    <img class="resizeImage1" src="../assets/Images/VectorFleche.svg" alt="">
+                      -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--
             <div class="smallCard1">
               <div class="pictureAndWorkstation">
                 <img class="roundedImageEntreprise" src="../assets/Images/brand 1.png" alt="Photo de profil">
@@ -254,81 +257,81 @@
             </div>
             -->
 
-        </div>
+          </div>
 
-        <div class="smallCardAdd">
-          <h3><span class="setOnlyLabelName"> Add experience </span></h3>
-          <form>
-            <div>
-              <label for="email"><span class="setOnlyLabelName"> Number of stars (between 1 and 5): </span>
-              </label>
-              <input type="number" id="quantity" name="quantity" min="1" max="5">
-            </div>
-            <div class="verySmallSpacer"></div>
-            <div class="fixWidthOfInputAndTextarea">
-              <label for="email"><span class="setOnlyLabelName"> Date:</span>
-              </label>
-              <input type="date" id="datemax" name="datemax" max="1979-12-31">
-              <span class="setOnlyLabelName"> - </span>
-              <input type="date" id="datemin" name="datemin" min="2000-01-02">
-            </div>
-            <div class="verySmallSpacer"></div>
-            <div class="fixWidthOfInputAndTextarea">
-              <label for="email"><span class="setOnlyLabelName"> Action name : </span>
-              </label>
-              <input type="text" formControlName="email" name="email">
-            </div>
-            <div class="verySmallSpacer"></div>
-            <div class="fixWidthOfInputAndTextarea">
-              <label for="email"><span class="setOnlyLabelName">Company name:</span>
-              </label>
-              <input type="text" formControlName="email" name="email">
-            </div>
-            <div class="verySmallSpacer"></div>
-            <div class="fixWidthOfInputAndTextarea">
-              <label for="email"><span class="setOnlyLabelName"> Workspace : </span>
-              </label>
-              <input type="text" formControlName="email" name="email">
-            </div>
+          <div class="smallCardAdd">
+            <h3><span class="setOnlyLabelName"> Add experience </span></h3>
+            <form>
+              <div>
+                <label for="email"><span class="setOnlyLabelName"> Number of stars (between 1 and 5): </span>
+                </label>
+                <input type="number" id="quantity" name="quantity" min="1" max="5">
+              </div>
+              <div class="verySmallSpacer"></div>
+              <div class="fixWidthOfInputAndTextarea">
+                <label for="email"><span class="setOnlyLabelName"> Date:</span>
+                </label>
+                <input type="date" id="datemax" name="datemax" max="1979-12-31">
+                <span class="setOnlyLabelName"> - </span>
+                <input type="date" id="datemin" name="datemin" min="2000-01-02">
+              </div>
+              <div class="verySmallSpacer"></div>
+              <div class="fixWidthOfInputAndTextarea">
+                <label for="email"><span class="setOnlyLabelName"> Action name : </span>
+                </label>
+                <input type="text" formControlName="email" name="email">
+              </div>
+              <div class="verySmallSpacer"></div>
+              <div class="fixWidthOfInputAndTextarea">
+                <label for="email"><span class="setOnlyLabelName">Company name:</span>
+                </label>
+                <input type="text" formControlName="email" name="email">
+              </div>
+              <div class="verySmallSpacer"></div>
+              <div class="fixWidthOfInputAndTextarea">
+                <label for="email"><span class="setOnlyLabelName"> Workspace : </span>
+                </label>
+                <input type="text" formControlName="email" name="email">
+              </div>
 
-            <div class="verySmallSpacer"></div>
+              <div class="verySmallSpacer"></div>
 
-            <div class="labelOnTextarea">
-              <label for="email"><span class="setOnlyLabelName"> Description of an action </span>
-              </label>
-              <textarea type="text" formControlName="email" name="email">
+              <div class="labelOnTextarea">
+                <label for="email"><span class="setOnlyLabelName"> Description of an action </span>
+                </label>
+                <textarea type="text" formControlName="email" name="email">
                           </textarea>
-            </div>
-            <div class="verySmallSpacer"></div>
-            <div class="labelOnTextarea">
-              <label for="email"><span class="setOnlyLabelName"> Description of an experience </span>
-              </label>
-              <textarea type="text" formControlName="email" name="email">
+              </div>
+              <div class="verySmallSpacer"></div>
+              <div class="labelOnTextarea">
+                <label for="email"><span class="setOnlyLabelName"> Description of an experience </span>
+                </label>
+                <textarea type="text" formControlName="email" name="email">
                           </textarea>
-            </div>
+              </div>
 
 
-          </form>
+            </form>
+          </div>
+          <div class="fixInCenterButton">
+            <button>
+              <div type="submit" class="addButton">
+                Add
+              </div>
+            </button>
+            <button>
+              <div type="submit" class="saveButton">
+                Saves changes
+              </div>
+            </button>
+          </div>
         </div>
-        <div class="fixInCenterButton">
-          <button>
-            <div type="submit" class="addButton">
-              Add
-            </div>
-          </button>
-          <button>
-            <div type="submit" class="saveButton">
-              Saves changes
-            </div>
-          </button>
-        </div>
+
+
+
       </div>
 
 
-
     </div>
-
-
   </div>
-
 </div>
