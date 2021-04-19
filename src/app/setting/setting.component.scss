@@ -481,9 +481,9 @@ input:focus + label {
 
 .uploadImage img {
   height: 9.35rem;
-  width: 9.35rem;
+  width: 65%;
   position: absolute;
-  left: 0;
+  right: 0;
   border-radius: 50%;
 }
 
@@ -497,7 +497,7 @@ input:focus + label {
   box-sizing: border-box;
   cursor: pointer;
   background-color: transparent;
-  background-position: 120px 4px;
+  background-position: 240px 4px;
   padding: 51px 0px;
   transition: 0.5s;
   border-bottom: 1px solid #fff;
@@ -1129,6 +1129,8 @@ textarea {
    // padding: 1rem 8rem 10rem 8rem;
    // width: 100%;
   }
+
+
 }
 
 //fin du css des skill
