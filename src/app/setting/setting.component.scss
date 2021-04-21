@@ -140,6 +140,21 @@ h2 {
   border-radius: 5px;
 }
 
+.mainclassE {
+  display: block;
+  /*
+  text-align: center;
+*/
+}
+
+.mainContainerE {
+  border: 1px solid rgba(35, 36, 37, 0.19);
+  margin: 0;
+  padding: 2rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+}
 .loginButton {
   cursor: pointer;
   background: #65b79f;
@@ -152,10 +167,20 @@ h2 {
   font-weight: bold;
 }
 
-a:link {
-  color: #6b7588;
-  background-color: transparent;
-  text-decoration: none;
+.image-and-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.fixImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 10px;
 }
 
 h2 {
@@ -300,7 +325,7 @@ input[type="text"] {
 }
 
 input[type="number"] {
-  font-size: 1.1em;
+  font-size: var(--big-size);
   margin-left: 0.2rem;
   border: 1px solid #65b79f;
   -webkit-appearance: none;
@@ -326,7 +351,7 @@ input[type="number"] {
   }
 */
 label span {
-  font-size: 0.7rem;
+  font-size: 1.1rem;
 }
 
 .fixWidthOfInputAndTextarea {
@@ -398,7 +423,7 @@ input {
 }
 
 input {
-  font-size: 1.1em;
+  font-size: var(--big-size);
   border: 0;
   border-bottom: 1px solid #65b79f;
   -webkit-appearance: none;
@@ -413,10 +438,10 @@ input:focus {
 }
 
 label {
-  width: 80%;
+  width: 40%;
   letter-spacing: 0.03em;
   color: #65b79f;
-  font-size: 1.1em;
+  font-size: var(--big-size);
 }
 
 input:placeholder-shown + label {
@@ -466,30 +491,9 @@ input:focus + label {
 */
 }
 
-.uploadImage {
-  height: 15rem;
-  width: 15rem;
-  position: relative;
-  display: block;
-  margin: 12% 10% 0% 20%;
-  /*
-  background-size: 100% 100%;
-
-  overflow: hidden;
-  */
-}
-
-.uploadImage img {
-  height: 9.35rem;
-  width: 65%;
-  position: absolute;
-  right: 0;
-  border-radius: 50%;
-}
-
 .my_file {
   position: absolute;
-  bottom: 0;
+
   left: 0;
   outline: none;
   color: transparent;
@@ -497,21 +501,30 @@ input:focus + label {
   box-sizing: border-box;
   cursor: pointer;
   background-color: transparent;
-  background-position: 240px 4px;
-  padding: 51px 0px;
+
+  padding: 31px 0px;
   transition: 0.5s;
   border-bottom: 1px solid #fff;
   background-repeat: no-repeat;
+  -moz-opacity: 0;
+  opacity: 0;
+  z-index: 2;
+}
 
+.fakeFile {
+  position: absolute;
+  top: 8;
+  //right: 0;
+  cursor: pointer;
+  z-index: 1;
+  height: 2rem;
+  width: 2rem;
+  margin: 4rem 0rem 0rem 6.9rem;
 }
 
 .userName {
   font-weight: bold;
   text-align: center;
-}
-
-.my_file::-webkit-file-upload-button {
-  visibility: hidden;
 }
 
 input[type="file"]:focus {
@@ -536,9 +549,91 @@ input[type="file"]:focus {
   margin-right: 0em;
 }
 
+.resizeImg {
+  height: 1.1rem;
+}
+
+.pictureAndWorkstation {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.smallCard {
+  background: #ffffff;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.smallCard1 {
+  background: #ffffff;
+  border: 1px solid rgba(35, 36, 37, 0.19);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+  margin: 1rem 0rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+}
+.workstation {
+  display: flex;
+  flex-direction: column;
+  padding: 2.6rem 0rem 2.2rem 0.9rem;
+  text-align: left;
+}
+
+.rail {
+  margin-left: 1.1em;
+  margin-right: 1.1em;
+}
+.challengeAndVector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.smallCardForAction {
+  background: #ffffff;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+  margin: 0 0 1em 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bigCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #6b7588;
+  border-radius: 8px;
+  background: #f7f8fb;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
+  margin-bottom: 0px 0px 20px 0px;
+  width: 100%;
+}
+
+.challenge {
+  padding-left: 20px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
 .bigTitle {
   font-weight: bold;
-  //font-size: 18px;
+  font-size: 18px;
   color: #6b7588;
   margin: 0 0 0.2em 0;
 }
@@ -556,19 +651,16 @@ input[type="file"]:focus {
   padding: 0em;
   margin: 0.2em 0 0 0;
 }
-
 .roundedImage {
   border-radius: 50%;
   width: 1.875em;
   height: 1.875em;
 }
-
 .roundedImageEntreprise {
   width: 2.5em;
   height: 2.5em;
   padding: 2.7em 0em 2.3em 1.25em;
 }
-
 .challengeText {
   font-size: 14px;
   font-weight: bold;
@@ -576,67 +668,25 @@ input[type="file"]:focus {
   padding: 0px;
 }
 
-.mainclassE {
-  display: block;
-  /*
-  text-align: center;
-*/
-}
-
-.mainContainerE {
-  border: 1px solid rgba(35, 36, 37, 0.19);
-  margin: 0;
-  padding: 0.7rem;
-  background: #ffffff;
-  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
-  border-radius: 5px;
-}
-
-.bigCard {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.smartTitle {
+  font-size: 14px;
+  padding: 20px 20px 10px 20px;
+  font-weight: bold;
   color: #6b7588;
-  border-radius: 8px;
-  background: #fff;
-  //box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
-  margin-bottom: 0px 0px 20px 0px;
-  width: 100%;
-  border: 1px solid #65b79f;
-}
-
-.challenge {
-  padding-left: 20px;
-  padding-bottom: 12px;
-  display: flex;
-  flex-direction: column;
-}
-
-.resizeImg {
-  height: 0.6rem;
-}
-
-.challengeAndVector {
-  /*
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  */
+  text-align: left;
   margin: 0;
-  padding: 0;
-  text-align: center;
+}
+.smallDescription {
+  text-align: justify;
+  padding: 0px 20px;
+  font-size: 13px;
+  margin: 0 0 10px 0;
 }
 
-.smallCardForAction {
-  background: #ffffff;
-  border: 1px solid #65b79f;
-  //box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
-  border-radius: 8px;
-  margin: 0 0 1em 0;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+.description {
+  padding: 20px;
+  font-size: 13px;
+  text-align: justify;
 }
 
 .showCursor {
@@ -694,32 +744,6 @@ h5 {
   text-align: center;
 }
 */
-.smartTitle {
-  font-size: 13px;
-  padding: 20px 20px 10px 20px;
-  font-weight: bold;
-  color: #6b7588;
-  text-align: left;
-  margin: 0;
-}
-
-.smallDescription {
-  text-align: justify;
-  padding: 0px 20px;
-  font-size: 12px;
-  margin: 0 0 10px 0;
-}
-
-.rail {
-  margin-left: 1.1em;
-  margin-right: 1.1em;
-}
-
-.description {
-  padding: 20px;
-  font-size: 12px;
-  text-align: justify;
-}
 
 .resizeImage {
   width: 12px;
@@ -742,19 +766,6 @@ h5 {
 .pictureAndWorkstation {
   display: flex;
   flex-wrap: nowrap;
-}
-
-.smallCardE {
-  background: #ffffff;
-
-  box-shadow: 1px 4px 10px 1px rgba(0, 0, 0, 0.26);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 h3 {
@@ -830,13 +841,6 @@ button {
   border-color: 0;
 }
 
-.workstation {
-  display: flex;
-  flex-direction: column;
-  padding: 2.2rem 0rem 2.2rem 0.9rem;
-  text-align: left;
-}
-
 a:link {
   color: #6b7588;
   background-color: transparent;
@@ -852,11 +856,11 @@ input[type="text"] {
   padding: 0;
   cursor: text;
   width: 100%;
-  flex: 50%;
+  flex: 100%;
 }
 
 input[type="number"] {
-  font-size: 1.1em;
+  font-size: var(--big-size);
   margin-left: 0.2rem;
   border: 1px solid #65b79f;
   -webkit-appearance: none;
@@ -881,7 +885,7 @@ input[type="date"] {
 }
 
 label span {
-  font-size: 0.7rem;
+  font-size: var(--big-size);
 }
 
 .fixWidthOfInputAndTextarea {
@@ -902,6 +906,7 @@ textarea {
 
 .setOnlyLabelName {
   color: #65b79f;
+  font-size: var(--regular-size);
 }
 
 //fin css experience
@@ -928,7 +933,7 @@ textarea {
   }
 
   form {
-    margin: 0 0 2rem 0;
+    margin: 0 0 1rem 0;
   }
 
   .mainContainerS {
@@ -991,23 +996,21 @@ textarea {
   body {
     display: flex;
     flex-direction: column;
-   // align-items: center;
+    // align-items: center;
   }
 
   .container {
-    padding: 3.5rem 3rem ;
+    padding: 3.5rem 3rem;
     display: flex;
   }
 
   .superMainContainer {
     margin: 1rem;
-
   }
 
   .fixAllContainerInCenter {
     display: flex;
     flex-direction: column;
-
   }
 
   .settingSidebar {
@@ -1017,39 +1020,32 @@ textarea {
     background: #ffffff;
     box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
     border-radius: 5px;
-    position:fixed;
+    position: fixed;
     height: 70vh;
-
   }
 
+  .mainContainerU {
+    padding: 0rem 12rem;
 
+    margin: 0;
 
-    .mainContainerU {
+    //font-size: 1.6rem;
+  }
+  .spacer {
+    margin: 0;
+  }
 
-  padding: 0rem 12rem;
-
-  margin: 0 ;
-
-  font-size: 1.6rem;
-
-}
-.spacer {
-  margin: 0;
-}
-.uploadImage {
-  margin: 0;
-}
   .mainContainerS {
     padding: 2rem;
 
-  font-size: 1.6rem;
-  margin: 0 2rem;
+    // font-size: 1.6rem;
+    margin: 0;
   }
-.mainContainerE {
+  .mainContainerE {
     padding: 2rem;
 
-  font-size: 1.6rem;
-  margin: 0 2rem;
+    // font-size: 1.6rem;
+    margin: 0;
   }
   .skillContainer2 {
     display: block;
@@ -1092,7 +1088,7 @@ textarea {
     align-items: center;
   }
   .containerU {
-    margin: 0rem 0rem 3.5rem 0rem;;
+    margin: 0rem 0rem 3.5rem 0rem;
     align-items: center;
   }
 
@@ -1100,7 +1096,7 @@ textarea {
     padding: 3.5rem 0rem 3.5rem 0rem;
     align-items: center;
   }
-/*
+  /*
   form {
     padding: 1.9rem 8rem;
   }
@@ -1110,27 +1106,25 @@ textarea {
 @media only screen and (min-width: 1281px) {
   .mainContainerS {
     //padding: 1rem 6rem 10rem 6rem;
-   // width: 100%;
+    // width: 100%;
   }
 
   .mainContainerE {
-   // padding: 1rem 6rem 10rem 6rem;
-   // width: 100%;
+    // padding: 1rem 6rem 10rem 6rem;
+    // width: 100%;
   }
 }
 
 @media only screen and (min-width: 1351px) {
   .mainContainerS {
-   // padding: 1rem 8rem 10rem 8rem;
+    // padding: 1rem 8rem 10rem 8rem;
     //width: 100%;
   }
 
   .mainContainerE {
-   // padding: 1rem 8rem 10rem 8rem;
-   // width: 100%;
+    // padding: 1rem 8rem 10rem 8rem;
+    // width: 100%;
   }
-
-
 }
 
 //fin du css des skill

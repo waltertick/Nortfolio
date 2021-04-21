@@ -22,34 +22,6 @@ padding: 0;
   flex-direction: row;
   justify-content: space-between;
 }
-a:link {
-  color: #6B7588;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-
-a:visited {
-  color: #6B7588;
-  background-color: transparent;
-  text-decoration: none;
-
-}
-
-
-a:hover {
-  color: #1e6d55;
-  background-color: transparent;
-  text-decoration: none;
-  font-size: 125%;
-  font-weight: bold;
-}
-
-a:active {
-  color: #65B79F ;
-  background-color: transparent;
-  text-decoration: none;
-}
 
 .logout {
   cursor:pointer;

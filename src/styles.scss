@@ -1,7 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+:root {
+  /*Colors */
+  --primary-color: #65b79f;
+  --primary-color-900: #1e6d55;
+  --secondary-color: #052b5d;
+  --error-color: #f55f44;
 
+  /*Font sizes*/
+  --big-size: 1.1rem;
+  --regular-size: 0.9em;
+  --small-size: 0.7em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -34,6 +49,19 @@ aside {
 */
 .spacer {
   margin-top: 40px;
+}
+
+a{
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: color 250ms ease-in-out;
+  text-decoration: none;
+}
+
+
+a:hover{
+  color: var(--primary-color-900);
+  transition: color 250ms ease-in-out;
 }
 
 

@@ -4,12 +4,9 @@
   <div class="skillContainer">
 
     <div class="comming-soon">
-      <h5> <a routerLink="/settings" (click)="updateUserColor()" [style.color]="colorU"
-          [style.fontWeight]="fontWeightU">User profile</a> </h5>
-      <h5><a [routerLink]='"."' [fragment]="ids[1]" (click)="updateSkillColor()" [style.color]="colorS"
-          [style.fontWeight]="fontWeightS">Add skill</a></h5>
-      <h5><a [routerLink]='"."' [fragment]="ids[2]" (click)="updateExperienceColor()" [style.color]="colorE"
-          [style.fontWeight]="fontWeightE">Add experiences</a></h5>
+      <h5> <a routerLink="/settings">User profile</a> </h5>
+      <h5><a [routerLink]='"."' [fragment]="ids[1]">Add a skill</a></h5>
+      <h5><a [routerLink]='"."' [fragment]="ids[2]">Add experiences</a></h5>
     </div>
   </div>
   <!--For desktop only-->
@@ -17,34 +14,26 @@
     <div class="settingSidebar">
 
       <div class="comming-soon">
-        <h5> <a routerLink="/settings" (click)="updateUserColor()" [style.color]="colorU"
-            [style.fontWeight]="fontWeightU">User profile</a> </h5>
-        <h5><a [routerLink]='"."' [fragment]="ids[1]" (click)="updateSkillColor()" [style.color]="colorS"
-            [style.fontWeight]="fontWeightS">Add skill</a></h5>
-        <h5><a [routerLink]='"."' [fragment]="ids[2]" (click)="updateExperienceColor()" [style.color]="colorE"
-            [style.fontWeight]="fontWeightE">Add experiences</a></h5>
+        <h5> <a routerLink="/settings">User profile</a> </h5>
+        <h5><a [routerLink]='"."' [fragment]="ids[1]">Add skill</a></h5>
+        <h5><a [routerLink]='"."' [fragment]="ids[2]">Add experiences</a></h5>
       </div>
     </div>
   </div>
-  <div class="superMainContainer" >
+  <div class="superMainContainer">
     <div class="fixAllContainerInCenter">
-      <div class="containerU" >
-        <div class="mainContainerU" >
-          <div class="mainclassU"  >
-            <form [formGroup]="userProfileForm" (ngSubmit)="onSubmit()" >
+      <div class="containerU">
+        <div class="mainContainerU">
+          <div class="mainclassU">
+            <form [formGroup]="userProfileForm" (ngSubmit)="onSubmit()">
 
-              <div>
-                <div class="uploadImage">
+              <div class="image-and-name">
+                <img class="fixImage" [src]="urlLink" alt="Profile image">
+                <input type="file" class="my_file" style="background-image: url('../assets/Images/cameraGroup.png');"
+                  (change)="selectFiles($event)">
 
-                  <img [src]="urlLink" alt="Profile image">
-
-                  <input type="file" class="my_file" style="background-image: url('../assets/Images/cameraGroup.png');"
-                    (change)="selectFiles($event)">
-
-                </div>
-                <div class="userName">
-                  <span> ELVIS TICK TICK </span>
-                </div>
+                <img class="fakeFile" src="../assets/Images/cameraGroup.png" alt="usericon">
+                <span> ELVIS TICK TICK </span>
               </div>
 
               <div class="field">
@@ -76,12 +65,13 @@
                   </i>
                 </div>
               </div>
-
+              <div class="spacer"></div>
               <div class="invalid-feedback" *ngIf="submitted && f.password.errors">
                 <div *ngIf="f.password.errors.required">Password is required</div>
                 <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
               </div>
               <div class="spacer"></div>
+              <div class="verySmallSpacer"></div>
               <button type="submit" class="loginButton">
                 Save changes
               </button>
@@ -95,8 +85,8 @@
 
 
 
-        <div class="mainContainerS" >
-          <div class="mainclassS" >
+        <div class="mainContainerS">
+          <div class="mainclassS">
             <div class="smallCardS">
 
               <div class="progressBar">
@@ -196,11 +186,11 @@
       <div class="containerE" [attr.id]='ids[2]'>
 
 
-        <div class="mainContainerE" >
-          <div class="mainclassE" >
+        <div class="mainContainerE">
+          <div class="mainclassE">
 
             <div class="bigCard">
-              <div class="smallCardE">
+              <div class="smallCard">
                 <div class="pictureAndWorkstation">
                   <img class="roundedImageEntreprise" src="../assets/Images/enterpri 1.png" alt="Photo de profil">
                   <div class="fixWorkstation">
@@ -227,17 +217,14 @@
                 <div class="smallCardForAction">
                   <span class="smartTitle">Coder une application de fast food</span>
                   <p class="smallDescription">Lorem ipsum dolor sit ametje suis en plein je paeeee , consectetur
-                    adipiscing
-                    elit. tu
+                    adipiscing elit. tu
                     as</p>
                   <div class="challengeAndVector">
                     <div class="challenge">
                       <span class="challengeText">Challenge</span>
-                      <img class="resizeImg" src="../assets/Images/staricon.svg" alt="">
+                      <img src="../assets/Images/staricon.svg" alt="">
                     </div>
-                    <!--
                     <img class="resizeImage1" src="../assets/Images/VectorFleche.svg" alt="">
-                      -->
                   </div>
                 </div>
               </div>
