@@ -3,25 +3,36 @@
   <span></span>
   <span></span>
 </a>
-<div  *ngIf="!changeMenu" class="mobile-menu " #mobile_menu>
+<div class="mobile-menu " #mobile_menu>
   <a routerLink="/home"> Home</a>
-  <a routerLink="/settings" (click)="onChangeHamburger()"> Settings</a>
+  
+  <a routerLink="/settings" (click)="openSidebar()" #openSidebarBtn>
+    <span>Settings</span>
+    <img class="resizeImage" src="../assets/Images/VectorFleche.svg" alt="chevron-down">
+  </a>
   <div class="deconnexion">
     <a (click)="onSignOut()" routerLink="/auth/signin" class="logout"> <img class="hide-mobile"
         src="../assets/Images/Vector_power.svg" alt="Se Déconnecter"></a>
   </div>
 
+
 </div>
 
-<div  *ngIf="changeMenu==true" class="mobile-menu " #mobile_menu2>
+<div class="sidebar" #sidebar >
+  <a href="javascript:void(0)" class="closebtn" (click)="closeSidebar()">&larr;</a>
+
+  
+
   <a routerLink="/settings"> User profile</a>
-  <a routerLink="/settings"> Add skills</a>
-  <a routerLink="/settings"> Add experience</a>
-  <a routerLink="/settings" (click)="onSetVariable()">
-    retour</a>
-      <div class="deconnexion">
-        <a (click)="onSignOut()" routerLink="/auth/signin" class="logout"> <img class="hide-mobile"
-            src="../assets/Images/Vector_power.svg" alt="Se Déconnecter"></a>
-      </div>
+  <a [routerLink]='"/settings"' [fragment]="ids[1]"> Add skills</a>
+  <a [routerLink]='"/settings"' [fragment]="ids[2]"> Add experience</a>
+
 </div>
 
+
+
+
+
+ 
+
+    

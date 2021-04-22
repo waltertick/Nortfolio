@@ -10,7 +10,11 @@ import { Component, OnInit , AfterViewInit, ElementRef,ViewChild } from '@angula
 export class HamburgerComponent implements OnInit, AfterViewInit {
 @ViewChild("menu", { static: false }) hamburgerMenu: ElementRef;
 @ViewChild("mobile_menu", { static: false }) mobileMenu: ElementRef;
-@ViewChild("mobile_menu2", { static: false }) mobileMenu2: ElementRef;
+@ViewChild("sidebar", { static: false }) sidebar: ElementRef;
+@ViewChild("openSidebarBtn", { static: false }) openSidebarBtn: ElementRef;
+ ids: Array<String> = ['User profile', 'Add skill', 'Add experiences'];
+
+
 changeMenu:boolean;
 
   constructor(private elementRef: ElementRef,
@@ -20,6 +24,9 @@ changeMenu:boolean;
   }
 
    ngAfterViewInit() {
+
+   
+    
 
     const menu = this.elementRef.nativeElement.querySelector('.menu');
     menu.addEventListener('click', () => {
@@ -32,15 +39,9 @@ changeMenu:boolean;
   }
 });
 
-menu.addEventListener('click', () => {
-  if (this.hamburgerMenu.nativeElement.classList.contains('open')) {
-    this.hamburgerMenu.nativeElement.classList.remove('open');
-    this.mobileMenu2.nativeElement.style.width = '40%';
-  } else {
-    this.hamburgerMenu.nativeElement.classList.add('open');
-    this.mobileMenu2.nativeElement.style.width = '0';
-  }
-});
+ // this.openSidebarBtn.nativeElement.addEventListener('click',this.openSidebar())  
+    
+
 
 
 
@@ -53,18 +54,22 @@ window.addEventListener('mouseup', (event) => {
 })
   }
 
+
+  
+   openSidebar() {
+       this.sidebar.nativeElement.style.width = '40%';
+    }
+
+    closeSidebar() {
+       this.sidebar.nativeElement.style.width = '0';
+       this.mobileMenu.nativeElement.style.width = '40%';
+    }
+
+    
   onSignOut() {
     this.authService.signOutUser();
   }
 
-  onChangeHamburger() {
-    this.changeMenu=true;
-
-  }
-
-  onSetVariable() {
-    this.changeMenu=false;
-
-  }
+ 
 }
 
