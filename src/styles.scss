@@ -5,13 +5,19 @@
   /*Colors */
   --primary-color: #65b79f;
   --primary-color-900: #1e6d55;
-  --secondary-color: #052b5d;
+  --secondary-color: #6B7588;
+  --firstBackground-color: #ffffff;
+  --secondBackground-color: #F3F5F9;
   --error-color: #f55f44;
 
   /*Font sizes*/
-  --big-size: 1.1rem;
-  --regular-size: 0.9em;
-  --small-size: 0.7em;
+  --bigTitle-size: 1.5rem;
+  --big-size: 1.25rem;
+  --regular-size: 1.15rem;
+  --medium-size: 1.25rem;
+  --small-size: .9rem;
+  --verySmall-size: .725rem;
+  
 }
 
 html {

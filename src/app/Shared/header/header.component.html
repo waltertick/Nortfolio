@@ -6,10 +6,10 @@
      <div class="logo"> <a routerLink="/home" >Nortfolio</a></div>
       <div class="navbar">
       <div class="hide-desktop ">
-        <a class="showCursor "  *ngIf="isAuth" (click)="updateHomeColor()"  [style.color] ="colorH" [style.fontWeight]="fontWeightH" routerLink="/home" >Home</a>
+        <a class="showCursor "  *ngIf="isAuth"  routerLink="/home" >Home</a>
       </div>
       <div class="hide-desktop">
-        <a class="showCursor" *ngIf="isAuth" (click)="updateSettingColor()"  [style.color] ="colorS" [style.fontWeight]="fontWeightS" routerLink="/settings">Settings</a>
+        <a class="showCursor" *ngIf="isAuth"  routerLink="/settings">Settings</a>
       </div>
       <div class="logout" (click)="onSignOut()"  >
         <a *ngIf="isAuth" routerLink="auth/signin">
@@ -19,10 +19,8 @@
 
     </div>
     <div *ngIf="isAuth" class="show-mobile hide-mobile">
-          <app-hamburger></app-hamburger>
-
-
-
+          <app-hamburger ></app-hamburger>
+          
       </div>
   </div>
 

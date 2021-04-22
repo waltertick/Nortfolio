@@ -1,6 +1,6 @@
 .invalid-feedback {
   color: tomato;
-  font-size: 12px;
+  font-size: var(--verySmall-size);
 }
 .rightSide {
   background-color: #fff;
@@ -28,7 +28,7 @@ button {
 }
 
 .setOnlyLabelName {
-  font-size: 12px;
+  font-size: var(--verySmall-size);
   text-align: center;
 }
 .hide_mobile {
@@ -64,7 +64,7 @@ input {
 
 input:focus {
   outline: 0;
-  border-bottom: 1px solid#65B79F;
+  border-bottom: 1px solid #65B79F;
 }
 
 label {
@@ -249,7 +249,7 @@ span {
   }
 
   .setOnlyLabelName {
-    font-size: 14px;
+    font-size: var(--small-size);
   }
 }
 
@@ -337,7 +337,7 @@ span {
   }
 
   .setOnlyLabelName {
-    font-size: 14px;
+    font-size: var(--small-size);
   }
 
   .imgPosition {
@@ -417,7 +417,7 @@ span {
 }
 
   .setOnlyLabelName {
-    font-size: 14px;
+    font-size: var(--small-size);
   }
 }
 
@@ -503,7 +503,7 @@ span {
 
 
   .setOnlyLabelName {
-    font-size: 14px;
+    font-size: var(--small-size);
   }
 }
 
@@ -589,6 +589,6 @@ span {
 
 
   .setOnlyLabelName {
-    font-size: 14px;
+    font-size: var(--small-size);
   }
 }

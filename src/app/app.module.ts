@@ -16,7 +16,7 @@ import { SignupComponent } from './Auth/signup/signup.component';
 import { HeaderComponent } from './Shared/header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SettingComponent } from './setting/setting.component';
-import { ProfileComponent } from './Shared/profile/profile.component';
+
 import { SkillListComponent } from './Shared/skill-list/skill-list.component';
 import { SingleSkillComponent } from './Shared/single-skill/single-skill.component';
 import { ExperienceListComponent } from './Shared/experience-list/experience-list.component';
@@ -34,6 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule} from '@angular/material/input';
 import { AuthCheckredirectionComponent } from './Shared/auth-checkredirection/auth-checkredirection.component';
 import { HamburgerComponent } from './Shared/hamburger/hamburger.component';
+import { SettingsHamburgerComponent } from './Shared/settings-hamburger/settings-hamburger.component';
 
 
 
@@ -46,7 +47,6 @@ import { HamburgerComponent } from './Shared/hamburger/hamburger.component';
     HeaderComponent,
     HomeComponent,
     SettingComponent,
-    ProfileComponent,
     SkillListComponent,
     SingleSkillComponent,
     ExperienceListComponent,
@@ -57,7 +57,8 @@ import { HamburgerComponent } from './Shared/hamburger/hamburger.component';
     ToasterContainerComponent, ToasterComponent,
     ReadMoreComponent,
     AuthCheckredirectionComponent,
-    HamburgerComponent
+    HamburgerComponent,
+    SettingsHamburgerComponent
 
   ],
   imports: [

@@ -1,0 +1,15 @@
+<a class="hamburger menu" #menu>
+  <span></span>
+  <span></span>
+  <span></span>
+</a>
+<div class="mobile-menu " #mobile_menu>
+  <a routerLink="/settings"> User profile</a>
+  <a routerLink="/settings"> Add skills</a>
+  <a routerLink="/settings"> Add experience</a>
+  <a routerLink="/settings"> <===</a>
+  <div class="deconnexion">
+    <a (click)="onSignOut()" routerLink="/auth/signin" class="logout"> <img class="hide-mobile"
+        src="../assets/Images/Vector_power.svg" alt="Se Déconnecter"></a>
+  </div>
+</div>

@@ -3,21 +3,21 @@ import { Component, OnInit , AfterViewInit, ElementRef,ViewChild } from '@angula
 
 
 @Component({
-  selector: 'app-hamburger',
-  templateUrl: './hamburger.component.html',
-  styleUrls: ['./hamburger.component.scss']
+  selector: 'app-settings-hamburger',
+  templateUrl: './settings-hamburger.component.html',
+  styleUrls: ['./settings-hamburger.component.scss']
 })
-export class HamburgerComponent implements OnInit, AfterViewInit {
+export class SettingsHamburgerComponent implements OnInit, AfterViewInit {
 @ViewChild("menu", { static: false }) hamburgerMenu: ElementRef;
 @ViewChild("mobile_menu", { static: false }) mobileMenu: ElementRef;
-@ViewChild("mobile_menu2", { static: false }) mobileMenu2: ElementRef;
-changeMenu:boolean;
+
 
   constructor(private elementRef: ElementRef,
               private authService : AuthService) { }
 
   ngOnInit() {
   }
+
 
    ngAfterViewInit() {
 
@@ -29,16 +29,6 @@ changeMenu:boolean;
   } else {
     this.hamburgerMenu.nativeElement.classList.add('open');
     this.mobileMenu.nativeElement.style.width = '40%';
-  }
-});
-
-menu.addEventListener('click', () => {
-  if (this.hamburgerMenu.nativeElement.classList.contains('open')) {
-    this.hamburgerMenu.nativeElement.classList.remove('open');
-    this.mobileMenu2.nativeElement.style.width = '40%';
-  } else {
-    this.hamburgerMenu.nativeElement.classList.add('open');
-    this.mobileMenu2.nativeElement.style.width = '0';
   }
 });
 
@@ -57,14 +47,6 @@ window.addEventListener('mouseup', (event) => {
     this.authService.signOutUser();
   }
 
-  onChangeHamburger() {
-    this.changeMenu=true;
-
-  }
-
-  onSetVariable() {
-    this.changeMenu=false;
-
-  }
 }
+
 

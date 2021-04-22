@@ -14,7 +14,7 @@
 
 .invalid-feedback {
   color: tomato;
-  font-size: 12px;
+  font-size: var(--verySmall-size);
 }
 
 .progressBarAndImage {
@@ -46,7 +46,7 @@ h2 {
   background-color: #65b79f;
   width: 96%;
   height: 0.8rem;
-  font-size: 12px;
+  font-size: var(--verySmall-size);
   border-radius: 33px;
   text-align: center;
   padding-top: 0.025rem;
@@ -67,7 +67,7 @@ h2 {
   width: 90%;
   /* Adjust with JavaScript */
   height: 0.8rem;
-  font-size: 12px;
+  font-size: var(--verySmall-size);
   border-radius: 33px;
   text-align: center;
   padding-top: 0.025rem;
@@ -88,7 +88,7 @@ h2 {
   width: 98%;
   /* Adjust with JavaScript */
   height: 0.8rem;
-  font-size: 12px;
+  font-size: var(--verySmall-size);
   border-radius: 33px;
   text-align: center;
   padding-top: 0.025rem;
@@ -109,7 +109,7 @@ h2 {
   width: 96%;
   /* Adjust with JavaScript */
   height: 0.8rem;
-  font-size: 12px;
+  font-size: var(--verySmall-size);
   border-radius: 33px;
   text-align: center;
   padding-top: 0.025rem;
@@ -194,7 +194,7 @@ h2 {
 }
 
 h5 {
-  font-size: 13px;
+  font-size: var(--small-size);
   margin: 0.7rem;
   font-weight: normal;
 }
@@ -386,7 +386,7 @@ textarea {
 
 .mainContainerU {
   border: 1px solid rgba(35, 36, 37, 0.19);
-  margin: 0;
+  margin: 2rem 2rem;
   padding: 2rem;
   background: #ffffff;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
@@ -640,14 +640,14 @@ input[type="file"]:focus {
 
 .mediumTitle {
   font-weight: bold;
-  font-size: 12px;
+  font-size: var(--verySmall-size);
   color: #6b7588;
   margin: 0 0 0.2em 0;
 }
 
 .smallTitle {
   color: #6b7588;
-  font-size: 12px;
+  font-size: var(--verySmall-size);
   padding: 0em;
   margin: 0.2em 0 0 0;
 }
@@ -662,14 +662,14 @@ input[type="file"]:focus {
   padding: 2.7em 0em 2.3em 1.25em;
 }
 .challengeText {
-  font-size: 14px;
+  font-size: var(--small-size);
   font-weight: bold;
   color: #6b7588;
   padding: 0px;
 }
 
 .smartTitle {
-  font-size: 14px;
+  font-size: var(--small-size);
   padding: 20px 20px 10px 20px;
   font-weight: bold;
   color: #6b7588;
@@ -679,13 +679,13 @@ input[type="file"]:focus {
 .smallDescription {
   text-align: justify;
   padding: 0px 20px;
-  font-size: 13px;
+  font-size: var(--small-size);
   margin: 0 0 10px 0;
 }
 
 .description {
   padding: 20px;
-  font-size: 13px;
+  font-size: var(--small-size);
   text-align: justify;
 }
 
@@ -699,7 +699,7 @@ h2 {
 }
 
 h5 {
-  font-size: 13px;
+  font-size: var(--small-size);
   margin: 0.7rem;
   font-weight: normal;
 }
