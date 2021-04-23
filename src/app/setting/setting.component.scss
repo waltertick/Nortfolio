@@ -9,7 +9,7 @@
   border-radius: 12px;
   width: 100%;
 
-  margin-bottom: 12px;
+  margin: 0.75rem 0rem;
 }
 
 .invalid-feedback {
@@ -116,7 +116,7 @@ h2 {
 }
 
 .containerS {
-  padding: 0.7rem 0.7em;
+  padding: 0.7rem 0.3em;
   color: #6b7588;
 }
 
@@ -130,11 +130,14 @@ h2 {
   text-align: center;
 */
 }
-
+.containerSkill {
+  padding: 0.8rem;
+  border: 1px solid #ffffff;
+}
 .mainContainerS {
   border: 1px solid rgba(35, 36, 37, 0.19);
   margin: 0;
-  padding: 2rem;
+  padding: 2rem 0.6rem;
   background: #ffffff;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
@@ -150,7 +153,7 @@ h2 {
 .mainContainerE {
   border: 1px solid rgba(35, 36, 37, 0.19);
   margin: 0;
-  padding: 2rem;
+  padding: 2rem 0.6rem;
   background: #ffffff;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
@@ -300,18 +303,6 @@ button {
   border-color: transparent;
 }
 
-.addButton {
-  cursor: pointer;
-  background: #fff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
-  color: #65b79f;
-  padding: 4px;
-  width: 50px;
-  margin: 0.8rem;
-  font-weight: bold;
-  border-color: 0;
-}
-
 input[type="text"] {
   font-size: 1em;
   border: 0;
@@ -350,9 +341,6 @@ input[type="number"] {
     flex: 50%;
   }
 */
-label span {
-  font-size: 1.1rem;
-}
 
 .fixWidthOfInputAndTextarea {
   width: 100%;
@@ -381,12 +369,16 @@ textarea {
 
 //Haut le css des skill
 .containerE {
-  padding: 0.7rem 0.7em;
+  padding: 2.7rem 0.7em;
+}
+
+.containerU {
+  padding: 1.7rem 0.7em;
 }
 
 .mainContainerU {
   border: 1px solid rgba(35, 36, 37, 0.19);
-  margin: 2rem 2rem;
+  //margin: 2rem 2rem;
   padding: 2rem;
   background: #ffffff;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
@@ -396,7 +388,7 @@ textarea {
 .resizeImage {
   width: 12px;
   height: 12px;
-  padding: 3.8em 1.25em 3.8em 0em;
+  padding: 3.4em 0em 2.3em 0.6em;
 }
 
 .resizeImage1 {
@@ -438,10 +430,10 @@ input:focus {
 }
 
 label {
-  width: 40%;
+  width: 80%;
   letter-spacing: 0.03em;
   color: #65b79f;
-  font-size: var(--big-size);
+  font-size: var(--regular-size);
 }
 
 input:placeholder-shown + label {
@@ -633,7 +625,7 @@ input[type="file"]:focus {
 
 .bigTitle {
   font-weight: bold;
-  font-size: 18px;
+  //font-size: 18px;
   color: #6b7588;
   margin: 0 0 0.2em 0;
 }
@@ -659,7 +651,7 @@ input[type="file"]:focus {
 .roundedImageEntreprise {
   width: 2.5em;
   height: 2.5em;
-  padding: 2.7em 0em 2.3em 1.25em;
+  padding: 2.7em 0em 2.3em 0.6em;
 }
 .challengeText {
   font-size: var(--small-size);
@@ -678,14 +670,14 @@ input[type="file"]:focus {
 }
 .smallDescription {
   text-align: justify;
-  padding: 0px 20px;
-  font-size: var(--small-size);
+  padding: 0px 0.6rem;
+  font-size: var(--verySmall-size);
   margin: 0 0 10px 0;
 }
 
 .description {
-  padding: 20px;
-  font-size: var(--small-size);
+  padding: 0.6rem;
+  font-size: var(--verySmall-size);
   text-align: justify;
 }
 
@@ -744,18 +736,6 @@ h5 {
   text-align: center;
 }
 */
-
-.resizeImage {
-  width: 12px;
-  height: 12px;
-  padding: 3.8em 1.25em 3.8em 0em;
-}
-
-.resizeImage1 {
-  width: 12px;
-  height: 12px;
-  padding: 14px 20px 18px 20px;
-}
 
 .fixUsername {
   padding: 6px 0px 6px 8px;
@@ -834,9 +814,9 @@ button {
   background: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
   color: #65b79f;
-  padding: 4px;
+  padding: 0.2rem;
   width: 50px;
-  margin: 0.8rem;
+  margin: 0.2rem;
   font-weight: bold;
   border-color: 0;
 }
@@ -881,11 +861,7 @@ input[type="date"] {
   color: #65b79f;
   margin-left: 0.2rem;
   width: 100%;
-  flex: 50%;
-}
-
-label span {
-  font-size: var(--big-size);
+  flex: 100%;
 }
 
 .fixWidthOfInputAndTextarea {
@@ -906,7 +882,7 @@ textarea {
 
 .setOnlyLabelName {
   color: #65b79f;
-  font-size: var(--regular-size);
+  font-size: var(--small-size);
 }
 
 //fin css experience
@@ -1005,7 +981,7 @@ textarea {
   }
 
   .superMainContainer {
-    margin: 1rem;
+    margin: 1rem ;
   }
 
   .fixAllContainerInCenter {
