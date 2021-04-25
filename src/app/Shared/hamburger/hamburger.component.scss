@@ -43,7 +43,7 @@ a {
   background-color: #65B79F;
   transition: all 300ms ease-in-out;
   transform-origin: 3px 1px;
-    
+
 }
 
 .menu span:not(:last-child) {
@@ -112,4 +112,8 @@ a {
 .sidebar .title {
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.resizeImage {
+ padding: 1rem 1rem .6rem .4rem
 }

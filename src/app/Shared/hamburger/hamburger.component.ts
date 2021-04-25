@@ -25,8 +25,8 @@ changeMenu:boolean;
 
    ngAfterViewInit() {
 
-   
-    
+
+
 
     const menu = this.elementRef.nativeElement.querySelector('.menu');
     menu.addEventListener('click', () => {
@@ -39,11 +39,19 @@ changeMenu:boolean;
   }
 });
 
- // this.openSidebarBtn.nativeElement.addEventListener('click',this.openSidebar())  
-    
+ // this.openSidebarBtn.nativeElement.addEventListener('click',this.openSidebar())
 
 
 
+
+
+window.addEventListener('mouseup', (event) => {
+  if ( event.target != this.openSidebarBtn.nativeElement) {
+    this.openSidebarBtn.nativeElement.classList.remove('open');
+     this.sidebar.nativeElement.style.width = '0';
+
+  }
+})
 
 window.addEventListener('mouseup', (event) => {
   if ( event.target != this.hamburgerMenu.nativeElement) {
@@ -55,21 +63,20 @@ window.addEventListener('mouseup', (event) => {
   }
 
 
-  
+
    openSidebar() {
        this.sidebar.nativeElement.style.width = '40%';
     }
 
     closeSidebar() {
        this.sidebar.nativeElement.style.width = '0';
-       this.mobileMenu.nativeElement.style.width = '40%';
     }
 
-    
+
   onSignOut() {
     this.authService.signOutUser();
   }
 
- 
+
 }
 
