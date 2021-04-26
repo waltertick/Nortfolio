@@ -1,4 +1,5 @@
 import { AuthService } from './../../services/auth.service';
+import { Router } from '@angular/router';
 import { Component, OnInit , AfterViewInit, ElementRef,ViewChild } from '@angular/core';
 
 
@@ -12,12 +13,13 @@ export class HamburgerComponent implements OnInit, AfterViewInit {
 @ViewChild("mobile_menu", { static: false }) mobileMenu: ElementRef;
 @ViewChild("sidebar", { static: false }) sidebar: ElementRef;
 @ViewChild("openSidebarBtn", { static: false }) openSidebarBtn: ElementRef;
- ids: Array<String> = ['User profile', 'Add skill', 'Add experiences'];
+ ids: Array<String> = ['User_profile', 'Add_skill', 'Add_experiences'];
 
 
 changeMenu:boolean;
 
   constructor(private elementRef: ElementRef,
+              private router: Router,
               private authService : AuthService) { }
 
   ngOnInit() {
@@ -76,6 +78,7 @@ window.addEventListener('mouseup', (event) => {
   onSignOut() {
     this.authService.signOutUser();
   }
+
 
 
 }

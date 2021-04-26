@@ -5,7 +5,7 @@
 </a>
 <div class="mobile-menu " #mobile_menu>
   <a routerLink="/home"> Home</a>
-  
+
   <a  (click)="openSidebar()" #openSidebarBtn>
     <span>Settings</span>
     <img class="resizeImage" src="../assets/Images/VectorFleche.svg" alt="chevron-down">
@@ -21,7 +21,7 @@
 <div class="sidebar" #sidebar >
   <a href="javascript:void(0)" class="closebtn" (click)="closeSidebar()">&larr;</a>
 
-  
+
 
   <a routerLink="/settings"> User profile</a>
   <a [routerLink]='"/settings"' [fragment]="ids[1]"> Add skills</a>
@@ -33,6 +33,5 @@
 
 
 
- 
 
-    
+

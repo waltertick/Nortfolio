@@ -18,9 +18,9 @@ const routerOptions: ExtraOptions = {
 
 const routes: Routes = [
   {path: 'auth/signin', component : SigninComponent},
-  {path: 'settings/skill', component : SkillListComponent},
+  {path: 'settings#Add_skill', component : SettingComponent},
   {path: 'auth/check', component : AuthCheckredirectionComponent},
-  {path: 'settings/experience', component : ExperienceListComponent},
+  {path: 'settings#Add_experiences', component : SettingComponent},
   {path: 'auth/signup', component: SignupComponent},
   {path: 'home', canActivate: [AuthGuardService], component: HomeComponent},
   {path: 'settings', canActivate: [AuthGuardService], component: SettingComponent },

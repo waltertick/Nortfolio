@@ -14,7 +14,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class SettingComponent implements OnInit {
   userProfileForm: FormGroup;
    submitted=false;
-   ids: Array<String> = ['User profile', 'Add skill', 'Add experiences'];
+   ids: Array<String> = ['User_profile', 'Add_skill', 'Add_experiences'];
 
   errorMessage: string;
   hide:boolean = true;
