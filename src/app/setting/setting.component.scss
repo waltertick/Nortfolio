@@ -178,7 +178,10 @@ h2 {
   margin-top: 20px;
   position: relative;
 }
-
+.profileName {
+  font-weight: bold;
+  color: #6b7588;
+}
 .fixImage {
   width: 150px;
   height: 150px;
@@ -924,6 +927,17 @@ textarea {
 @media only screen and (min-width: 750px) {
   .containerS {
     padding: 3rem 3rem;
+
+  }
+
+  .containerE {
+    padding: 3rem 3rem 5rem 3rem;
+
+  }
+
+  .containerU {
+    padding: 3rem 3rem;
+
   }
 
   h2 {
@@ -937,20 +951,27 @@ textarea {
   }
 
   .spacer {
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+   .mainContainerU {
+    padding: 2rem 12rem;
+
+    // font-size: 1.6rem;
+    margin: 0;
   }
 
   .mainContainerS {
-    padding: 1rem 8rem 8rem 8rem;
-  }
+    padding: 2rem 12rem;
 
-  .containerE {
-    padding: 3rem 3rem;
-    height: 67vh;
+    // font-size: 1.6rem;
+    margin: 0;
   }
-
   .mainContainerE {
-    padding: 1rem 8rem 8rem 8rem;
+    padding: 2rem 12rem;
+
+    // font-size: 1.6rem;
+    margin: 0;
   }
 }
 
@@ -959,16 +980,32 @@ textarea {
     padding: 5rem 5rem;
   }
 
-  .mainContainerS {
-    padding: 1rem 10rem 10rem 10rem;
+  .containerU {
+    padding: 5rem 5rem;
   }
 
   .containerE {
     padding: 5rem 5rem;
   }
 
+   .mainContainerU {
+    padding: 2rem 12rem;
+
+    // font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .mainContainerS {
+    padding: 2rem 12rem;
+
+    // font-size: 1.6rem;
+    margin: 0;
+  }
   .mainContainerE {
-    padding: 1rem 10rem 10rem 10rem;
+    padding: 2rem 12rem;
+
+    // font-size: 1.6rem;
+    margin: 0;
   }
 }
 
@@ -985,7 +1022,8 @@ textarea {
   }
 
   .superMainContainer {
-    margin: 1rem;
+    margin: 0rem;
+
   }
 
   .fixAllContainerInCenter {
@@ -1004,35 +1042,33 @@ textarea {
     height: 70vh;
   }
 
-  .mainContainerU {
-    padding: 0rem 12rem;
+   .mainContainerU {
+    padding: 2rem 12rem;
 
-    margin: 0;
-
-    //font-size: 1.6rem;
-  }
-  .spacer {
+    // font-size: 1.6rem;
     margin: 0;
   }
 
-  .mainContainerS {
-    padding: 2rem;
+
+ .mainContainerS {
+    padding: 2rem 12rem;
 
     // font-size: 1.6rem;
     margin: 0;
   }
   .mainContainerE {
-    padding: 2rem;
+    padding: 2rem 12rem 3rem 12rem;
 
     // font-size: 1.6rem;
     margin: 0;
   }
+
   .skillContainer2 {
     display: block;
     text-align: left;
     color: #6b7588;
-    flex: 35%;
-    margin: 1rem;
+    flex: 38%;
+    margin: 0rem;
   }
 
   .skillContainer {
@@ -1044,8 +1080,11 @@ textarea {
     text-align: left;
   }
 
+  .spacerH {
+    margin-bottom: 4rem;
+  }
   .comming-soon h5 {
-    margin: 0 0 1.2rem 0;
+    margin: 0 0 1.4rem 0;
     text-align: left;
   }
 
@@ -1063,13 +1102,17 @@ textarea {
     display: block;
   }
 
+
+
   .containerE {
-    padding: 3.5rem 0rem;
+     padding: 3.5rem 0rem 1rem 0rem;
+
     align-items: center;
   }
   .containerU {
     margin: 0rem 0rem 3.5rem 0rem;
     align-items: center;
+    padding: 0;
   }
 
   .containerS {
@@ -1083,27 +1126,102 @@ textarea {
   */
 }
 
+@media only screen and (min-width: 1181px) {
+  .skillContainer2 {
+
+    flex: 35%;
+    margin: 0rem;
+  }
+}
+
 @media only screen and (min-width: 1281px) {
-  .mainContainerS {
-    //padding: 1rem 6rem 10rem 6rem;
-    // width: 100%;
+ .mainContainerU {
+    padding: 2rem 12rem;
+
+    // font-size: 1.6rem;
+    margin: 0;
+  }
+  .skillContainer2 {
+
+    flex: 32%;
+    margin: 0rem;
   }
 
+  .mainContainerS {
+    padding: 2rem 12rem;
+
+    // font-size: 1.6rem;
+    margin: 0;
+  }
   .mainContainerE {
-    // padding: 1rem 6rem 10rem 6rem;
-    // width: 100%;
+    padding: 2rem 12rem 3rem 12rem;
+
+    // font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .containerE {
+     padding: 3.5rem 0rem 1rem 0rem;
+
+    align-items: center;
+  }
+}
+
+
+@media only screen and (min-width: 1181px) {
+  .skillContainer2 {
+
+    flex: 30%;
+    margin: 0rem;
   }
 }
 
 @media only screen and (min-width: 1351px) {
-  .mainContainerS {
-    // padding: 1rem 8rem 10rem 8rem;
-    //width: 100%;
+  .mainContainerU {
+    padding: 1rem 12rem;
+
+    margin: 0;
+
+    //font-size: 1.6rem;
   }
 
+  .spacerH {
+    margin-bottom: 4.1rem;
+  }
+  .mainContainerS {
+    padding: 2rem 12rem;
+
+    // font-size: 1.6rem;
+    margin: 0;
+  }
   .mainContainerE {
-    // padding: 1rem 8rem 10rem 8rem;
-    // width: 100%;
+    padding: 2rem 12rem 3rem 12rem;
+
+    // font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .containerE {
+     padding: 3.5rem 0rem 1rem 0rem;
+
+    align-items: center;
+  }
+  .containerU {
+    align-items: center;
+    padding: 0rem 0rem 3.5rem 0rem;
+  }
+
+  .containerS {
+    padding: 3.5rem 0rem;
+    align-items: center;
+  }
+
+
+
+  .skillContainer2 {
+
+    flex: 25%;
+    margin: 0rem;
   }
 }
 

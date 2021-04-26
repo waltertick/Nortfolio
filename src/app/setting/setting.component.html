@@ -36,7 +36,7 @@
                   (change)="selectFiles($event)">
 
                 <img class="fakeFile" src="../assets/Images/cameraGroup.png" alt="usericon">
-                <span> ELVIS TICK TICK </span>
+                <span class="profileName"> ELVIS TICK TICK </span>
               </div>
 
               <div class="field">
@@ -51,8 +51,9 @@
               <div class="invalid-feedback" *ngIf="submitted && f.email.errors" class="invalid-feedback">
                 <div *ngIf="f.email.errors.required">Email is required</div>
                 <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                <div class="spacerH"></div>
               </div>
-              <div class="spacer"></div>
+              <div class="spacerH"></div>
               <div class="field">
                 <input type="password" required formControlName="password" name="Password" id="Password" placeholder=" "
                   [type]=" hide ?'password':'text'" [ngClass]="{ 'is-invalid': submitted && f.password.errors}">
@@ -68,12 +69,12 @@
                   </i>
                 </div>
               </div>
-              <div class="spacer"></div>
+              
               <div class="invalid-feedback" *ngIf="submitted && f.password.errors">
                 <div *ngIf="f.password.errors.required">Password is required</div>
                 <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
               </div>
-              <div class="spacer"></div>
+              <div class="spacerH"></div>
               <div class="verySmallSpacer"></div>
               <button type="submit" class="loginButton">
                 Save changes
