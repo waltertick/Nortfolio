@@ -6,9 +6,9 @@
 <div class="mobile-menu " #mobile_menu>
   <a routerLink="/home"> Home</a>
 
-  <a  (click)="openSidebar()" #openSidebarBtn>
+  <a   #openSidebarBtn>
     <span>Settings</span>
-    <img class="resizeImage" src="../assets/Images/VectorFleche.svg" alt="chevron-down">
+    <img (click)="openSidebar()" routerLink="/settings" class="resizeImage" src="../assets/Images/VectorFleche.svg" alt="chevron-down">
   </a>
   <div class="deconnexion">
     <a (click)="onSignOut()" routerLink="/auth/signin" class="logout"> <img class="hide-mobile"
@@ -24,8 +24,8 @@
 
 
   <a routerLink="/settings"> User profile</a>
-  <a [routerLink]='"/settings"' [fragment]="ids[1]"> Add skills</a>
-  <a [routerLink]='"/settings"' [fragment]="ids[2]"> Add experience</a>
+  <a [routerLink]='"settings"' [fragment]="ids[1]"> Add skills</a>
+  <a [routerLink]='"settings"' [fragment]="ids[2]"> Add experience</a>
 
 </div>
 
