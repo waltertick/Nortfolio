@@ -6,10 +6,10 @@
 <div class="mobile-menu " #mobile_menu>
   <a routerLink="/home"> Home</a>
 
-  <a   #openSidebarBtn>
+  <a  routerLink="/settings"  >
     <span>Settings</span>
-    <img (click)="openSidebar()" routerLink="/settings" class="resizeImage" src="../assets/Images/VectorFleche.svg" alt="chevron-down">
-  </a>
+  <!-- <img  class="resizeImage" src="../assets/Images/VectorFleche.svg" alt="chevron-down">-->
+</a>
   <div class="deconnexion">
     <a (click)="onSignOut()" routerLink="/auth/signin" class="logout"> <img class="hide-mobile"
         src="../assets/Images/Vector_power.svg" alt="Se Déconnecter"></a>
@@ -18,16 +18,7 @@
 
 </div>
 
-<div class="sidebar" #sidebar >
-  <a href="javascript:void(0)" class="closebtn" (click)="closeSidebar()">&larr;</a>
 
-
-
-  <a routerLink="/settings"> User profile</a>
-  <a [routerLink]='"settings"' [fragment]="ids[1]"> Add skills</a>
-  <a [routerLink]='"settings"' [fragment]="ids[2]"> Add experience</a>
-
-</div>
 
 
 

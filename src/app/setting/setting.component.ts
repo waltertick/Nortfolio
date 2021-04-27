@@ -1,20 +1,20 @@
 import { ToasterService } from './../services/toaster.service';
 import { AuthService } from 'src/app/services/auth.service';
-
 import { Router } from '@angular/router';
-
-import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, OnInit , AfterViewInit, ElementRef,ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-setting',
   templateUrl: './setting.component.html',
   styleUrls: ['./setting.component.scss']
 })
-export class SettingComponent implements OnInit {
+export class SettingComponent implements OnInit, AfterViewInit {
+  @ViewChild("sidebar", { static: false }) sidebar: ElementRef;
+  @ViewChild("openSidebarBtn", { static: false }) openSidebarBtn: ElementRef;
   userProfileForm: FormGroup;
    submitted=false;
-   ids: Array<String> = ['User_profile', 'Add_skill', 'Add_experiences'];
+   ids: Array<String> = ['userProfile', 'addSkill', 'addExperiences'];
 
   errorMessage: string;
   hide:boolean = true;
@@ -32,6 +32,7 @@ clickerS:number=0;
 
   constructor(private formBuilder:FormBuilder,
               private authService: AuthService,
+              private elementRef: ElementRef,
               private router: Router,
               private toaster: ToasterService) { }
 
@@ -43,6 +44,33 @@ clickerS:number=0;
 
     });
   }
+
+  ngAfterViewInit() {
+
+ // this.openSidebarBtn.nativeElement.addEventListener('click',this.openSidebar())
+
+window.addEventListener('mouseup', (event) => {
+  if ( event.target != this.openSidebarBtn.nativeElement) {
+    this.openSidebarBtn.nativeElement.classList.remove('open');
+     this.sidebar.nativeElement.style.width = '0';
+
+  }
+})
+
+
+  }
+
+
+
+   openSidebar() {
+       this.sidebar.nativeElement.style.width = '40%';
+    }
+
+    closeSidebar() {
+       this.sidebar.nativeElement.style.width = '0';
+    }
+
+
   selectFiles(event) {
     if( event.target.files) {
       var reader = new FileReader()

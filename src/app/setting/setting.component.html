@@ -1,6 +1,22 @@
 <!--     place of skill -->
 <div class="container">
 
+  <div class="settingsButton">
+    <div class="emptyDivWaitingForElement"></div>
+    <div (click)="openSidebar()" class="imgButton" #openSidebarBtn>
+      <img class="resizeImg" src="../assets/Images/settings button.svg" alt="usericon">
+    </div>
+    <div class="sidebar" #sidebar>
+      <a href="javascript:void(0)" class="closebtn" (click)="closeSidebar()">&larr;</a>
+
+
+
+      <a routerLink="/settings"> User profile</a>
+      <a [routerLink]='"."' [fragment]="ids[1]"> Add skills</a>
+      <a [routerLink]='"."' [fragment]="ids[2]"> Add experience</a>
+
+    </div>
+  </div>
   <!--     place of skill
   <div class="skillContainer">
 
@@ -75,7 +91,7 @@
                 <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
               </div>
               <div class="spacerH"></div>
-              <div class="verySmallSpacer"></div>
+
               <button type="submit" class="loginButton">
                 Save changes
               </button>
@@ -91,8 +107,8 @@
 
         <div class="mainContainerS">
           <div class="mainclassS">
-             <div class="containerSkill">
-            <div class="smallCardS">
+            <div class="containerSkill">
+              <div class="smallCardS">
 
                 <div class="progressBar">
                   <h2>Maitrise du Html 5</h2>
@@ -103,91 +119,91 @@
                     <img class="setImage" src="../assets/Images/Group1.png" alt="usericon">
                   </div>
                 </div>
-                </div>
+              </div>
 
-                <div class="smallCardS">
+              <div class="smallCardS">
 
-                  <div class="progressBar">
-                    <h2>Maitrise du Css 3</h2>
-                    <div class="progressBarAndImage">
-                      <div id="progressbar2">
-                        <div>90%</div>
-                      </div>
-                      <img class="setImage" src="../assets/Images/Group2.png" alt="usericon">
+                <div class="progressBar">
+                  <h2>Maitrise du Css 3</h2>
+                  <div class="progressBarAndImage">
+                    <div id="progressbar2">
+                      <div>90%</div>
                     </div>
+                    <img class="setImage" src="../assets/Images/Group2.png" alt="usericon">
                   </div>
-
                 </div>
-                <div class="smallCardS">
 
-                  <div class="progressBar">
-                    <h2>Maitrise du Javascript </h2>
-                    <div class="progressBarAndImage">
-                      <div id="progressbar3">
-                        <div>98%</div>
-                      </div>
-                      <img class="setImage" src="../assets/Images/Group3.png" alt="usericon">
+              </div>
+              <div class="smallCardS">
+
+                <div class="progressBar">
+                  <h2>Maitrise du Javascript </h2>
+                  <div class="progressBarAndImage">
+                    <div id="progressbar3">
+                      <div>98%</div>
                     </div>
+                    <img class="setImage" src="../assets/Images/Group3.png" alt="usericon">
                   </div>
-
                 </div>
-                <div class="smallCardS">
 
-                  <div class="progressBar">
-                    <h2>Maitrise d'Angular</h2>
-                    <div class="progressBarAndImage">
-                      <div id="progressbar4">
-                        <div>94%</div>
-                      </div>
-                      <img class="setImage" src="../assets/Images/Group4.png" alt="usericon">
+              </div>
+              <div class="smallCardS">
+
+                <div class="progressBar">
+                  <h2>Maitrise d'Angular</h2>
+                  <div class="progressBarAndImage">
+                    <div id="progressbar4">
+                      <div>94%</div>
                     </div>
+                    <img class="setImage" src="../assets/Images/Group4.png" alt="usericon">
                   </div>
-
                 </div>
+
               </div>
             </div>
-            <div class="verySmallSpacer"></div>
-            <div class="smallCardAddS">
-              <h3><span class="changeColor"> Add skill </span></h3>
-              <form>
+          </div>
+          <div class="verySmallSpacer"></div>
+          <div class="smallCardAddS">
+            <h3><span class="changeColor"> Add skill </span></h3>
+            <form>
 
-                <div class="verySmallSpacer"></div>
-                <div class="fixWidthOfInputAndTextarea">
-                  <label for="email"><span class="setOnlyLabelName"> Skill name : </span>
-                  </label>
-                  <input type="text" formControlName="email" name="email">
-                </div>
+              <div class="verySmallSpacer"></div>
+              <div class="fixWidthOfInputAndTextarea">
+                <label for="email"><span class="setOnlyLabelName"> Skill name : </span>
+                </label>
+                <input type="text" formControlName="email" name="email">
+              </div>
 
-                <div class="verySmallSpacer"></div>
-                <div>
-                  <label for="email"><span class="setOnlyLabelName"> Skill level % (between 1 and 100): </span>
-                  </label>
-                  <input type="number" id="quantity" name="quantity" min="1" max="100">
-                </div>
-                <div class="verySmallSpacer"></div>
+              <div class="verySmallSpacer"></div>
+              <div>
+                <label for="email"><span class="setOnlyLabelName"> Skill level % (between 1 and 100): </span>
+                </label>
+                <input type="number" id="quantity" name="quantity" min="1" max="100">
+              </div>
+              <div class="verySmallSpacer"></div>
 
 
-              </form>
-            </div>
-            <div class="verySmallSpacer"></div>
-            <div class="fixInCenterButton">
-              <button>
-                <div type="submit" class="addButton">
-                  Add
-                </div>
-              </button>
-              <button>
-                <div type="submit" class="saveButton">
-                  Saves changes
-                </div>
-              </button>
-            </div>
+            </form>
+          </div>
+          <div class="verySmallSpacer"></div>
+          <div class="fixInCenterButton">
+            <button>
+              <div type="submit" class="addButton">
+                Add
+              </div>
+            </button>
+            <button>
+              <div type="submit" class="saveButton">
+                Saves changes
+              </div>
+            </button>
           </div>
         </div>
-
-
-
       </div>
+
+
+
+
 
       <!--     place of experince-->
       <div class="containerE" [attr.id]='ids[2]'>
@@ -229,9 +245,9 @@
                   <div class="challengeAndVector">
                     <div class="challenge">
                       <span class="challengeText">Challenge</span>
-                     <img src="../assets/Images/staricon.svg" alt="">
+                      <img src="../assets/Images/staricon.svg" alt="">
                     </div>
-                  <!--  <img class="resizeImage1" src="../assets/Images/VectorFleche.svg" alt="">-->
+                    <!--  <img class="resizeImage1" src="../assets/Images/VectorFleche.svg" alt="">-->
                   </div>
                 </div>
               </div>
@@ -324,8 +340,7 @@
 
 
       </div>
-
-
     </div>
-  </div>
 
+  </div>
+</div>

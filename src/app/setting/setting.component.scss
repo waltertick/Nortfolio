@@ -116,7 +116,7 @@ h2 {
 }
 
 .containerS {
-  padding: 0.7rem 0.3em;
+  padding: 2.7rem 0.3em;
   color: #6b7588;
 }
 
@@ -286,13 +286,86 @@ h3 {
 
 .saveButton {
   cursor: pointer;
-  background: #65b79f;
+  background: var(--primary-color);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
-  color: #fff;
+  color: var(--firstBackground-color);
   padding: 4px;
   width: 120px;
 
   font-weight: bold;
+}
+
+.settingsButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imgButton {
+  position: fixed;
+  right: 0.7rem;
+  cursor: pointer;
+  background: var(--firstBackground-color);
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 16%);
+  color: var(--primary-color);
+  padding: 0.125rem;
+  margin: 0.7rem 0;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar {
+  color: var(--primary-color);
+  background: var(--primary-color);
+  background-image: linear-gradient(to bottom, #057c86 39.12%, #057c86 75.61%);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  line-height: 1.5;
+  background: #fff;
+  overflow-x: hidden;
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.sidebar img {
+  width: 20px;
+  margin-right: 0.8rem;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 1.2rem 0.8rem;
+  border-bottom: 1px solid #ddd;
+  transition: 0.5s;
+}
+
+.sidebar a:not(.closebtn, .title):focus {
+  color: var(--primary-color);
+  background-color: rgba(221, 221, 221, 0.5);
+}
+
+.sidebar .closebtn {
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 1rem 0.625rem;
+  margin-left: 80%;
+  border-bottom: none;
+}
+
+.sidebar .title {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .fixInCenterButton {
@@ -376,7 +449,7 @@ textarea {
 }
 
 .containerU {
-  padding: 1.7rem 0.7em;
+  padding: 3.5rem 0.7em 2.7rem 0.7em;
 }
 
 .mainContainerU {
@@ -464,6 +537,9 @@ input:focus + label {
   cursor: pointer;
 }
 
+.spacerH {
+    margin-bottom: 1.5rem;
+  }
 .setImage {
   margin-right: 4px;
   width: 16px;
@@ -891,18 +967,20 @@ textarea {
 //fin css experience
 @media only screen and (min-width: 501px) {
   .containerE {
-    padding: 2rem 2rem;
+    padding: 2.7rem 2rem;
   }
-
+  .imgButton {
+    right: 2rem;
+  }
   .containerU {
-    padding: 2rem 2rem;
+    padding: 2.7rem 2rem;
   }
 
   .mainContainerE {
     padding: 1rem 4rem 4rem 4rem;
   }
   .containerS {
-    padding: 2rem 2rem;
+    padding: 2.7rem 2rem;
   }
 
   h2 {
@@ -916,7 +994,7 @@ textarea {
   }
 
   form {
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
   }
 
   .mainContainerS {
@@ -927,17 +1005,17 @@ textarea {
 @media only screen and (min-width: 750px) {
   .containerS {
     padding: 3rem 3rem;
-
   }
 
+  .imgButton {
+    right: 3rem;
+  }
   .containerE {
     padding: 3rem 3rem 5rem 3rem;
-
   }
 
   .containerU {
     padding: 3rem 3rem;
-
   }
 
   h2 {
@@ -954,7 +1032,7 @@ textarea {
     margin-bottom: 2.5rem;
   }
 
-   .mainContainerU {
+  .mainContainerU {
     padding: 2rem 5rem;
 
     // font-size: 1.6rem;
@@ -988,7 +1066,10 @@ textarea {
     padding: 3rem 5rem;
   }
 
-   .mainContainerU {
+  .imgButton {
+    right: 5rem;
+  }
+  .mainContainerU {
     padding: 2rem 6rem;
 
     // font-size: 1.6rem;
@@ -996,7 +1077,7 @@ textarea {
   }
 
   .mainContainerS {
-    padding: 2rem 6rem;
+    padding: 2rem 6rem ;
 
     // font-size: 1.6rem;
     margin: 0;
@@ -1021,43 +1102,44 @@ textarea {
     display: flex;
   }
 
+  .settingsButton {
+    display: none;
+  }
   .superMainContainer {
     margin: 0rem;
-    width: 75rem;
+    width: 60rem;
   }
 
   .fixAllContainerInCenter {
-    display: flex;
-    flex-direction: column;
+    padding:0 ;
   }
 
   .settingSidebar {
     border: 1px solid rgba(35, 36, 37, 0.19);
     margin: 0 0.9rem 0 0;
     padding: 0.9rem 2rem 2rem 1rem;
-    background: #ffffff;
+    background: var(--firstBackground-color);
     box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
     border-radius: 5px;
     position: fixed;
     height: 70vh;
   }
 
-   .mainContainerU {
-    padding: 1.5rem 11rem;
-
+  .mainContainerU {
+    padding: 1.5rem 11rem 2rem 11rem;
+    height: 69vh;
     // font-size: 1.6rem;
     margin: 0;
   }
 
-
- .mainContainerS {
-    padding: 2rem 10rem;
+  .mainContainerS {
+    padding: 2rem 10rem 2.5rem 10rem;
 
     // font-size: 1.6rem;
     margin: 0;
   }
   .mainContainerE {
-    padding: 2rem 10rem 3rem 10rem;
+    padding: 2rem 10rem 4.5rem 10rem;
 
     // font-size: 1.6rem;
     margin: 0;
@@ -1067,8 +1149,8 @@ textarea {
     display: block;
     text-align: left;
     color: #6b7588;
-    width: 17rem;
-    margin: 0rem;
+    width: 13rem;
+    margin: 0rem 2rem 0rem 0rem;
   }
 
   .skillContainer {
@@ -1081,7 +1163,7 @@ textarea {
   }
 
   .spacerH {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
   }
   .comming-soon h5 {
     margin: 0 0 1.4rem 0;
@@ -1102,21 +1184,19 @@ textarea {
     display: block;
   }
 
-
-
   .containerE {
-     padding: 2.5rem 0rem 1rem 0rem;
+    padding: 2.5rem 0rem 0rem 0rem;
 
     align-items: center;
   }
   .containerU {
-    margin: 0rem 0rem 3.5rem 0rem;
+    margin: 0rem 0rem 3rem 0rem;
     align-items: center;
     padding: 0;
   }
 
   .containerS {
-    padding: 2.5rem 0rem 3.5rem 0rem;
+    padding: 2.5rem 0rem 3rem 0rem;
     align-items: center;
   }
   /*
@@ -1128,27 +1208,24 @@ textarea {
 
 @media only screen and (min-width: 1181px) {
   .skillContainer2 {
-
-     width: 15rem;
-    margin: 0rem;
+    width: 13rem;
+    margin: 0rem 2rem 0rem 0rem;
   }
 }
 
 @media only screen and (min-width: 1281px) {
- .mainContainerU {
-    padding: 1.5rem 11rem;
+  .mainContainerU {
+    padding: 1.5rem 11rem 2rem 11rem;
 
     // font-size: 1.6rem;
     margin: 0;
   }
   .skillContainer2 {
-
-    width: 15rem;
-    margin: 0rem;
+    width: 13rem;
+    margin: 0rem 2rem 0rem 0rem;
   }
   .superMainContainer {
-
-    width: 82.26rem;
+    width: 70rem;
   }
   .mainContainerS {
     padding: 2rem 12rem;
@@ -1157,24 +1234,22 @@ textarea {
     margin: 0;
   }
   .mainContainerE {
-    padding: 2rem 12rem 3rem 12rem;
+    padding: 2rem 12rem 2.6rem 12rem;
 
     // font-size: 1.6rem;
     margin: 0;
   }
 
   .containerE {
-     padding: 2.5rem 0rem 1rem 0rem;
+    padding: 2.5rem 0rem 0rem 0rem;
 
     align-items: center;
   }
 }
 
-
-
 @media only screen and (min-width: 1351px) {
   .mainContainerU {
-    padding: 1.5rem 11rem;
+    padding: 1.5rem 11rem 2rem 11rem;
 
     margin: 0;
 
@@ -1182,12 +1257,11 @@ textarea {
   }
 
   .superMainContainer {
-
-    width: 88.75rem;
+    width: 75.75rem;
   }
 
   .spacerH {
-    margin-bottom: 4.1rem;
+    margin-bottom: 2.1rem;
   }
   .mainContainerS {
     padding: 2rem 12rem;
@@ -1196,20 +1270,20 @@ textarea {
     margin: 0;
   }
   .mainContainerE {
-    padding: 2rem 12rem 3rem 12rem;
+    padding: 2rem 12rem 2.6rem 12rem;
 
     // font-size: 1.6rem;
     margin: 0;
   }
 
   .containerE {
-     padding: 1.885rem 0rem 1rem 0rem;
+    padding: 1.885rem 0rem 0rem 0rem;
 
     align-items: center;
   }
   .containerU {
     align-items: center;
-    padding: 0rem 0rem 3.5rem 0rem;
+    padding: 0rem 0rem 1.5rem 0rem;
   }
 
   .containerS {
@@ -1217,12 +1291,9 @@ textarea {
     align-items: center;
   }
 
-
-
   .skillContainer2 {
-
-     width: 15rem;
-    margin: 0rem;
+    width: 13rem;
+    margin: 0rem 2rem 0rem 0rem;
   }
 }
 
