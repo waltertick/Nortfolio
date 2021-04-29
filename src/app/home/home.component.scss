@@ -330,12 +330,18 @@ h5 {
     display: flex;
   }
 
+.comming-soon {
 
+  //padding: 0.625rem 0.5rem;
+
+  display:block;
+
+}
 .skillContainer2 {
   display:block;
   text-align: left;
   color: #6B7588;
-  flex: 75%;
+  flex: 65%;
 }
 .skillContainer {
   display: none;
@@ -387,7 +393,7 @@ h5 {
     display: block;
     text-align: left;
     color: #6B7588;
-    flex: 60%;
+    flex: 55%;
   }
 
  .Profile2 {
@@ -438,7 +444,7 @@ body {
   display: block;
   text-align: left;
   color: #6B7588;
-  flex: 50%;
+  flex: 45%;
 }
 
 .Profile2 {

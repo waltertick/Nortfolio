@@ -13,14 +13,14 @@ import { SkillListComponent } from './Shared/skill-list/skill-list.component';
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
-  scrollOffset: [0, 64],
+  scrollOffset: [0, 50],
 };
 
 const routes: Routes = [
   {path: 'auth/signin', component : SigninComponent},
-  {path: 'settings#Add_skill', component : SettingComponent},
+  {path: 'settings#addSkill', component : SettingComponent},
   {path: 'auth/check', component : AuthCheckredirectionComponent},
-  {path: 'settings#Add_experiences', component : SettingComponent},
+  {path: 'settings#addExperiences', component : SettingComponent},
   {path: 'auth/signup', component: SignupComponent},
   {path: 'home', canActivate: [AuthGuardService], component: HomeComponent},
   {path: 'settings', canActivate: [AuthGuardService], component: SettingComponent },

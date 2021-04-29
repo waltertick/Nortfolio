@@ -308,14 +308,22 @@ h3 {
   background: var(--firstBackground-color);
   box-shadow: 0px 4px 10px rgb(0 0 0 / 16%);
   color: var(--primary-color);
-  padding: 0.125rem;
+ // padding: 0.125rem;
   margin: 0.7rem 0;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 26px;
+  width: 26px;
 }
 
+.imgButton img {
+  display: block;
+  margin: auto;
+  height: 16px;
+  width: 16px;
+}
 .sidebar {
   color: var(--primary-color);
   background: var(--primary-color);
@@ -538,8 +546,8 @@ input:focus + label {
 }
 
 .spacerH {
-    margin-bottom: 1.5rem;
-  }
+  margin-bottom: 1.5rem;
+}
 .setImage {
   margin-right: 4px;
   width: 16px;
@@ -967,20 +975,20 @@ textarea {
 //fin css experience
 @media only screen and (min-width: 501px) {
   .containerE {
-    padding: 2.7rem 2rem;
+    padding: 3.7rem 2rem 3.7rem 2rem;
   }
   .imgButton {
     right: 2rem;
   }
   .containerU {
-    padding: 2.7rem 2rem;
+    padding: 3.7rem 2rem 0rem 2rem;
   }
 
   .mainContainerE {
     padding: 1rem 4rem 4rem 4rem;
   }
   .containerS {
-    padding: 2.7rem 2rem;
+    padding: 3.7rem 2rem 0rem 2rem;
   }
 
   h2 {
@@ -1004,7 +1012,7 @@ textarea {
 
 @media only screen and (min-width: 750px) {
   .containerS {
-    padding: 3rem 3rem;
+    padding: 3rem 3rem 0rem 3rem;
   }
 
   .imgButton {
@@ -1077,7 +1085,7 @@ textarea {
   }
 
   .mainContainerS {
-    padding: 2rem 6rem ;
+    padding: 2rem 6rem;
 
     // font-size: 1.6rem;
     margin: 0;
@@ -1098,7 +1106,7 @@ textarea {
   }
 
   .container {
-    padding: 3rem 3rem;
+    padding: 48px 48px;
     display: flex;
   }
 
@@ -1111,7 +1119,7 @@ textarea {
   }
 
   .fixAllContainerInCenter {
-    padding:0 ;
+    padding: 0;
   }
 
   .settingSidebar {
@@ -1122,12 +1130,12 @@ textarea {
     box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
     border-radius: 5px;
     position: fixed;
-    height: 70vh;
+    height:69.5vh;
   }
 
   .mainContainerU {
     padding: 1.5rem 11rem 2rem 11rem;
-    height: 69vh;
+   // height: 69vh;
     // font-size: 1.6rem;
     margin: 0;
   }
@@ -1185,18 +1193,17 @@ textarea {
   }
 
   .containerE {
-    padding: 2.5rem 0rem 0rem 0rem;
-
+    padding: 48px 0rem 0rem 0rem;
+    height:100%;
     align-items: center;
   }
   .containerU {
-    margin: 0rem 0rem 3rem 0rem;
     align-items: center;
     padding: 0;
   }
 
   .containerS {
-    padding: 2.5rem 0rem 3rem 0rem;
+    padding: 48px 0rem 0rem 0rem;
     align-items: center;
   }
   /*
@@ -1224,6 +1231,11 @@ textarea {
     width: 13rem;
     margin: 0rem 2rem 0rem 0rem;
   }
+
+  
+  .settingSidebar {
+    height: 68vh;
+  }
   .superMainContainer {
     width: 70rem;
   }
@@ -1241,9 +1253,7 @@ textarea {
   }
 
   .containerE {
-    padding: 2.5rem 0rem 0rem 0rem;
-
-    align-items: center;
+    padding: 48px 0rem 0rem 0rem;
   }
 }
 
@@ -1277,17 +1287,18 @@ textarea {
   }
 
   .containerE {
-    padding: 1.885rem 0rem 0rem 0rem;
+    padding: 48px 0rem 0rem 0rem;
 
     align-items: center;
   }
   .containerU {
     align-items: center;
-    padding: 0rem 0rem 1.5rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
   }
 
   .containerS {
-    padding: 1.885rem 0rem;
+    padding: 48px 0rem 0rem 0rem;
+
     align-items: center;
   }
 
