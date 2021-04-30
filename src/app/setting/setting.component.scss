@@ -1104,10 +1104,13 @@ textarea {
     flex-direction: column;
     // align-items: center;
   }
-
   .container {
     padding: 48px 48px;
+  }
+  .containerForSidebarAndMain {
+
     display: flex;
+    flex-wrap:no-wrap;
   }
 
   .settingsButton {
@@ -1115,39 +1118,42 @@ textarea {
   }
   .superMainContainer {
     margin: 0rem;
-    width: 60rem;
+
+
   }
 
   .fixAllContainerInCenter {
     padding: 0;
+
   }
 
   .settingSidebar {
     border: 1px solid rgba(35, 36, 37, 0.19);
-    margin: 0 0.9rem 0 0;
-    padding: 0.9rem 2rem 2rem 1rem;
+    margin: 0 0.9rem 48px 0;
+    padding: 0.9rem 2rem 2rem 2rem;
     background: var(--firstBackground-color);
     box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.16);
     border-radius: 5px;
-    position: fixed;
-    height:69.5vh;
+    width:10rem;
+
+    position:fixed;
   }
 
   .mainContainerU {
-    padding: 1.5rem 11rem 2rem 11rem;
+    padding: 1.5rem 5rem 2rem 5rem;
    // height: 69vh;
     // font-size: 1.6rem;
     margin: 0;
   }
 
   .mainContainerS {
-    padding: 2rem 10rem 2.5rem 10rem;
+    padding: 2rem 5rem 2.5rem 5rem;
 
     // font-size: 1.6rem;
     margin: 0;
   }
   .mainContainerE {
-    padding: 2rem 10rem 4.5rem 10rem;
+    padding: 2rem 5rem 4.5rem 5rem;
 
     // font-size: 1.6rem;
     margin: 0;
@@ -1157,8 +1163,10 @@ textarea {
     display: block;
     text-align: left;
     color: #6b7588;
-    width: 13rem;
-    margin: 0rem 2rem 0rem 0rem;
+    width: 28rem;
+
+
+    margin: 0rem 2rem 3rem 0rem;
   }
 
   .skillContainer {
@@ -1215,38 +1223,37 @@ textarea {
 
 @media only screen and (min-width: 1181px) {
   .skillContainer2 {
-    width: 13rem;
+    width: 26rem;
     margin: 0rem 2rem 0rem 0rem;
   }
 }
 
 @media only screen and (min-width: 1281px) {
   .mainContainerU {
-    padding: 1.5rem 11rem 2rem 11rem;
+    padding: 1.5rem 8rem 2rem 8rem;
 
     // font-size: 1.6rem;
     margin: 0;
   }
   .skillContainer2 {
-    width: 13rem;
+    width: 23rem;
     margin: 0rem 2rem 0rem 0rem;
   }
 
 
-  .settingSidebar {
-    height: 70vh;
-  }
+/*
   .superMainContainer {
     width: 70rem;
   }
+  */
   .mainContainerS {
-    padding: 2rem 12rem;
+    padding: 2rem 8rem;
 
     // font-size: 1.6rem;
     margin: 0;
   }
   .mainContainerE {
-    padding: 2rem 12rem 2.6rem 12rem;
+    padding: 2rem 8rem 2.6rem 8rem;
 
     // font-size: 1.6rem;
     margin: 0;
@@ -1259,28 +1266,32 @@ textarea {
 
 @media only screen and (min-width: 1351px) {
   .mainContainerU {
-    padding: 1.5rem 11rem 2rem 11rem;
+    padding: 1.5rem 9rem 2rem 9rem;
 
     margin: 0;
 
     //font-size: 1.6rem;
   }
+ /*
+  .settingSidebar {
+    height: 500px;
+  }
 
   .superMainContainer {
     width: 75.75rem;
   }
-
+*/
   .spacerH {
     margin-bottom: 2.1rem;
   }
   .mainContainerS {
-    padding: 2rem 12rem;
+    padding: 2rem 9rem;
 
     // font-size: 1.6rem;
     margin: 0;
   }
   .mainContainerE {
-    padding: 2rem 12rem 2.6rem 12rem;
+    padding: 2rem 9rem 2.6rem 9rem;
 
     // font-size: 1.6rem;
     margin: 0;
@@ -1303,7 +1314,7 @@ textarea {
   }
 
   .skillContainer2 {
-    width: 13rem;
+    width: 21rem;
     margin: 0rem 2rem 0rem 0rem;
   }
 }

@@ -8,7 +8,7 @@ import { SettingComponent } from './setting/setting.component';
 import { AuthGuardService } from './services/auth-guard.service';
 import { UserFormComponent } from './Shared/user-form/user-form.component';
 import { AuthCheckredirectionComponent } from './Shared/auth-checkredirection/auth-checkredirection.component';
-import { SkillListComponent } from './Shared/skill-list/skill-list.component';
+
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -18,7 +18,6 @@ const routerOptions: ExtraOptions = {
 
 const routes: Routes = [
   {path: 'auth/signin', component : SigninComponent},
-  {path: 'settings#addSkill', component : SettingComponent},
   {path: 'auth/check', component : AuthCheckredirectionComponent},
   {path: 'settings#addExperiences', component : SettingComponent},
   {path: 'auth/signup', component: SignupComponent},
