@@ -1,9 +1,11 @@
-import { AuthService } from 'src/app/services/auth.service';
+
 import { ToasterService } from './../../services/toaster.service';
 import { Router } from '@angular/router';
 
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from 'src/app/core/auth.service';
+
 
 @Component({
   selector: 'app-signup',
@@ -16,7 +18,7 @@ export class SignupComponent implements OnInit {
   errorMessage: string;
   hide:boolean = true;
 
-  
+
 
   constructor(private formBuilder:FormBuilder,
               private authService: AuthService,
@@ -24,7 +26,7 @@ export class SignupComponent implements OnInit {
               private toaster: ToasterService) { }
 
   ngOnInit() {
-    
+
     this.signUpForm = this.formBuilder.group({
       email: ['',[Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.pattern(/[0-9a-zA-Z]{6,}/), Validators.minLength(6)]],
@@ -35,10 +37,10 @@ export class SignupComponent implements OnInit {
   onChangeView() {
       this.hide=!this.hide;
   }
-  
+
   get f() { return this.signUpForm.controls; }
-  
-  
+
+
   onSubmit() {
     this.submitted = true;
 
@@ -56,11 +58,11 @@ export class SignupComponent implements OnInit {
       (error)  => {
         this.errorMessage = error;
         this.toaster.show('error', 'Error Message!', this.errorMessage,5000);
-       
+
       }
     )
   }
- 
+
     /*this.toaster.show('warning', 'Check it out!', 'This is a warning alert', 3000);
       */
 

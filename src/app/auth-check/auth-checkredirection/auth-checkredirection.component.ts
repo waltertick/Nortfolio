@@ -1,4 +1,4 @@
-import { AuthService } from 'src/app/services/auth.service';
+
 import { Component, OnInit } from '@angular/core';
 import * as firebase from 'firebase/app';
 import 'firebase/auth';        // for authentication
@@ -17,22 +17,22 @@ import 'firebase/functions';   // for cloud functions
 export class AuthCheckredirectionComponent implements OnInit {
 isConnected : boolean ;
 isAuth : boolean ;
-  constructor(private authService : AuthService) { }
+  constructor() { }
 
   ngOnInit() {
     firebase.auth().onAuthStateChanged(
         (user) => {
           if(user) {
           this.isAuth = true;
-          
+
           }else {
             this.isAuth = false;
-            
+
           }
         }
     );
     this.isConnected=this.isAuth;
-    console.log(this.isAuth + 'beedi'+ this.isConnected);
+
   }
- 
+
 }

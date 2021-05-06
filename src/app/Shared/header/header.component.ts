@@ -1,10 +1,11 @@
-import { AuthService } from './../../services/auth.service';
+
 
 import { Component, OnInit , AfterViewInit, ElementRef,ViewChild } from '@angular/core';
 import * as firebase from 'firebase/app';
 import 'firebase/auth';        // for authentication
 import 'firebase/storage';     // for storage
 import 'firebase/database';    // for realtime database
+import { AuthService } from 'src/app/core/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -59,7 +60,7 @@ window.addEventListener('mouseup', (event) => {
   }
 })
 
-   
+
    console.log(this.onSettingsPage);
   }
 
