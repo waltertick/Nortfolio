@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 
 import { ToasterService } from './../../services/toaster.service';
+=======
+import { AuthService } from 'src/app/Auth/auth.service';
+import { ToasterService } from '../../Shared/toaster.service';
+>>>>>>> 5a21b8e7d05b3422e063a013726fd725e017a2a2
 import { Router } from '@angular/router';
 
 import { Component, OnInit } from '@angular/core';

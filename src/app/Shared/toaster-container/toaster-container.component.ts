@@ -1,15 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ToasterService } from '../../services/toaster.service';
+import { ToasterService } from '../toaster.service';
 import { Toast } from '../../models/toast.interface';
 
 @Component({
   selector: 'app-toaster-container',
   template: `
-    <app-toaster *ngFor="let toast of toasts; let i=index" 
+    <app-toaster *ngFor="let toast of toasts; let i=index"
       [toast]="toast" [i]="i"
       (remove)="remove($event)"></app-toaster>
 
-    
+
   `,
   styles: []
 })

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+import { AuthService } from '../../Auth/auth.service';
+>>>>>>> 5a21b8e7d05b3422e063a013726fd725e017a2a2
 
 import { Component, OnInit , AfterViewInit, ElementRef,ViewChild } from '@angular/core';
 import * as firebase from 'firebase/app';

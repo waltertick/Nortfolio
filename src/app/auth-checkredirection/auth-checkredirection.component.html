@@ -1,0 +1,3 @@
+<app-experience-action-list *ngIf="(isAuth==undefined)"></app-experience-action-list>
+<app-home *ngIf="isAuth==true" ></app-home>
+<app-signin *ngIf="isAuth==false"></app-signin>

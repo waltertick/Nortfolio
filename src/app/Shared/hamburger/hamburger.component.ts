@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+import { AuthService } from '../../Auth/auth.service';
+>>>>>>> 5a21b8e7d05b3422e063a013726fd725e017a2a2
 import { Router } from '@angular/router';
 import { Component, OnInit , AfterViewInit, ElementRef,ViewChild } from '@angular/core';
 import { AuthService } from 'src/app/core/auth.service';

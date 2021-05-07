@@ -2,13 +2,21 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
+<<<<<<< HEAD
 import { ToasterService } from './../../services/toaster.service';
+=======
+>>>>>>> 5a21b8e7d05b3422e063a013726fd725e017a2a2
 import * as firebase from 'firebase/app';
 import 'firebase/auth';        // for authentication
 import 'firebase/storage';     // for storage
 import 'firebase/database';    // for realtime database
+<<<<<<< HEAD
 import { AuthService } from 'src/app/core/auth.service';
 
+=======
+import { ToasterService } from 'src/app/Shared/toaster.service';
+import { AuthService } from '../auth.service';
+>>>>>>> 5a21b8e7d05b3422e063a013726fd725e017a2a2
 
 @Component({
   selector: 'app-signin',

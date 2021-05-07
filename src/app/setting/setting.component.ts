@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 import { ToasterService } from './../services/toaster.service';
 
 import { Router } from '@angular/router';
+=======
+
+>>>>>>> 5a21b8e7d05b3422e063a013726fd725e017a2a2
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit , AfterViewInit, ElementRef,ViewChild } from '@angular/core';
 import { AuthService } from '../core/auth.service';
@@ -22,6 +26,7 @@ export class SettingComponent implements OnInit, AfterViewInit {
   urlLink:string="assets/Images/pexels-2.jpg";
 
 
+<<<<<<< HEAD
 
 
   constructor(private formBuilder:FormBuilder,
@@ -29,6 +34,10 @@ export class SettingComponent implements OnInit, AfterViewInit {
               private elementRef: ElementRef,
               private router: Router,
               private toaster: ToasterService) { }
+=======
+  constructor(private formBuilder:FormBuilder
+             ) { }
+>>>>>>> 5a21b8e7d05b3422e063a013726fd725e017a2a2
 
   ngOnInit() {
     this.userProfileForm = this.formBuilder.group({
@@ -79,6 +88,7 @@ window.addEventListener('mouseup', (event) => {
       this.hide=!this.hide;
   }
 
+<<<<<<< HEAD
   get f() { return this.userProfileForm.controls; }
 
 
@@ -103,4 +113,7 @@ window.addEventListener('mouseup', (event) => {
       }
     )
   }
+=======
+
+>>>>>>> 5a21b8e7d05b3422e063a013726fd725e017a2a2
 }

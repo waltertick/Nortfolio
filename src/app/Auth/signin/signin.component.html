@@ -1,36 +1,5 @@
 
-<!--
-  <div class="header">
-  <div routerLinkActive="active" class="headerContent">
 
-    <div class="navbar">
-
-      <span routerLink="home" class="logo">Preferral</span>
-      
-      <div class="hide-desktop">
-        <span class="showCursor" *ngIf="isAuth" routerLink="home">Home</span>
-      </div>
-      <div class="hide-desktop">
-        <span class="hide-desktop showCursor" *ngIf="isAuth" routerLink="setting">Setting</span>
-      </div>
-      <div *ngIf="isAuth" (click)="onSignOut()" routerLink="auth/signin" class="logout">
-        <img class="hide-desktop" src="../assets/Images/Vector_power.svg" alt="Se Déconnecter">
-      </div>
-      <div *ngIf="isAuth" class="show-mobile hide-mobile">
-
-        <a class="hamburger menu  " id="menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-
-
-      </div>
-      
-    </div>
-  
-    </div>
-    -->
 
 
 <div class="signinClass">
@@ -43,7 +12,7 @@
         <img class="fixCameraImage" src="../assets/Images/camera.png" alt="">
       </div>
   </div>
-  
+
         <div class="rightSide">
           <div class="spacer"></div>
 
@@ -57,7 +26,7 @@
               <label for="email"><img class="resizeImg" src="../assets/Images/userIcon.svg" alt="usericon">
               <span class="setOnlyLabelName"> USERNAME </span>
               </label>
-              
+
             </div>
             <div class="invalid-feedback" *ngIf="submitted && f.email.errors" class="invalid-feedback">
               <div *ngIf="f.email.errors.required">Email is required</div>
@@ -77,9 +46,9 @@
                 <i class="material-icons resizeImg imgClass changeColor" matSuffix (click)="hide =!hide">
                   {{hide ? 'visibility': 'visibility_off'}}
                 </i>
-              </div> 
+              </div>
             </div>
-            
+
               <div class="invalid-feedback" *ngIf="submitted && f.password.errors">
                 <div *ngIf="f.password.errors.required">Password is required</div>
                 <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
@@ -88,7 +57,7 @@
             <button type="submit"  class="loginButton">
               Log In
             </button>
-            
+
           </form>
 
                 <div class="centerContainer">
@@ -96,10 +65,10 @@
                   <div class="signupLink">
                     <span>Not registered yet?<a routerLink="/auth/signup" class="changeColor"> Sign up</a></span>
                   </div>
-                  
-                  
+
+
                 </div>
           </div>
-    
+
   </div>
 

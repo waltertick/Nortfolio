@@ -1,37 +1,4 @@
-<!--
-<div class="header">
-  <div routerLinkActive="active" class="headerContent">
 
-    <div class="navbar">
-
-      <a routerLink="home" class="logo">Preferral</a>
-      
-      <div class="hide-desktop">
-        <span class="showCursor" *ngIf="isAuth" routerLink="home">Home</span>
-      </div>
-      <div class="hide-desktop">
-        <span class="hide-desktop showCursor" *ngIf="isAuth" routerLink="setting">Setting</span>
-      </div>
-      <div *ngIf="isAuth" (click)="onSignOut()" routerLink="auth/signin" class="logout">
-        <img class="hide-desktop" src="../assets/Images/Vector_power.svg" alt="Se Déconnecter">
-      </div>
-      <div *ngIf="isAuth" class="show-mobile hide-mobile">
-
-        <a class="hamburger menu  " id="menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-
-
-      </div>
-    </div>
-  
-  </div>
-
-</div>
-
--->
 <div class="signinClass">
   <div class="_container">
     <div class="imageDesign preferal_bg" [ngStyle]="{'background-image': 'url(../assets/Images/pexelscamera.jpeg)'}">
@@ -78,7 +45,7 @@
           </div>
 
         </div>
-        
+
         <div class="invalid-feedback" *ngIf="submitted && f.password.errors">
           <div *ngIf="f.password.errors.required">Password is required</div>
           <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
@@ -100,7 +67,7 @@
 
 
       <div class="centerContainer">
-        
+
         <div class="signupLink">
           <span>Existing user?<a routerLink="/auth/signin" class="changeColor"> Log in</a></span>
         </div>

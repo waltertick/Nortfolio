@@ -1,4 +1,5 @@
 <!--     place of skill -->
+<app-header></app-header>
 <div class="container">
   <div class="containerForSidebarAndMain">
 
@@ -46,7 +47,7 @@
         <div class="containerU">
           <div class="mainContainerU">
             <div class="mainclassU">
-              <form [formGroup]="userProfileForm" (ngSubmit)="onSubmit()">
+              <form [formGroup]="userProfileForm" >
 
                 <div class="image-and-name">
                   <img class="fixImage" [src]="urlLink" alt="Profile image">
@@ -59,23 +60,23 @@
 
                 <div class="field">
                   <input type="email" formControlName="email" name="email" id="email" placeholder=" "
-                    [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                    >
                   <label for="email"><img class="resizeImg" src="../assets/Images/userIcon.svg" alt="usericon">
                     <span class="setOnlyLabelName"> USERNAME </span>
                   </label>
 
                 </div>
-
+                    <!--
                 <div class="invalid-feedback" *ngIf="submitted && f.email.errors" class="invalid-feedback">
                   <div *ngIf="f.email.errors.required">Email is required</div>
                   <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
                   <div class="spacerH"></div>
                 </div>
+              -->
                 <div class="spacerH"></div>
                 <div class="field">
                   <input type="password" required formControlName="password" name="Password" id="Password"
-                    placeholder=" " [type]=" hide ?'password':'text'"
-                    [ngClass]="{ 'is-invalid': submitted && f.password.errors}">
+                    >
                   <label for="Password">
 
                     <img class="resizeImg" src="../assets/Images/password.svg" alt="usericon">
@@ -88,11 +89,12 @@
                     </i>
                   </div>
                 </div>
-
+                    <!--
                 <div class="invalid-feedback" *ngIf="submitted && f.password.errors">
                   <div *ngIf="f.password.errors.required">Password is required</div>
                   <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
                 </div>
+                -->
                 <div class="spacerH"></div>
 
                 <button type="submit" class="loginButton">
